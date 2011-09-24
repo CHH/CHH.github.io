@@ -1,0 +1,4 @@
+auto: true
+server: true
+permalink: pretty
+paginate: 1

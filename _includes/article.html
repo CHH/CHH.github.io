@@ -1,0 +1,20 @@
+<article>
+    <header>
+        <h1>{{ post.title }}</h1>
+    </header>
+
+    <section class="content">
+        {{ post.content }}
+    </section>
+
+    <footer>
+        Erstellt am 
+        <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
+        &mdash;
+        <span class="words">
+            {{ post.content | number_of_words }} W&ouml;rter
+        </span>
+        &mdash;
+        <a href="{{ post.url }}">Permalink</a>
+    </footer>
+</article>

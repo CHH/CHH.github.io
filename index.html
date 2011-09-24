@@ -1,0 +1,151 @@
+---
+layout: default
+title: Start
+---
+
+{% if site.posts != empty %}
+<section id="articles_brief">
+    <h2>Die letzten Artikel:</h2>
+    
+    {% for post in site.posts limit:3 %}
+    <article>
+        <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    </article>
+    {% endfor %}
+    <a class="more" href="/blog">Mehr Artikel &rarr;</a>
+</section>
+{% endif %}
+
+<section id="manifesto">
+    <h2>An das glaube ich</h2>
+    
+    <ol>
+        <li>
+            <h3>Bei Design geht es darum das Wesentliche zu <em>finden</em></h3>
+            <p class="opening">
+                Ein Design muss Sinn machen. Ein Design-Element muss sich zuerst 
+                bewähren bevor es behalten wird. Man wird of &bdquo;Nein&rdquo; 
+                sagen müssen &mdash; aber man kommt nur so auf das Wesentliche.
+            </p>
+        </li>
+        <li>
+            <h3>Software-Entwicklung <br><em>ist</em> Design</h3>
+            <p class="opening">
+                Man soll sich auch bei der Software-Entwicklung auf das Wesentlichste
+                konzentrieren. Wenn man versucht alle Probleme zu lösen, löst man
+                <em>keines richtig</em>.
+            </p>
+        </li>
+        <li>
+            <h3>Ehrlichkeit ist <em>Alles</em></h3>
+            <p class="opening">
+                In einer Welt der dubiosen Lockangebote, der Heilsversprechen
+                und der &bdquo;Eier-legendenwollmilchsäue&rdquo; kann man mit Ehrlichkeit
+                noch einen echten Unterschied machen.
+            </p>
+        </li>
+    </ol>
+</section>
+
+<section id="contact">
+    <h2>Mich kontaktieren</h2>
+
+    <ul>
+        <li>
+            <h3>E-Mail</h3>
+            <p>
+                <em>Schreiben Sie an</em>
+                <script type="text/javascript">
+                //<![CDATA[
+                <!--
+                var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+                "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+                " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!29{)rt{y+xx=l;=+;" +
+                "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+                "\"(8),3\\\"\\\\dn{hnsa.8q$. g6/0*+0(3\\\\\\\\\\\\\\\\q~jbhg_@7 01\\\\\\\\37" +
+                "\\\\07\\\\02\\\\\\\\7V03\\\\\\\\36\\\\05\\\\00\\\\\\\\33\\\\07\\\\00\\\\\\\\"+
+                "01\\\\00\\\\03\\\\\\\\02\\\\07\\\\00\\\\\\\\\\\\r-\\\\03\\\\07\\\\00\\\\\\\\"+
+                "06\\\\04\\\\01\\\\\\\\00\\\\0E\\\\X:01\\\\07\\\\01\\\\\\\\26\\\\00\\\\01\\\\"+
+                "\\\\24\\\\07\\\\17\\\\\\\\1|00\\\\\\\\>(w4?0:&  #;,816\\\\0\\\\\\\\\\\\\\\"" +
+                " \\\\/'r!2(-)\\\"\\\\\\\\\\\\c/34\\\\02\\\\00\\\\\\\\XXSN32\\\\0X\\\\04\\\\" +
+                "05\\\\02\\\\\\\\36\\\\0[\\\\VXXFXB00\\\\0Y\\\\NB\\\\G\\\\\\\\K\\\\BH\\\"\\\\"+
+                "f(;} ornture;}))++(y)^(iAtdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%2;*=)yy)8" +
+                "+(3i>f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontinc" +
+                "fu)\\\"\")"                                                                  ;
+                while(x=eval(x));
+                //-->
+                //]]>
+                </script>
+            </p>
+        </li>
+        <li>
+            <h3>Soziale Netzwerke</h3>
+            <p>
+                <em>Twitter:</em> 
+                <a href="http://twitter.com/yuri41" target="_blank">@yuri41</a>
+            </p>
+            
+            <h3>Code</h3>
+            <p>
+                <em>Github:</em>
+                <a href="http://github.com/CHH" target="_blank">CHH</a>
+            </p>
+        </li>
+        <li>
+            <h3>Fotos</h3>
+            <p>
+                <em>Flickr:</em> 
+                <a href="http://flickr.com/people/yuri41" target="_blank">christoph.hochstrasser</a>
+            </p>
+
+            <h3>Stack Overflow</h3>
+            <p>
+                <a href="http://stackoverflow.com/users/616425/chh">
+                    <img src="http://stackoverflow.com/users/flair/616425.png?theme=clean" width="208" height="58" alt="profile for chh at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for chh at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                </a>
+            </p>
+        </li>
+    </ul>
+</section>
+
+<section id="projects">
+    <header>
+        <h2>Open-Source</h2>
+        <p>
+            <em>Sie wollen sich von meinem Können ein Bild machen?</em> &mdash; Dann sehen
+            Sie sich einige meiner Open-Source Projekte an:
+        </p>
+    </header>
+    
+    <article>
+        <h3><a href="https://github.com/CHH/Sirel">Sirel</a></h3>
+        <p class="opening">
+            Eine DSL f&uuml;r PHP die das erstellen von SQL Abfragen
+            erleichtert. Sehr n&uuml;tzlich als Basis f&uuml;r
+            ActiveRecord Implementierungen.
+        </p>
+    </article>
+
+    <article>
+        <h3><a href="https://github.com/CHH/Trek">Trek</a></h3>
+        <p class="opening">
+            Ein framework-unabh&auml;ngiges Tool, geschrieben in Shell, f&uuml;r 
+            das Versionieren des Schemas einer relationalen Datenbank. 
+            Funktioniert mit SQLite und MySQL.
+        </p>
+    </article>
+
+    <article>
+        <h3><a href="https://github.com/CHH/php-build">php-build</a></h3>
+        <p class="opening">
+            Erstellt PHP Binaries vom Quelltext und konfiguriert sie, sodass
+            mehrere Versionen nebeneinander betrieben werden k&ouml;nnen.
+        </p>
+    </article>
+    
+    <footer class="caption">
+        Weitere Projekte finden Sie auf meinem
+        <a href="http://github.com/CHH">Github Profil</a>.
+    </footer>
+</section>

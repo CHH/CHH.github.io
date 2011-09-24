@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {{ page.title }} &mdash;
+            Christoph's CodeLog
+        </title>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/fonts.css">
+        <link rel="stylesheet/less" type="text/css" href="/css/screen.less">
+        
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/ie_legacy.css">
+        <![endif]-->
+    </head>
+    <body class="blog">
+        <header role="banner">
+            <p id="greeting">Hallo Besucher</p>
+
+            <h1>Christoph's <em>CodeLog</em></h1>
+
+            {% include navigation.html %}
+        </header>
+
+        <section class="content">
+            <article>
+                <header>
+                    <h1>{{ page.title }}</h1>
+                </header>
+                <section>
+                    {{ content }}
+                </section>
+                <footer>
+                    Erstellt am
+                    <time datetime="{{ page.date }}">
+                        {{ page.date | date: "%d.%m.%Y" }}
+                    </time>
+                    &mdash;
+                    {{ content | number_of_words }} W&ouml;rter
+                    &mdash;
+                    <a href="{{ page.url }}">Permalink</a>
+                </footer>
+            </article>
+
+            <section class="article-list">
+                <header>
+                    <h1>Mehr Artikel</h1>
+                </header>
+                <ul>
+                {% for post in site.posts limit:5 %}
+                    <li>
+                        <time datetime="{{ page.date }}">
+                            {{ page.date | date: "%d.%m.%Y" }}
+                        </time>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </section>
+        </section>
+
+        {% include footer.html %}
+
+        <script src="/js/modernizr.js"></script>
+        <script src="/js/less.js"></script>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+---
+published: false
+title: Foo Bar
+layout: blog
+---
+Foo Bar

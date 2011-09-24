@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {{ page.title }} &mdash;
+            Christoph Hochstrasser, Web Entwickler &amp; Designer
+        </title>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/fonts.css">
+        <link rel="stylesheet/less" type="text/css" href="/css/screen.less">
+        
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/css/ie_legacy.css">
+        <![endif]-->
+    </head>
+    
+    <body>
+        <header role="banner">
+            <p id="greeting">
+                Hallo Besucher!
+            </p>
+        
+            <h1><a href="/">Christoph Hochstrasser</a></h1>
+            
+            <p id="tagline">
+                Ich bin Software Entwickler <span class="ampersand">&amp;</span>
+                Designer. <br>
+                Ich mache einfache und
+                benutzerfreundliche Software für das Web.
+            </p>
+
+            {% include navigation.html %}
+        </header>
+        
+        <section id="content">
+            {{ content }}
+        </section>
+        
+        {% include footer.html %}
+
+        <script src="/js/modernizr.js"></script>
+        <script src="/js/less.js"></script>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
