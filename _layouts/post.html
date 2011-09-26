@@ -18,7 +18,7 @@
         <header role="banner">
             <p id="greeting">Hallo Besucher</p>
 
-            <h1>Christoph's <em>CodeLog</em></h1>
+            <h1><a href="/blog">Christoph's <em>CodeLog</em></a></h1>
 
             {% include navigation.html %}
         </header>
@@ -28,18 +28,24 @@
                 <header>
                     <h1>{{ page.title }}</h1>
                 </header>
-                <section>
+
+                <section class="content">
                     {{ content }}
                 </section>
+
                 <footer>
-                    Erstellt am
-                    <time datetime="{{ page.date }}">
-                        {{ page.date | date: "%d.%m.%Y" }}
-                    </time>
+                    Erstellt am 
+                    <time datetime="{{ page.date }}">{{ page.date | date: "%d.%m.%Y" }}</time>
                     &mdash;
-                    {{ content | number_of_words }} W&ouml;rter
+                    <span class="words">
+                        {{ content | number_of_words }} W&ouml;rter
+                    </span>
                     &mdash;
                     <a href="{{ page.url }}">Permalink</a>
+                    &mdash;
+                    <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
+                        Kommentiere auf Twitter
+                    </a>
                 </footer>
             </article>
 
