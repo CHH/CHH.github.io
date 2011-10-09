@@ -25,6 +25,13 @@ border-radius: @radius;
 -moz-border-radius: @radius;
 -o-border-radius: @radius;}
 
+.box-shadow(@options) {
+    -webkit-box-shadow: @options;
+    -moz-box-shadow: @options;
+    -o-box-shadow: @options;
+    box-shadow: @options;
+}
+
 body {
 font-size: 0.625em;
 width: 96em;
@@ -393,11 +400,13 @@ font-size: 3em; font-style: italic;}
             position: relative;
             overflow: hidden;
             width: 96em;
+            padding: 1em 0 0 1em;
             font-size: 1em;
             margin: 1em 0;
-            margin-left: -2em;
+            margin-left: -3em;
 
             img {
+                .box-shadow(-10px -10px 0 #eee);
                 float: left;
                 max-width: 70em;
             }
