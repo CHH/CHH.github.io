@@ -1,2 +1,6 @@
 permalink: pretty
 lessc: /usr/local/bin/lessc
+exclude:
+    - Vagrantfile
+    - .vagrant
+    - chef
