@@ -7,7 +7,7 @@ title: Start
 <section id="articles_brief">
     <h2>Die letzten Artikel:</h2>
     
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:2 %}
     <article>
         <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

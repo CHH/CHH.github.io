@@ -119,14 +119,6 @@ margin: 0 0 0.8em;}
 li { 
 margin: 0 0 0.45em;}
 
-figure {
-    img {
-    padding: 4px; border: 1px solid #aaa;}
-    
-    figcaption {
-    font-size: 1.4em; margin: 0.5em 0 0;}
-}
-
 .caption {
 padding: 0em 10em;
 text-align: center;
@@ -285,7 +277,7 @@ font-size: 3em; font-style: italic;}
     float: left; 
     display: inline; 
     font-size: 1em;
-    width: 46em;
+    width: 30em;
     margin: 0 1em 1em;}
 
     .caption {
@@ -298,11 +290,11 @@ font-size: 3em; font-style: italic;}
 
     > header > h1 {
         margin: 1em 0;
-        color: #666;
+        color: #333;
         letter-spacing: 0.2em;
         .font_serif;
         font-weight: normal;
-        font-size: 1.8em;
+        font-size: 1.6em;
         text-transform: uppercase;
         text-align: left;
     }
@@ -332,10 +324,12 @@ font-size: 3em; font-style: italic;}
     }
 
     article {
+        position: relative;
         width: 60em;
+        color: #333;
 
         .pulled-out {
-            position: absolute;
+            float: right;
             margin-right: -70em;
             width: 26em;
         }
@@ -347,13 +341,10 @@ font-size: 3em; font-style: italic;}
             }
         }
         > section {
-            font-size: 1.2em;
         }
         > footer {
-            padding: 1em;
-            background: #f5f5f5;
-            border-bottom: 5px solid #ccc;
-
+            padding: 1em 0;
+            border-top: 1px dashed #555;
             margin-top: 2em;
             color: #888;
             font-size: 1.4em;
@@ -363,8 +354,78 @@ font-size: 3em; font-style: italic;}
             }
         }
 
+        h2 {
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 1.6em;
+            margin: 1em 0;
+        }
+
+        h3 {
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 1.4em;
+            font-style: normal;
+            margin: 0.6em 0;
+        }
+
+        blockquote {
+            position: relative;
+            padding: 0.2em 0 0.3em 4em;
+            color: #333;
+            font-size: 1em;
+
+            p {
+                font-size: 1.6em;
+            }
+        }
+
+        pre {
+            margin: 0 0 1em;
+            padding: 0 0 0 4em;
+            .font_monospace;
+            font-size: 1.6em;
+        }
+
+        figure {
+            position: relative;
+            overflow: hidden;
+            width: 96em;
+            font-size: 1em;
+            margin: 1em 0;
+            margin-left: -2em;
+
+            img {
+                float: left;
+                max-width: 70em;
+            }
+
+            figcaption {
+                color: #555;
+                font-style: italic;
+                font-size: 1.6em;
+                line-height: 1.3em;
+                float: right;
+                width: 15em;
+
+                em {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        p code {
+            .round_all(2px);
+            background: #f2f2f2;
+            padding: 0.25em;
+        }
+
+        ul {
+            padding-left: 4em;
+        }
         li {
-            margin-left: 2em;
         }
         li:before {
             content: "\2767";
