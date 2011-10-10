@@ -1,5 +1,7 @@
 
 $(function() {
+    hljs.initHighlightingOnLoad();
+
     $('#greeting').html(welcomeMessage());
 
     $(document).delegate('.comment-on-twitter', 'click', function() {

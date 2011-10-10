@@ -39,5 +39,6 @@ end
 bash "run_jekyll" do
     cwd node[:vagrant][:directory]
     code "jekyll --server 8080 --auto &"
+    user "root"
 end
 
