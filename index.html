@@ -7,7 +7,7 @@ title: Start
 <section id="articles_brief">
     <h2>Die letzten Artikel:</h2>
     
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:2 %}
     <article>
         <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -91,19 +91,19 @@ title: Start
                 <em>Github:</em>
                 <a href="http://github.com/CHH" target="_blank">CHH</a>
             </p>
-        </li>
-        <li>
-            <h3>Fotos</h3>
-            <p>
-                <em>Flickr:</em> 
-                <a href="http://flickr.com/people/yuri41" target="_blank">christoph.hochstrasser</a>
-            </p>
 
             <h3>Stack Overflow</h3>
             <p>
                 <a href="http://stackoverflow.com/users/616425/chh" target="_blank">
                     <img src="http://stackoverflow.com/users/flair/616425.png?theme=clean" width="208" height="58" alt="profile for chh at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for chh at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
                 </a>
+            </p>
+        </li>
+        <li>
+            <h3>Fotos</h3>
+            <p>
+                <em>Flickr:</em> 
+                <a href="http://flickr.com/people/yuri41" target="_blank">christoph.hochstrasser</a>
             </p>
         </li>
     </ul>
