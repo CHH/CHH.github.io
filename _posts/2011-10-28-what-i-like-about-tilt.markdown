@@ -7,7 +7,7 @@ engine, but kind of an aggregator for templating engines and provides
 adapters to Erubis, Markdown and even for LESS and SASS. It's kind of
 a "Meta" Templating Engine. Here is what I like about it.
 
-## Democratizing View Templates
+## Democratizes Writing of View Templates
 
 Tilt supports many templating engines and you can choose the one you
 like the most. Want to use Markdown instead of Textile? Just use a
