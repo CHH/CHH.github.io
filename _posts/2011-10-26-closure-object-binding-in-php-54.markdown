@@ -1,6 +1,11 @@
 ---
 title: Closure Object Binding in PHP 5.4
 layout: post
+excerpt:
+    Closure Object Binding is one of the features that I'm looking
+    forward to in PHP 5.4. We will take a brief look at the long way
+    it took to be implemented and look into practical examples on how to
+    improve libraries.
 ---
 
 For the people who read PHP's `NEWS` file, it's no surprise &mdash; but

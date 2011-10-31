@@ -5,15 +5,23 @@ title: Start
 
 {% if site.posts != empty %}
 <section id="articles_brief">
-    <h2>Die letzten Artikel:</h2>
+    <h2>Die letzten Artikel</h2>
     
-    {% for post in site.posts limit:2 %}
+    {% for post in site.posts limit:3 %}
     <article>
-        <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <header>
+            <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        </header>
+        <p>{{ post.excerpt }}</p>
     </article>
     {% endfor %}
-    <a class="more" href="/blog">Mehr Artikel &rarr;</a>
+
+    <footer>
+        <p class="caption">
+            Weitere Artikel finden Sie im <a class="more" href="/blog">Blog</a>.
+        </p>
+    </footer>
 </section>
 {% endif %}
 
