@@ -8,7 +8,7 @@
         </title>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/fonts.css">
-        <link rel="stylesheet" href="/js/highlight_styles/solarized_light.css">
+        <link rel="stylesheet" href="/js/highlight_styles/solarized_dark.css">
         <link rel="stylesheet" href="/css/screen.css">
         
         <!--[if lt IE 9]>
@@ -21,7 +21,14 @@
         <header role="banner">
             <p id="greeting">Hallo Besucher</p>
 
-            <h1><a href="/blog">Christoph's <em>CodeLog</em></a></h1>
+            <h1>
+                Ich bin
+                <a href="/">Christoph Hochstrasser</a> und mache
+                <em>einfache</em> und <em>benutzbare</em> Software
+                f&uuml;r das Web. <br>
+                Hier schreibe ich &uuml;ber Software Entwicklung, Design
+                und PHP.
+            </h1>
 
             {% include navigation.html %}
         </header>
@@ -29,6 +36,9 @@
         <section class="content">
             <article>
                 <header>
+                    <time class="created-at" datetime="{{ page.date }}">
+                        {{ page.date | date: "%Y/%m/%d" }}
+                    </time>
                     <h1>{{ page.title }}</h1>
                 </header>
 
@@ -37,13 +47,6 @@
                 </section>
 
                 <footer>
-                    Erstellt am 
-                    <time datetime="{{ page.date }}">{{ page.date | date: "%d.%m.%Y" }}</time>
-                    &mdash;
-                    <span class="words">
-                        {{ content | number_of_words }} W&ouml;rter
-                    </span>
-                    &mdash;
                     <a href="{{ page.url }}">Permalink</a>
                     &mdash;
                     <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">

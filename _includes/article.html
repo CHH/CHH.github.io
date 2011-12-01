@@ -1,5 +1,6 @@
 <article>
     <header>
+        <time class="created-at" datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
         <h1>{{ post.title }}</h1>
     </header>
 
@@ -8,13 +9,6 @@
     </section>
 
     <footer>
-        Erstellt am 
-        <time datetime="{{ post.date }}">{{ post.date | date: "%d.%m.%Y" }}</time>
-        &mdash;
-        <span class="words">
-            {{ post.content | number_of_words }} W&ouml;rter
-        </span>
-        &mdash;
         <a href="{{ post.url }}">Permalink</a>
         &mdash;
         <a href="#" class="comment-on-twitter" data-url="{{ post.url }}">

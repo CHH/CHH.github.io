@@ -5,7 +5,13 @@ title: Start
 
 {% if site.posts != empty %}
 <section id="articles_brief">
-    <h2>Die letzten Artikel</h2>
+    <header>
+        <h2>Die letzten Artikel</h2>
+        <p class="caption">
+            Hier schreibe ich &mdash; unregelm&auml;&szlig;ig &mdash;
+            &uuml;ber Software Entwicklung, PHP und Design.
+        </p>
+    </header>
     
     {% for post in site.posts limit:3 %}
     <article>
@@ -19,7 +25,7 @@ title: Start
 
     <footer>
         <p class="caption">
-            Weitere Artikel finden Sie im <a class="more" href="/blog">Blog</a>.
+            <a class="more" href="/weblog">Mehr Artikel</a>
         </p>
     </footer>
 </section>

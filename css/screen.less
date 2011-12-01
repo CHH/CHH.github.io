@@ -150,27 +150,22 @@ section > header > p {
 header[role=banner] {
     position: relative; 
     overflow: hidden;
-    text-align: center;
     border-bottom: 1px dashed #ddd;
 
     #greeting {
-    text-align: left;
     color: #999;
     margin: 0.5em 0 0;
     font-size: 1.4em;}
 
     h1 {
-    .font_serif;
-    font-weight: normal; 
-    font-size: 6em; margin: 0.5em 0 0.25em;}
+        text-align: left;
+        .font_serif;
+        font-weight: normal;
+        font-size: 2em; 
+        line-height: 1.4em;
+        margin: 1em 0 1em;
+    }
     
-    h1 a {
-    color: black; 
-    border-bottom: 3px solid transparent;}
-    
-    h1 a:hover {
-    text-decoration: underline;}
-
     p {
     color: #222;}
 
@@ -329,15 +324,6 @@ font-size: 3em; font-style: italic;}
 }
 
 .blog {
-    header[role=banner] {
-        h1 {
-            em {
-                .font_monospace;
-                font-style: normal;
-            }
-        }
-    }
-
     > .content > footer {
         font-size: 1.6em;
     }
@@ -348,10 +334,6 @@ font-size: 3em; font-style: italic;}
         margin: 0 auto 2em;
         padding: 0 2em;
         color: #333;
-        border: 1px solid #eee;
-        border-top: none;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
 
         .pulled-out {
             float: right;
@@ -360,6 +342,18 @@ font-size: 3em; font-style: italic;}
         }
 
         > header {
+            position: relative;
+            
+            > time {
+                padding: 0.5em 0;
+                position: absolute;
+                top: 1em;
+                left: -10em;
+                width: 8em;
+                font-size: 1.8em;
+                color: #555;
+                border-bottom: 1px solid #ccc;
+            }
             h1 {
                 .font_serif;
                 font-weight: normal;
@@ -418,6 +412,7 @@ font-size: 3em; font-style: italic;}
 
         pre {
             margin: 0 0 1em;
+            border-left: 10px solid lighten(#002B36, 10);
             
             code {
                 .font_monospace;
