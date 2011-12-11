@@ -4,3 +4,5 @@ exclude:
     - Vagrantfile
     - .vagrant
     - chef
+ftp_host: christophh.net
+ftp_dir: /www/home/www.christophh.net

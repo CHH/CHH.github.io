@@ -22,22 +22,19 @@
             <p id="greeting">Hallo Besucher</p>
 
             <h1>
-                Ich bin
-                <a href="/">Christoph Hochstrasser</a> und mache
-                <em>einfache</em> und <em>benutzbare</em> Software
-                f&uuml;r das Web. <br>
-                Hier schreibe ich &uuml;ber Software Entwicklung, Design
+				{% include tagline.html %}
+				<br>
+                Hier schreibe ich in unregelm&auml;&szlig;en
+				Abst&auml;nden &uuml;ber Software Entwicklung, Design
                 und PHP.
-            </h1>
-
-            {% include navigation.html %}
+			</h1>
         </header>
 
         <section class="content">
             <article>
                 <header>
                     <time class="created-at" datetime="{{ page.date }}">
-                        {{ page.date | date: "%Y/%m/%d" }}
+                        {{ page.date | date: "%d.%m.%Y" }}
                     </time>
                     <h1>{{ page.title }}</h1>
                 </header>

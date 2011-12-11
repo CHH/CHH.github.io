@@ -1,23 +1,16 @@
-/**
- * Color Definitions
- */
-@color_rusticotta: darken(#E86B35, 10);
-@color_darker_rusticotta: darken(@color_rusticotta, 15);
-@color_sands: #f2ecdf;
-@color_bright_lights: #FFF1CC;
-@color_black: #0D0201;
+@import "variables.less";
 
 /**
  * Font Families
  */
 .font_serif {
-font-family: "Gentium Book Basic", "Georgia", "Palatino", "Times New Roman", "Baskerville", "Hoefler Text", serif;}
+font-family: @fontstack_serif;}
 
 .font_sans_serif {
-font-family: "Liberation Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;}
+font-family: @fontstack_sans;}
 
 .font_monospace {
-font-family: Monaco, Consolas, monospace;}
+font-family: @fontstack_monospace;}
 
 .round_all(@radius: 3px) {
 border-radius: @radius;
@@ -87,17 +80,17 @@ a:visited {
 h1, h2, h3, h4, h5, h6 {
 .font_sans_serif;
 font-weight: bold; line-height: 1.1em;
-margin: 0.5em 0 0.3em;}
+margin: 1em 0 0.5em;}
 
-h1, h2, h3 {
+h2, h3 {
 text-align: center;}
 
-h1 { 
-font-size: 4em;}
+h1 {
+font-size: 2.4em;}
 
 h2 { 
 .font_serif; 
-font-size: 4em;
+font-size: 2.1em;
 font-weight: normal;}
 
 h3 {
@@ -117,19 +110,24 @@ font-size: 1.6em; line-height: 1.6em;}
 .opening {
 position: relative;}
 
-.opening:first-letter {
-position: relative;
-margin: 0.1em 0.05em 0 0;
-float: left;
-font-size: 3.6em; 
-line-height: 36px;
-color: @color_darker_rusticotta;}
-
 em {
 font-style: italic;}
 
 p {
 margin: 0 0 0.8em;}
+
+ul, ol {
+	padding: 0 0 0 4em;
+	margin: 0 0 1.5em;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style-type: disc;
+}
 
 li { 
 margin: 0 0 0.45em;}
@@ -231,34 +229,28 @@ font-size: 3em; font-style: italic;}
 }
 
 /**
- * What I believe into
+ * What I believe in
  */
 #manifesto {
     border-bottom: 1px dashed #ddd;
-
-    ol {
-    overflow: hidden;}
+	
+	> h2 {
+		text-align: left;
+	}
+	
+    ul {
+		max-width: 70em;
+	}
     
     li {
-    color: #aaa; 
-    float: left;
-    font-size: 1em;
-    width: 30em;
-    margin: 0 1em 1em;
-    padding: 0;}
-    
-    h3 {
-    .font_serif;
-    font-style: italic;
-    font-weight: normal;
-    color: #000;
-    font-size: 2.6em;
-    line-height: 1.2em;
-    height: 2em;}
+		font-size: 1.8em;
+		padding: 0;
+	}
     
     p {
-    color: #000; margin: 0;
-    line-height: 1.5em;}
+		color: #000; margin: 0;
+		line-height: 1.5em;
+	}
 }
 
 /**
@@ -268,12 +260,12 @@ font-size: 3em; font-style: italic;}
     border-bottom: 1px dashed #ddd;
 
     ul {
-    overflow: hidden;}
+    overflow: hidden;
+	list-style: none;
+	padding: 0;}
     
     li {
-    float: left; 
-    width: 30em; 
-    margin: 0 1em 1em;
+	.column(4);
     font-size: 1em;
     text-align: center;}
     
@@ -288,11 +280,10 @@ font-size: 3em; font-style: italic;}
     border-bottom: 1px dashed #ddd;
     
     article {
-    float: left; 
-    display: inline; 
-    font-size: 1em;
-    width: 30em;
-    margin: 0 1em 1em;}
+		.column(4);
+		display: inline; 
+		font-size: 1em;
+	}
 
     .caption {
     clear: both;
@@ -312,6 +303,11 @@ font-size: 3em; font-style: italic;}
         text-transform: uppercase;
         text-align: left;
     }
+
+	> ul {
+		list-style: none;
+		padding: 0;
+	}
 
     li {
         margin-left: 1em;
@@ -357,8 +353,8 @@ font-size: 3em; font-style: italic;}
             h1 {
                 .font_serif;
                 font-weight: normal;
-                margin: 0 0;
-                padding: 0.5em 0 0.5em;
+				font-size: 4em;
+				text-align: center;
             }
         }
 
@@ -411,7 +407,7 @@ font-size: 3em; font-style: italic;}
         }
 
         pre {
-            margin: 0 0 1em;
+            margin: 0 0 1em -2em;
             border-left: 10px solid lighten(#002B36, 10);
             
             code {
@@ -472,22 +468,6 @@ font-size: 3em; font-style: italic;}
             .round_all(2px);
             background: #f2f2f2;
             padding: 0.25em;
-        }
-
-        ul, ol {
-            padding-left: 4em;
-            margin-bottom: 2em;
-        }
-        ul {
-            li:before {
-                content: "\2767";
-                margin-left: -1.3em;
-                margin-right: 0.5em;
-            }
-        }
-
-        ol {
-            list-style: decimal;
         }
     }
 }
