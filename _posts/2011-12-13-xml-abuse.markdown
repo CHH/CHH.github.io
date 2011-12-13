@@ -1,0 +1,59 @@
+---
+layout: post
+title: XML Abuse
+excerpt: >
+    XML Abuse is everywhere, and I'm sick of it. Everytime
+    I have to use Ant, I'm feeling like I'm in **XML Hell**.<br>
+    _Warning_: This can be ranty at times.
+---
+It's _everywhere_. **XML Abuse**. From Domain Specific Languages to
+Data Serialization, XML is the most commonly abused data format I've
+ever encountered.
+
+XML is perfectly fine for (because it was designed for this):
+
+ 1. First of all: XML was designed to be _written_ by **humans** and
+    _read_ by **humans**. Nearly
+    all _generated_ XML I've seen _sucks badly_. I think this is because
+    XML cannot efficiently represent common data structures found in 
+    programming languages.
+ 2. XML is _good_ for representing trees. If you imagine the outline of a document, 
+    you see that this is _definitly_ a **tree**.
+ 3. XML is good for creating _Markup_ Languages with it. Markup
+    Languages are intended to be written by **humans** and can easily validated by a standard
+    validator by utilizing the **Document Type Definition** (`DTD`).
+    The DTD essentially describes what combinations of tags and
+    attributes are valid (an XML "Schema").<br>
+    Good examples of this are __Atom__, __RSS__ and __FBML__.
+
+## You probably shouldn't use XML:
+
+ 1. For **Serializing Data (Human Readable):** It's overly verbose, as well as it
+    _cannot_ represent basic data types such as Lists, Maps, Strings
+    and Numbers as _efficently_ as JSON.
+ 2. For **Domain Specific Languages:** _Fuck Ant_. XML is for marking up
+    *Documents*. It was not designed to represent logic. It's
+    overly verbose at this task too. Pick some _Ruby_, _Groovy_ or whatever
+    fits your taste &mdash; as long it's a language _meant for programming_.
+    **Your users will thank you.**
+ 3. When you are **not using DTDs**: Using XML without a Document Type
+    Definition is like programming without defining _any_
+    Interfaces. Your XML is impossible to automatically validate and
+    very hard to pick up too.
+ 4. When you intend to mark up _traditional_ documents and do _not_ need to
+    create your _own_ Elements. HTML is perfectly fine for this
+    as long you _ensure it's valid_.
+ 5. When you are **not** taking the time to think about how to represent your
+    data in _well formed_ XML, and instead let it generate
+    automatically.
+
+## Alternatives
+
+Without pointing a way out of __XML Hell__, this article would be only a
+rant. So this are your ways to escape:
+
+ - **Data Serialization (Human Readable):** use JSON
+ - **Documents:** HTML (*valid* of course)
+ - **Domain Specific Languages:** use Ruby, Groovy or any _programming_
+   language
+ - **Configuration Files:** use YAML, .ini, Properties, Ruby, Groovy

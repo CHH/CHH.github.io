@@ -1,8 +1,12 @@
 ---
 layout: post
 title: We Power Users are going to be the 80 percent
-excerpt:
-  Recent OS releases follow some kind of trend: they all try to make the desktop more usable for normal users. But with the rapid adoption of tablets, the power users will be left as the 80 percent who use desktops at all.
+excerpt: >
+    Recent OS releases follow some kind of trend: 
+    they all try to make the desktop more usable 
+    for normal users. But with the rapid adoption 
+    of tablets, the power users will be left as the 
+    80 percent who use desktops at all.
 ---
 The recent announcement that all Apps distributed through the Mac App
 Store must run in a sandbox beginning with March 2012 has had a huge 
