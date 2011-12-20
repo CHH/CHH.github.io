@@ -39,6 +39,10 @@
                     <h1>{{ page.title }}</h1>
                 </header>
 
+                <section class="excerpt">
+                    {{ page.excerpt | markdownify }}
+                </section>
+
                 <section class="content">
                     {{ content }}
                 </section>
@@ -57,7 +61,7 @@
                     <h1>Mehr Artikel</h1>
                 </header>
                 <ul>
-                {% for post in site.posts offset:1 limit:5 %}
+                {% for post in site.posts limit:5 %}
                     <li>
                         <time datetime="{{ post.date }}">
                             {{ post.date | date: "%d.%m.%Y" }}
