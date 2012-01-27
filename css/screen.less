@@ -1,4 +1,7 @@
 @import "variables.less";
+@import "reset.css";
+@import "fonts.css";
+@import "/js/highlight_styles/solarized_dark.css";
 
 /**
  * Font Families
@@ -86,7 +89,10 @@ h2, h3 {
 text-align: center;}
 
 h1 {
-font-size: 2.4em;}
+    font-size: 3.8em;
+    font-family: @fontstack_headline;
+    font-weight: normal;
+}
 
 h2 { 
 .font_serif; 
@@ -157,7 +163,7 @@ header[role=banner] {
 
     h1 {
         text-align: left;
-        .font_serif;
+        font-family: @fontstack_serif;
         font-weight: normal;
         font-size: 2.1em; 
         line-height: 1.4em;
@@ -333,13 +339,13 @@ font-size: 3em; font-style: italic;}
         color: #333;
 
         .excerpt {
-            border-bottom: 2px solid @color_sands;
+            border-bottom: 5px dotted @color_sands;
             margin-bottom: 2em;
 
             p {
-                font-size: 2em;
-                font-style: italic;
-                color: #888;
+                font-family: @fontstack_headline;
+                font-size: 2.4em;
+                line-height: 1.2em;
             }
         }
 
@@ -363,9 +369,9 @@ font-size: 3em; font-style: italic;}
                 border-bottom: 1px solid #ccc;
             }
             h1 {
-                .font_serif;
+                font-family: @fontstack_headline;
                 font-weight: normal;
-				font-size: 4em;
+				font-size: 5em;
 				text-align: center;
             }
         }
