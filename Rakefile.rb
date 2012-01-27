@@ -7,14 +7,19 @@ namespace :post do
     desc "Creates an empty post"
     task :create, [:title] do |t, args|
         title = args.title.downcase.gsub(/\s+/, '-')
+        post  = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title}.markdown" 
 
-        post = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title}.markdown" 
+        if File.exists? post
+            puts %(File #{post} already exists!) if File.exists? post
+            return
+        end
 
-        puts %Q(Creating Post "#{args.title}" in #{post})
+        puts %(Creating Post "#{args.title}" => #{post})
 
         File.open(post, "w+") do |file|
-            file.write(%Q{---
+            file.write(%{---
 title: #{args.title}
+layout: post
 ---
 })
         end
