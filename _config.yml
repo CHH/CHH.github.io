@@ -2,6 +2,7 @@ permalink: pretty
 lessc: /usr/local/bin/lessc
 exclude:
     - Vagrantfile
+    - Rakefile.rb
     - .vagrant
     - chef
 ftp_host: christophh.net
