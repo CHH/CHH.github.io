@@ -1,7 +1,10 @@
 ---
 title: PHP Unix Programming
 layout: post
-excerpt:
+excerpt: >
+    Ever worried that your scripts ain't good Unix citizens?
+    Here are some quick, practial recipes usable for everyday
+    PHP Command Line scripting.
 ---
 
 ## Use appropiate exit codes
@@ -24,11 +27,34 @@ Here's a quick overview of appropiate Exit Codes:
  * Codes between __128__ and __255__ are reserved for special purposes. Do
    _not_ use them.
 
-## Exit early
+The [Appendix D.](http://www.tldp.org/LDP/abs/html/exitcodes.html)
+of the Advanced Shell Scripting Guide is a good place to look for
+infos about Exit Codes.
 
-## Do something when the script exits
+## Cleanup Your Mess
 
-## Writing error output
+It's always good to cleanup the mess that you've created. In a Shell
+Script you would trap the `EXIT` signal:
+
+    #!/bin/sh
+
+    my_exit_handler() {
+        echo "Cleaning up..." >&2
+    }
+
+    trap my_exit_handler EXIT
+
+You can do the same in PHP by using `register_shutdown_function` an
+passing a valid callback:
+
+    #!/usr/bin/env php
+    <?php
+
+    register_shutdown_function(function() {
+        fwrite(STDERR, "Cleaning up...\n");
+    });
+
+## Writing Error Output
 
 The Error Pipe is available via the `STDERR` constant. Simply use
 `fwrite` to write to it:
@@ -62,6 +88,37 @@ You can use `stream_get_contents` to get all input data:
 
     $input = stream_get_contents(STDIN);
 
+It's important to note that `stream_get_contents(STDIN)` _blocks_ script
+execution until data becomes available on `STDIN`.
+
+To check if data is available we can use `stream_select`.
+`stream_select` receives three lists of stream resources: "read",
+"write" and "except". To see if data is available to _read_ we put the
+stream into the "read" list:
+
+    #!/usr/bin/env php
+    <?php
+
+    $read = array(STDIN);
+    $write = null;
+    $except = null;
+
+Then we pass these variables to the `stream_select` function:
+
+    # ...
+
+    $readyCount = stream_select($read, $write, $except, 0);
+
+    if ($readyCount > 0 and $read) {
+        # Something is available to read on STDIN.
+        $input = stream_get_contents(STDIN);
+    }
+
+`stream_select` modifies the `$read` list to contain _only_ the
+resources which have something which can be read. The `$read`
+When nothing can be read, then the `$read` variable will contain _no_
+resources.
+
 Usually it's better to switch to receiving input from the input stream
 if a special parameter is passed, for example `-`:
 
@@ -76,7 +133,7 @@ if a special parameter is passed, for example `-`:
     }
 
     # Read from STDIN when "-" is passed as file name:
-    if ($file == "-") {
+    if ($file === "-") {
         $input = stream_get_contents(STDIN);
     } else {
         $input = file_get_contents($file);
@@ -84,6 +141,8 @@ if a special parameter is passed, for example `-`:
 
     # Do something with the $input
 
-**Important:** `stream_get_contents(STDIN)` _blocks_ when there is
-nothing available on `STDIN`.
+## Fin
+
+That's it for now. If you know some more tips just let me know by mentioning
+[@yuri41](http://twitter.com/yuri41) on Twitter.
 
