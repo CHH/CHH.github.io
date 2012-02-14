@@ -37,14 +37,16 @@ border-radius: @radius;
 
 /* Base Styles */
 body {
-font-size: 0.625em;
-width: 96em;
-position: relative;
-margin: 0 auto;
-.font_serif;}
+    font-size: 0.625em;
+    width: 96em;
+    position: relative;
+    margin: 0 auto;
+    .font_serif;
+}
 
 #content {
-position: relative; overflow: visible;}
+    position: relative; overflow: visible;
+}
 
 /* Site Footer */
 footer[role=contentinfo] {
@@ -81,12 +83,14 @@ a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-.font_sans_serif;
-font-weight: bold; line-height: 1.1em;
-margin: 1em 0 0.5em;}
+    .font_sans_serif;
+    font-weight: bold; line-height: 1.1em;
+    margin: 1em 0 0.5em;
+}
 
 h2, h3 {
-text-align: center;}
+    text-align: center;
+}
 
 h1 {
     font-size: 3.8em;
@@ -95,32 +99,39 @@ h1 {
 }
 
 h2 { 
-.font_serif; 
-font-size: 2.1em;
-font-weight: normal;}
+    font-family: @fontstack_headline;
+    font-size: 2.4em;
+    font-weight: normal;
+}
 
 h3 {
-.font_serif;
-font-style: italic;
-font-weight: normal;
-color: #000;
-font-size: 2.6em;
-margin: 0.25em 0 0.5em;}
+    .font_serif;
+    font-style: italic;
+    font-weight: normal;
+    color: #000;
+    font-size: 2.6em;
+    margin: 0.25em 0 0.5em;
+}
 
 h3 a {
-color: #000;}
+    color: #000;
+}
 
 p, li, blockquote {
-font-size: 1.6em; line-height: 1.6em;}
+    font-size: 1.6em; line-height: 1.6em;
+}
 
 .opening {
-position: relative;}
+    position: relative;
+}
 
 em {
-font-style: italic;}
+    font-style: italic;
+}
 
 p {
-margin: 0 0 0.8em;}
+    margin: 0 0 0.8em;
+}
 
 ul, ol {
 	padding: 0 0 0 4em;
@@ -136,16 +147,14 @@ ul {
 }
 
 li { 
-margin: 0 0 0.45em;}
+    margin: 0 0 0.45em;
+}
 
 .caption {
-padding: 0em 10em;
-text-align: center;
-font-style: italic;
-font-size:  2em;}
-
-section > header > p {
-.caption;
+    padding: 0em 10em;
+    text-align: center;
+    font-style: italic;
+    font-size:  2em;
 }
 
 /**
@@ -195,6 +204,47 @@ header[role=banner] {
 #tagline {
 font-size: 3em; font-style: italic;}
 
+#about {
+    > section {
+        h2 {
+            font-size: 3em;
+        }
+
+        h3 {
+            font-size: 2.1em;
+        }
+
+        > header > p {
+            .caption;
+        }
+    }
+}
+
+/**
+ * What I believe in
+ */
+#manifesto {
+    border-bottom: 5px solid @color_rusticotta;
+	
+	> h2 {
+		text-align: left;
+	}
+	
+    ul {
+		max-width: 70em;
+	}
+    
+    li {
+		font-size: 1.8em;
+		padding: 0;
+	}
+    
+    p {
+		color: #000; margin: 0;
+		line-height: 1.5em;
+	}
+}
+
 /**
  * Short ellipsis of the blog's articles
  */
@@ -236,31 +286,6 @@ font-size: 3em; font-style: italic;}
 }
 
 /**
- * What I believe in
- */
-#manifesto {
-    border-bottom: 5px solid @color_rusticotta;
-	
-	> h2 {
-		text-align: left;
-	}
-	
-    ul {
-		max-width: 70em;
-	}
-    
-    li {
-		font-size: 1.8em;
-		padding: 0;
-	}
-    
-    p {
-		color: #000; margin: 0;
-		line-height: 1.5em;
-	}
-}
-
-/**
  * Contact Me and Social Links
  */
 #contact {
@@ -272,12 +297,14 @@ font-size: 3em; font-style: italic;}
 	padding: 0;}
     
     li {
-	.column(4);
-    font-size: 1em;
-    text-align: center;}
+        .column(4);
+        font-size: 1em;
+        text-align: center;
+    }
     
     a {
-    font-variant: normal;}
+        font-variant: normal;
+    }
 }
 
 /**
@@ -295,6 +322,25 @@ font-size: 3em; font-style: italic;}
     .caption {
     clear: both;
     padding: 0em 5em 0.5em;}
+}
+
+#archives {
+    .column(8);
+    float: none;
+    margin: 0 auto;
+
+    > header {
+        > h1 {
+            font-size: 3em;
+            margin: 1em 0;
+        }
+
+        > p {
+            font-size: 1.8em;
+            max-width: 30em;
+            margin: 1em 0;
+        }
+    }
 }
 
 .article-list {
