@@ -213,7 +213,7 @@ This requires PHP 5.4.0 at least for the builtin CLI Web Server.
         # Write Error output to STDERR and normal output to
         # STDOUT, so we see the server's logging messages:
         $process->run(function($type, $output) {
-            $type == 'err' ? fwrite($output, STDERR) : echo $output;
+            $type == 'err' ? fwrite(STDERR, $output) : echo $output;
         });
     });
 

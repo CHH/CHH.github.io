@@ -63,7 +63,7 @@
                     <h1>Mehr Artikel</h1>
                 </header>
                 <ul>
-                {% for post in site.posts limit:5 %}
+                {% for post in site.related_posts limit:5 offset:1 %}
                     <li>
                         <time datetime="{{ post.date }}">
                             {{ post.date | date: "%d.%m.%Y" }}
