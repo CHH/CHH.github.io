@@ -1,7 +1,11 @@
 ---
 title: What I like about Tilt
 layout: post
-excerpt: Tilt is a templating library for Ruby. It's kind of an aggregator for templating engines &mdash; and I like it.
+tags:
+    - Opinion
+excerpt: > 
+    Tilt is a templating library for Ruby. It's kind of an 
+    aggregator for templating engines &mdash; and I like it.
 ---
 [Tilt](https://github.com/rtomayko/tilt) is a templating *library* for **Ruby**. It's not an 
 engine, but kind of an aggregator for templating engines and provides

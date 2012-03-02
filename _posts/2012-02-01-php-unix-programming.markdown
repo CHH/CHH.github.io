@@ -1,6 +1,8 @@
 ---
 title: PHP Unix Programming
 layout: post
+tags:
+    - How To
 excerpt: >
     Ever worried that your scripts ain't good Unix citizens?
     Here are some quick, practial recipes usable for everyday
@@ -115,9 +117,8 @@ Then we pass these variables to the `stream_select` function:
     }
 
 `stream_select` modifies the `$read` list to contain _only_ the
-resources which have something which can be read. The `$read`
-When nothing can be read, then the `$read` variable will contain _no_
-resources.
+resources which have data available for reading. When nothing 
+can be read, then the `$read` variable will contain _no_ resources.
 
 Usually it's better to switch to receiving input from the input stream
 if a special parameter is passed, for example `-`:

@@ -9,29 +9,17 @@ layout: post
 
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-<figure>
-<pre><code>
-&lt;?php
+    class VersionExpression {
+        protected $expr;
 
-class VersionExpression {
-    protected $expr;
+        function __construct($expr) {
+            $this->expr = $expr;
+        }
 
-    function __construct($expr) {
-        $this->expr = $expr;
+        function test($version) {
+            // Test if the version matches the expression
+        }
     }
-
-    function test($version) {
-        // Test if the version matches the expression
-    }
-}
-</code></pre>
-
-    <figcaption>
-        <em>Abb. 1:</em> So k&ouml;nnte eine einfache Klasse aussehen 
-        die eine Version-Expression, z.B. "~>1.0.0" mit einer Versions-
-        Nummer vergleicht.
-    </figcaption>
-</figure>
 
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 

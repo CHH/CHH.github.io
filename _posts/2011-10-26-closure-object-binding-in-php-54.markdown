@@ -1,6 +1,8 @@
 ---
 title: Closure Object Binding in PHP 5.4
 layout: post
+tags:
+    - How To
 excerpt:
     Closure Object Binding is one of the features that I'm looking
     forward to in PHP 5.4. We will take a brief look at the long way

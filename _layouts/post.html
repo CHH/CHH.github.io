@@ -21,65 +21,81 @@
     </head>
     <body class="blog">
         <header role="banner">
-            <p id="greeting">Hallo Besucher</p>
-
             <h1>
 				{% include tagline.html %}
-				<br>
-                Das hier ist mein Weblog. Hier schreibe ich in unregelm&auml;&szlig;en
-				Abst&auml;nden &uuml;ber Software Entwicklung, Design
-                und PHP.
-			</h1>
+            </h1>
         </header>
-
         <section class="content">
             <article>
                 <header>
-                    <time class="created-at" datetime="{{ page.date }}">
-                        {{ page.date | date: "%d.%m.%Y" }}
-                    </time>
+                    <nav class="back">
+                        <a href="/writes">Alle Artikel</a>
+                    </nav>
+
+                    <div>
+                        <time class="created-at" datetime="{{ page.date }}">
+                            <span class="month">{{ page.date | date: "%m" }}</span>/<span class="year">{{ page.date | date: "%Y" }}</span>
+                        </time>
+                        {% if page.tags != empty %}
+                        in 
+                        <ul class="tags">
+                            {% for tag in page.tags %}
+                            <li>{{ tag }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+
                     <h1>{{ page.title }}</h1>
                 </header>
 
-                <section class="excerpt">
-                    {{ page.excerpt | markdownify }}
+                <section class="article-info">
+                    <div class="excerpt">
+                        {{ page.excerpt | markdownify }}
+                    </div>
+
+                    <nav class="share">
+                        <ul>
+                            <li>
+                                <a href="{{ page.url }}">Permalink</a>
+                            </li>
+                            <li>
+                                <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
+                                    Kommentiere auf Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="article-list">
+                        <h1>Mehr Artikel</h1>
+                        <ul>
+                        {% for post in site.related_posts limit:5 offset:1 %}
+                            <li>
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+
+                    <p>
+                        <strong>Nicht genug?</strong>
+                        <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
+                        oder
+                        <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
+                    </p>
                 </section>
 
-                <section class="content">
+                <section>
                     {{ content }}
                 </section>
 
-                <footer>
-                    <a href="{{ page.url }}">Permalink</a>
-                    &mdash;
-                    <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
-                        Kommentiere auf Twitter
-                    </a>
+                <footer style="clear: both;">
+                    <nav class="back">
+                        <a href="/writes">Alle Artikel</a>
+                    </nav>
                 </footer>
             </article>
-
-            <section class="article-list">
-                <header>
-                    <h1>Mehr Artikel</h1>
-                </header>
-                <ul>
-                {% for post in site.related_posts limit:5 offset:1 %}
-                    <li>
-                        <time datetime="{{ post.date }}">
-                            {{ post.date | date: "%d.%m.%Y" }}
-                        </time>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </section>
-
-            <footer>
-                <strong>Nicht genug?</strong>
-                <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
-                oder
-                <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
-            </footer>
         </section>
 
         {% include footer.html %}
