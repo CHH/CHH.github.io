@@ -376,6 +376,15 @@ nav.back {
     }
 }
 
+a.back {
+    .button;
+
+    &:before {
+        content: "\21A2";
+        margin-right: 0.5em;
+    }
+}
+
 .blog {
     > .content > footer {
         font-size: 1.6em;
@@ -388,20 +397,30 @@ nav.back {
         .pulled-out {
         }
 
+        > footer {
+            margin-top: 2em;
+            padding-top: 2em;
+            border-top: 0.5em solid @color_sands;
+
+            > .article-list {
+                .column(4);
+            }
+
+            > nav.share {
+                .column(5);
+            }
+
+            > .even-more {
+                .column(3);
+            }
+        }
+
         > header {
             position: relative;
+            padding: 0 1em;
 
-            nav.back {
-                margin: 2em 0 0;
-
-                > a {
-                    .button;
-
-                    &:before {
-                        content: "\21A2";
-                        margin-right: 0.1em;
-                    }
-                }
+            > nav {
+                margin: 2em 0 0 -1.4em;
             }
 
             > div {
@@ -435,6 +454,15 @@ nav.back {
 				font-size: 5em;
                 margin: 0.25em 0 1em;
                 max-width: 12em;
+
+                a {
+                    color: black;
+                    border: none;
+
+                    &:hover {
+                        border: none;
+                    }
+                }
             }
         }
 

@@ -22,14 +22,14 @@
     <body class="blog">
         <header role="banner">
             <h1>
-				{% include tagline.html %}
+                {% include tagline.html %}
             </h1>
         </header>
         <section class="content">
             <article>
                 <header>
-                    <nav class="back">
-                        <a href="/writes">Alle Artikel</a>
+                    <nav>
+                        <a class="back" href="/writes">Alle Artikel</a>
                     </nav>
 
                     <div>
@@ -46,7 +46,9 @@
                         {% endif %}
                     </div>
 
-                    <h1>{{ page.title }}</h1>
+                    <h1>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </h1>
                 </header>
 
                 <section class="article-info">
@@ -91,9 +93,37 @@
                 </section>
 
                 <footer style="clear: both;">
-                    <nav class="back">
-                        <a href="/writes">Alle Artikel</a>
+                    <nav class="share">
+                        <ul>
+                            <li><a href="{{ page.url }}">Permalink</a></li>
+                            <li>
+                                <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
+                                    Kommentiere auf Twitter
+                                </a>
+                            </li>
+                            <li><a href="/writes" class="back">Alle Artikel</a></li>
+                        </ul>
                     </nav>
+
+                    <div class="article-list">
+                        <h1>Mehr Artikel</h1>
+                        <ul>
+                        {% for post in site.related_posts limit:5 offset:1 %}
+                            <li>
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    
+                    <div class="even-more">
+                        <p class="even-more">
+                            <strong>Nicht genug?</strong>
+                            <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
+                            oder
+                            <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
+                        </p>
+                    </div>
                 </footer>
             </article>
         </section>
