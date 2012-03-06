@@ -167,7 +167,7 @@ header[role=banner] {
         font-weight: normal;
         font-size: 2.1em; 
         line-height: 1.4em;
-        margin: 1em 0 1em;
+        margin: 0 0 1em;
 		padding-right: 10em;
     }
     
@@ -185,21 +185,19 @@ header[role=banner] {
     nav[role=navigation] {
         ul {
             text-align: right;
-            padding: 2em 0 0;
+            padding: 2em 0;
             margin: 0;
-
-            &:hover li a {
-                color: @color_rusticotta;
-            }
+            opacity: 0.3;
+            -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+        }
+        ul:hover {
+            opacity: 1;
         }
 
         li {
             margin: 0 0.5em;
             display: inline-block;
-
-            a {
-                color: #aaa;
-            }
         }
     }
 }
