@@ -21,6 +21,7 @@
     </head>
     <body class="blog">
         <header role="banner">
+            {% include navigation.html %}
             <h1>
                 {% include tagline.html %}
             </h1>
@@ -28,10 +29,6 @@
         <section class="content">
             <article>
                 <header>
-                    <nav>
-                        <a class="back" href="/writes">Alle Artikel</a>
-                    </nav>
-
                     <div>
                         <time class="created-at" datetime="{{ page.date }}">
                             <span class="month">{{ page.date | date: "%m" }}</span>/<span class="year">{{ page.date | date: "%Y" }}</span>
@@ -86,6 +83,8 @@
                         oder
                         <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
                     </p>
+
+                    {% include ad_article_sidebar.html %}
                 </section>
 
                 <section>
