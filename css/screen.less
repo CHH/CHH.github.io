@@ -203,7 +203,8 @@ header[role=banner] {
 }
 
 #tagline {
-font-size: 3em; font-style: italic;}
+    font-size: 3em; font-style: italic;
+}
 
 #about {
     > section {
@@ -348,12 +349,13 @@ font-size: 3em; font-style: italic;}
     margin: 0 0 2em;
 
     > h1 {
-        font-family: @fontstack_serif;
-        margin: 0.5em 0;
+        //font-family: @fontstack_serif;
+        font-family: @fontstack_sans;
+        margin: 1em 0;
         color: #333;
         letter-spacing: 0.2em;
-        font-weight: normal;
-        font-size: 1.6em;
+        font-weight: 700;
+        font-size: 1.4em;
         text-transform: uppercase;
         text-align: left;
     }
@@ -461,7 +463,7 @@ a.back {
             > h1 {
                 position: relative;
                 font-family: @fontstack_headline;
-                font-weight: normal;
+                font-weight: 700;
 				font-size: 5em;
                 margin: 0.25em 0 1em;
                 max-width: 12em;
@@ -483,6 +485,7 @@ a.back {
             p {
                 font: 2.4em @fontstack_headline;
                 line-height: 1.3em;
+                font-style: italic;
             }
         }
 
@@ -508,10 +511,14 @@ a.back {
         h2 {
             color: @color_darker_rusticotta;
             text-transform: uppercase;
-            letter-spacing: 0.2em;
-            font-family: @fontstack_serif;
-            font-size: 1.8em;
+            letter-spacing: 0.1em;
+            //font-family: @fontstack_serif;
+            font-family: @fontstack_sans;
+            //font-weight: normal;
+            font-weight: 700;
+            font-size: 1.6em;
             margin: 2em 0 1em;
+            text-align: left;
         }
 
         h3 {
