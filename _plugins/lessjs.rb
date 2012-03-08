@@ -21,6 +21,8 @@ module Jekyll
         next if not sf.path =~ less_ext
         
         site.static_files.delete(sf)
+
+        next if site.config['exclude'].include? sf.path.gsub(src_root + "/", '')
       
         less_path = sf.path
         css_path = less_path.gsub(less_ext, '.css').gsub(src_root, dest_root)
