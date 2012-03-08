@@ -1,3 +1,5 @@
+@import "http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Poly:400,400italic";
+
 // Colors
 //
 @color_rusticotta: darken(#E86B35, 10);
@@ -6,9 +8,15 @@
 @color_bright_lights: #FFF1CC;
 @color_black: #0D0201;
 
-// Fontstacks
+// Font stacks
 //
-@fontstack_serif:     "Gentium Book Basic", "Georgia", "Palatino", "Times New Roman", "Baskerville", "Hoefler Text", serif;
-@fontstack_sans:      Lato, sans-serif;
+@fontstack_serif:     "Poly", "Georgia", "Palatino", "Times New Roman", "Baskerville", "Hoefler Text", serif;
+@fontstack_sans:      "Lato", sans-serif;
 @fontstack_monospace: "Monaco", "Consolas", monospace;
-@fontstack_headline:  "Lato"/*, "Snippet"*/, sans-serif;
+@fontstack_headline:  "Lato", sans-serif;
+
+// Legacy Mixins for font stacks
+//
+.font_serif { font-family: @fontstack_serif; }
+.font_sans_serif { font-family: @fontstack_sans; }
+.font_monospace { font-family: @fontstack_monospace; }
