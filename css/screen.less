@@ -1,8 +1,8 @@
 @import "reset.css";
 @import "/js/highlight_styles/solarized_dark.css";
 
-@import "variables.less";
 @import "mixins.less";
+@import "variables.less";
 
 /* Base Styles */
 body {
@@ -235,20 +235,30 @@ header[role=banner] {
 	> h2 {
 		text-align: left;
 	}
+
+    h3 {
+        font-family: @fontstack_headline;
+        text-align: left;
+        font-size: 1em !important;
+        font-style: normal;
+        font-weight: 700;
+        color: @color_darker_rusticotta;
+    }
 	
     ul {
 		max-width: 70em;
 	}
-    
+
     li {
-		font-size: 1.8em;
-		padding: 0;
-	}
-    
+        font-size: 1.8em;
+        padding: 0;
+    }
+
     p {
-		color: #000; margin: 0;
-		line-height: 1.5em;
-	}
+        font-size: 1em;
+        color: #000; margin: 0;
+        line-height: 1.5em;
+    }
 }
 
 /**
