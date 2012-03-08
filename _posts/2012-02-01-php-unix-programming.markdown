@@ -80,7 +80,7 @@ output followed by a colon:
 Later on you can use `grep foo:` to show only log entries related to
 your command.
 
-## Read Input piped in from other commands
+## Read Input piped-in from other commands
 
 When data is piped into a script then PHP makes the input stream accessible via the `STDIN` constant. 
 You can use `stream_get_contents` to get all input data:
