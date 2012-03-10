@@ -150,7 +150,7 @@ And now run Bob again:
     Foo
     Hello World
 
-We can use this now set the `hello` task as default task, by adding
+We can use this now to set the `hello` task as default task, by adding
 it as dependency:
 
     task('default', array('hello'));
