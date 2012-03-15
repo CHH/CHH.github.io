@@ -1,20 +1,22 @@
-@import "reset.css";
-@import "/js/highlight_styles/solarized_dark.css";
 
-@import "mixins.less";
+@import "reset.css";
+@import "highlight_styles/solarized_dark.css";
+
 @import "variables.less";
+@import "mixins.less";
 
 /* Base Styles */
 body {
-    font-family: @fontstack_serif;
+    #grid > .core(@gridColumnWidth, @gridGutterWidth);
+    .container-fixed;
+    
     font-size: 0.625em;
-    width: 96em;
-    position: relative;
-    margin: 0 auto;
+    width: 940px;
+    font-family: @fontstack_serif;
 }
 
 #content {
-    position: relative; 
+    position: relative;
     overflow: visible;
 }
 
@@ -22,17 +24,6 @@ body {
 footer[role=contentinfo] {
     padding: 3em 0; margin: 1em 0 0;
     clear: both;
-    
-    #html5_powered {
-        position: absolute;
-        margin-top: -10px;
-        right: 0;
-        
-        img {
-            height: 32px;
-            width: auto;
-        }
-    }
 }
 
 a {
@@ -59,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
     .font_sans_serif;
     font-weight: bold; line-height: 1.1em;
     margin: 1em 0 0.5em;
+
+    > a, > a:hover {
+        color: #000;
+    }
 }
 
 h2, h3 {
@@ -71,23 +66,18 @@ h1 {
     font-weight: normal;
 }
 
-h2 { 
+h2 {
     font-family: @fontstack_headline;
-    font-size: 2.4em;
-    font-weight: normal;
+    font-size: 2.8em;
+    font-weight: 300;
 }
 
 h3 {
-    .font_serif;
-    font-style: italic;
+    font-family: @fontstack_headline;
     font-weight: normal;
     color: #000;
-    font-size: 2.6em;
+    font-size: 1.8em;
     margin: 0.25em 0 0.5em;
-}
-
-h3 a {
-    color: #000;
 }
 
 p, li, blockquote {
@@ -129,7 +119,6 @@ li {
 }
 
 .caption {
-    padding: 0em 10em;
     text-align: center;
     font-style: italic;
     font-size:  2em;
@@ -159,12 +148,6 @@ header[role=banner] {
     overflow: hidden;
     border-bottom: 1px dashed #ddd;
 
-    #greeting {
-        color: #999;
-        margin: 0.5em 0 0;
-        font-size: 1.4em;
-    }
-
     h1 {
         text-align: left;
         font-family: @fontstack_serif;
@@ -174,7 +157,7 @@ header[role=banner] {
         margin: 0 0 1em;
 		padding-right: 10em;
     }
-    
+
     p {
         color: #222;
     }
@@ -192,8 +175,7 @@ header[role=banner] {
             padding: 2em 0;
             margin: 0;
             opacity: 0.3;
-            -webkit-transition: opacity 0.5s;
-            transition: opacity 0.5s;
+            .transition(opacity 1s);
         }
         ul:hover {
             opacity: 1;
@@ -210,10 +192,12 @@ header[role=banner] {
     font-size: 3em; font-style: italic;
 }
 
-#about {
+#homepage {
     > section {
         h2 {
             font-size: 3em;
+            font-weight: 300;
+            text-align: left;
         }
 
         h3 {
@@ -226,16 +210,17 @@ header[role=banner] {
     }
 }
 
+#intro {
+    .makeRow;
+    border-bottom: 5px solid @color_rusticotta;
+}
+
 /**
  * What I believe in
  */
 #manifesto {
-    border-bottom: 5px solid @color_rusticotta;
+    .makeColumn(8);
 	
-	> h2 {
-		text-align: left;
-	}
-
     h3 {
         font-family: @fontstack_headline;
         text-align: left;
@@ -244,11 +229,10 @@ header[role=banner] {
         font-weight: 700;
         color: @color_darker_rusticotta;
     }
-	
-    ul {
-		max-width: 70em;
-	}
 
+    ul {
+    }
+	
     li {
         font-size: 1.8em;
         padding: 0;
@@ -261,43 +245,69 @@ header[role=banner] {
     }
 }
 
+#facts {
+    .makeColumn(4);
+    /*.right;*/
+
+    > div {
+        .fancy-box;
+    }
+}
+
+#articles_brief, #contact, #projects {
+    > header > h2 {
+        text-align: center;
+    }
+
+    .column(4);
+}
+
 /**
  * Short ellipsis of the blog's articles
  */
 #articles_brief {
-    overflow: hidden;
-    border-bottom: 1px dashed #ddd;
-    padding: 1em 0;
+    article {
+        .border-radius(3px);
+        .box-shadow(1px 4px 5px rgba(0,0,0,0.2));
+        border: 1px solid #bbb;
 
-    article { 
-        .column(4);
+        background: #fbfbfb;
+        margin: 0 0 2em;
         font-size: 1em;
+        .rotate(-4deg);
+
+        &:nth-child(odd) {
+            .rotate(3deg);
+        }
 
         header {
-            text-align: center;
-
             h3 {
-                font-size: 1.8em;
-                text-transform: uppercase;
-                font-style: normal;
+                text-align: center;
                 color: #888;
                 line-height: 1.4em;
             }
 
             time {
+                display: block;
+                padding: 0.5em;
+                margin: 0 0 1em;
                 font-size: 1.6em;
                 color: #888;
+                border-bottom: 1px dashed #ddd;
             }
         }
 
         p {
+            padding: 0 1em;
             font-size: 1.6em;
         }
     }
 
     footer {
         text-align: center;
-        clear: both;
+    }
+    .more {
+        font-size: 1.8em;
     }
 }
 
@@ -305,21 +315,33 @@ header[role=banner] {
  * Contact Me and Social Links
  */
 #contact {
-    border-bottom: 1px dashed #ddd;
-
-    ul {
-    overflow: hidden;
-	list-style: none;
-	padding: 0;}
-    
-    li {
-        .column(4);
-        font-size: 1em;
-        text-align: center;
+    > div {
+        .fancy-box;
     }
-    
+
+    h3 {
+        font-family: @fontstack_serif;
+    }
+
+    em {
+        font-style: normal;
+    }
+
     a {
         font-variant: normal;
+    }
+
+    .so-flair {
+        border: none;
+
+        &:hover > img {
+            border: 1px dashed lighten(@color_rusticotta, 5);
+        }
+
+        > img {
+            border: 1px dashed lighten(@color_rusticotta, 20);
+            padding: 0.3em;
+        }
     }
 }
 
@@ -327,17 +349,16 @@ header[role=banner] {
  * Some of my better projects
  */
 #projects {
-    border-bottom: 1px dashed #ddd;
-    
     article {
-		.column(4);
-		display: inline; 
 		font-size: 1em;
+
+        h3 {
+        }
 	}
 
-    .caption {
-    clear: both;
-    padding: 0em 5em 0.5em;}
+    > footer {
+        .caption;
+    }
 }
 
 #archives {
@@ -425,6 +446,7 @@ a.back {
         }
 
         > footer {
+            .makeRow;
             margin-top: 2em;
             padding-top: 2em;
             border-top: 0.5em solid @color_sands;
@@ -477,7 +499,7 @@ a.back {
             > h1 {
                 position: relative;
                 font-family: @fontstack_headline;
-                font-weight: 700;
+                font-weight: 300;
 				font-size: 5em;
                 margin: 0.25em 0 1em;
                 max-width: 12em;
@@ -498,6 +520,7 @@ a.back {
 
             p {
                 font: 2.4em @fontstack_headline;
+                font-weight: 300;
                 line-height: 1.3em;
                 font-style: italic;
             }

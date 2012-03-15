@@ -22,7 +22,9 @@ module Jekyll
         
         site.static_files.delete(sf)
 
-        next if site.config['exclude'].include? sf.path.gsub(src_root + "/", '')
+        next if site.config['exclude'].detect do |path|
+            sf.path.gsub(src_root + "/", '').include? path
+        end
       
         less_path = sf.path
         css_path = less_path.gsub(less_ext, '.css').gsub(src_root, dest_root)

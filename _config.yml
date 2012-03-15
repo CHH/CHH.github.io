@@ -5,6 +5,7 @@ exclude:
     - Rakefile.rb
     - .vagrant
     - chef
+    - css/bootstrap/
     - css/variables.less
     - css/mixins.less
 ftp_host: christophh.net
