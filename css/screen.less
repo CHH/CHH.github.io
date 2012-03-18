@@ -18,6 +18,13 @@ body {
 #content {
     position: relative;
     overflow: visible;
+
+    // Page Title
+    > header {
+        h2 {
+            font-size: 5em;
+        }
+    }
 }
 
 /* Site Footer */
@@ -68,7 +75,7 @@ h1 {
 
 h2 {
     font-family: @fontstack_headline;
-    font-size: 2.8em;
+    font-size: 3.2em;
     font-weight: 300;
     text-align: left;
 }
@@ -209,11 +216,15 @@ header[role=banner] {
             .caption;
         }
     }
+
+    hr {
+        border: none;
+        border-bottom: 5px solid @color_rusticotta;
+    }
 }
 
 #intro {
     .makeRow;
-    border-bottom: 5px solid @color_rusticotta;
 }
 
 /**
@@ -258,6 +269,7 @@ header[role=banner] {
 #articles_brief, #contact, #projects {
     > header > h2 {
         text-align: center;
+        font-size: 2.8em;
     }
 
     .column(4);
@@ -268,18 +280,8 @@ header[role=banner] {
  */
 #articles_brief {
     article {
-        .border-radius(3px);
-        .box-shadow(1px 4px 5px rgba(0,0,0,0.2));
-        border: 1px solid #bbb;
-
-        background: #fbfbfb;
         margin: 0 0 2em;
         font-size: 1em;
-        .rotate(-2deg);
-
-        &:nth-child(odd) {
-            .rotate(3deg);
-        }
 
         header {
             h3 {
@@ -290,16 +292,15 @@ header[role=banner] {
 
             time {
                 display: block;
-                padding: 0.5em;
-                margin: 0 0 1em;
-                font-size: 1.6em;
+                margin: 0 0 0.5em;
+                text-align: center;
+                font-family: @fontstack_sans;
+                font-size: 1.4em;
                 color: #666;
-                border-bottom: 1px dashed #ddd;
             }
         }
 
         p {
-            padding: 0 1em;
             font-size: 1.6em;
         }
     }
