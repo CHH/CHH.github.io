@@ -152,8 +152,8 @@ li {
  * Site Branding
  */
 header[role=banner] {
+    .clear;
     position: relative; 
-    overflow: hidden;
     border-bottom: 1px dashed #ddd;
 
     h1 {
@@ -192,6 +192,22 @@ header[role=banner] {
         li {
             margin: 0 0.5em;
             display: inline-block;
+        }
+    }
+
+    .avatar {
+        .rotate(-8deg);
+        .box-shadow(-1px 3px 3px rgba(0,0,0,0.2));
+
+        float: left;
+        margin-top: -30px;
+        margin-left: -30px;
+        padding: 5px 5px 10px;
+        background: white;
+        border: 1px solid #ccc;
+
+        img {
+            width: 96px;
         }
     }
 }
