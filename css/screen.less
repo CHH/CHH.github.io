@@ -405,7 +405,7 @@ header[role=banner] {
         //font-family: @fontstack_serif;
         font-family: @fontstack_sans;
         margin: 1em 0;
-        color: #333;
+        color: #666;
         letter-spacing: 0.1em;
         font-weight: 700;
         font-size: 1.4em;
@@ -469,16 +469,51 @@ a.back {
             padding-top: 2em;
             border-top: 0.5em solid @color_sands;
 
-            > .article-list {
+            > .left {
                 .column(4);
+
+                .share {
+                    margin-bottom: 4em;
+                }
             }
 
-            > nav.share {
-                .column(5);
-            }
+            > .comments {
+                .column(7);
+                .right;
 
-            > .even-more {
-                .column(3);
+                h3 {
+                    font-family: @fontstack_headline;
+                    font-weight: 700;
+                    text-align: left;
+                    font-size: 14px;
+                    letter-spacing: 0.1em;
+                    color: #666;
+                }
+
+                .dsq-comment-header {
+                    background: none;
+                    border: none;
+                    font-family: @fontstack_sans;
+                    font-size: 16px;
+                }
+
+                a.dsq-collapse-toggle, #dsq-subscribe a, .dsq-avatar a  {
+                    border: none;
+                }
+
+                #dsq-content .dsq-comment-text p {
+                    font-size: 16px;
+                }
+
+                .dsq-brlink {
+                    font-size: 12px;
+                    color: #888;
+                    font-family: @fontstack_sans;
+                }
+
+                #dsq-global-toolbar a {
+                    border-bottom: none;
+                }
             }
         }
 

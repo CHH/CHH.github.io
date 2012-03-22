@@ -11,3 +11,6 @@ exclude:
 ftp_host: christophh.net
 ftp_dir: /www/home/www.christophh.net
 lsi: true
+
+disqus:
+    shortname: "christophhochstrasser"

@@ -92,36 +92,60 @@
                 </section>
 
                 <footer style="clear: both;">
-                    <nav class="share">
-                        <ul>
-                            <li><a href="{{ page.url }}">Permalink</a></li>
-                            <li>
-                                <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
-                                    Kommentiere auf Twitter
-                                </a>
-                            </li>
-                            <li><a href="/writes" class="back">Alle Artikel</a></li>
-                        </ul>
-                    </nav>
+                    <div class="left">
+                        <nav class="share">
+                            <ul>
+                                <li><a href="{{ page.url }}">Permalink</a></li>
+                                <li>
+                                    <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
+                                        Kommentiere auf Twitter
+                                    </a>
+                                </li>
+                                <li><a href="/writes" class="back">Alle Artikel</a></li>
+                            </ul>
+                        </nav>
 
-                    <div class="article-list">
-                        <h1>Mehr Artikel</h1>
-                        <ul>
-                        {% for post in site.related_posts limit:5 offset:1 %}
-                            <li>
-                                <a href="{{ post.url }}">{{ post.title }}</a>
-                            </li>
-                        {% endfor %}
-                        </ul>
+                        <div class="article-list">
+                            <h1>Mehr Artikel</h1>
+                            <ul>
+                            {% for post in site.related_posts limit:5 offset:1 %}
+                                <li>
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                        
+                        <div class="even-more">
+                            <p class="even-more">
+                                <strong>Nicht genug?</strong>
+                                <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
+                                oder
+                                <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
+                            </p>
+                        </div>
                     </div>
-                    
-                    <div class="even-more">
-                        <p class="even-more">
-                            <strong>Nicht genug?</strong>
-                            <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
-                            oder
-                            <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
-                        </p>
+
+                    <div class="comments">
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                            var disqus_shortname = '{{ site.disqus.shortname }}'; // required: replace example with your forum shortname
+                            var disqus_identifier = "{{ page.id }}";
+
+                            {% if site.server %}
+                            var disqus_developer = 1;
+                            {% endif %}
+
+                            /* * * DON'T EDIT BELOW THIS LINE * * */
+                            (function() {
+                                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
                     </div>
                 </footer>
             </article>
