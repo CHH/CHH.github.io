@@ -1,0 +1,10 @@
+
+<link rel="stylesheet" href="/css/screen.css">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="/css/ie_legacy.css">
+<![endif]-->
+
+{% for link in page.stylesheet_links %}
+<link rel="stylesheet" href="{{ link }}">
+{% endfor %}

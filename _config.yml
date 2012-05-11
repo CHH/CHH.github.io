@@ -5,12 +5,16 @@ exclude:
     - Rakefile.rb
     - .vagrant
     - chef
-    - css/bootstrap/
+    - css/vendor/
+    - css/sections/
     - css/variables.less
     - css/mixins.less
-ftp_host: christophh.net
-ftp_dir: /www/home/www.christophh.net
+
+markdown: redcarpet
+
 lsi: true
+
+title: "Christoph Hochstrasser, Web Creator"
 
 disqus:
     shortname: "christophhochstrasser"

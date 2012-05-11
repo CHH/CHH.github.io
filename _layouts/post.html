@@ -1,31 +1,23 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
         <title>
             {{ page.title }} &mdash;
             Christoph Hochstrasser
         </title>
 
-        <link rel="stylesheet" href="/css/screen.css">
-        
         <link rel="alternate" type="application/atom+xml" 
               title="Christoph Hochstrasser Blog Feed"
               href="http://feeds.feedburner.com/christoph-hochstrasser" />
 
-        <!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" href="/css/ie_legacy.css">
-        <![endif]-->
-
-        {% include ga.html %}
+        {% include layout/styles.html %}
+        {% include layout/ga.html %}
     </head>
     <body class="blog">
-        <header role="banner">
-            {% include navigation.html %}
-            <h1>
-                {% include tagline.html %}
-            </h1>
-        </header>
+        {% include layout/header.html %}
+
         <section class="content">
             <article>
                 <header>
@@ -34,7 +26,7 @@
                             <span class="month">{{ page.date | date: "%m" }}</span>/<span class="year">{{ page.date | date: "%Y" }}</span>
                         </time>
                         {% if page.tags != empty %}
-                        in 
+                        in
                         <ul class="tags">
                             {% for tag in page.tags %}
                             <li>{{ tag }}</li>
@@ -56,10 +48,14 @@
                     <nav class="share">
                         <ul>
                             <li>
-                                <a href="{{ page.url }}">Permalink</a>
+                                <a href="{{ page.url }}">
+                                    <i class="icon-bookmark"></i>
+                                    Permalink
+                                </a>
                             </li>
                             <li>
                                 <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
+                                    <i class="icon-twitter-sign"></i>
                                     Kommentiere auf Twitter
                                 </a>
                             </li>
@@ -77,13 +73,7 @@
                         </ul>
                     </div>
 
-                    <p>
-                        <strong>Nicht genug?</strong>
-                        <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
-                        oder
-                        <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
-                    </p>
-
+                    {% include widgets/social_links.html %}
                     {% include ad_article_sidebar.html %}
                 </section>
 
@@ -95,13 +85,24 @@
                     <div class="left">
                         <nav class="share">
                             <ul>
-                                <li><a href="{{ page.url }}">Permalink</a></li>
+                                <li>
+                                    <a href="{{ page.url }}">
+                                        <i class="icon-bookmark"></i>
+                                        Permalink
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="#" class="comment-on-twitter" data-url="{{ page.url }}">
+                                        <i class="icon-twitter-sign"></i>
                                         Kommentiere auf Twitter
                                     </a>
                                 </li>
-                                <li><a href="/writes" class="back">Alle Artikel</a></li>
+                                <li>
+                                    <a href="/writes" class="back">
+                                        <i class="icon-book"></i>
+                                        Alle Artikel
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
@@ -115,15 +116,8 @@
                             {% endfor %}
                             </ul>
                         </div>
-                        
-                        <div class="even-more">
-                            <p class="even-more">
-                                <strong>Nicht genug?</strong>
-                                <a href="https://github.com/CHH">Schau auf mein Github Profil</a>
-                                oder
-                                <a href="http://twitter.com/yuri41">besuch mich auf Twitter</a>
-                            </p>
-                        </div>
+
+                        {% include widgets/social_links.html %}
                     </div>
 
                     <div class="comments">
@@ -151,6 +145,6 @@
             </article>
         </section>
 
-        {% include footer.html %}
+        {% include layout/footer.html %}
     </body>
 </html>

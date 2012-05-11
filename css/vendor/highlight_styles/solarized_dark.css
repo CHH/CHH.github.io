@@ -6,7 +6,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 
 pre code {
   display: block; padding: 0.5em;
-  background: #fdf6e3; color: #657b83;
+  background: #002b36; color: #839496;
 }
 
 pre .comment,
@@ -15,7 +15,7 @@ pre .diff .header,
 pre .doctype,
 pre .lisp .string,
 pre .javadoc {
-  color: #93a1a1;
+  color: #586e75;
   font-style: italic;
 }
 
@@ -55,12 +55,6 @@ pre .id {
   color: #268bd2;
 }
 
-pre .tag .title,
-pre .rules .property,
-pre .django .tag .keyword {
-  font-weight: bold;
-}
-
 pre .attribute,
 pre .variable,
 pre .instancevar,
@@ -92,5 +86,5 @@ pre .deletion {
 }
 
 pre .tex .formula {
-  background: #eee8d5;
+  background: #073642;
 }
