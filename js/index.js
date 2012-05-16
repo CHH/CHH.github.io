@@ -64,5 +64,7 @@ $(function() {
     $("[data-behavior=project-list]").each(function(i, el) {
         new ProjectList(el);
     });
+
+    $("nav[role=navigation] a[href='" + document.location.pathname + "']").first().addClass("active");
 });
 

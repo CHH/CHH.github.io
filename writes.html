@@ -39,7 +39,10 @@ title: Archiv
         <article>
             <h2><a href="{{ featured.url }}">{{ featured.title }}</a></h2>
             <p>{{ featured.excerpt | markdownify }}</p>
-            <a href="{{ featured.url }}" class="more">Artikel Lesen</a>
+            <a href="{{ featured.url }}" class="more">
+                <i class="icon-arrow-right"></i>
+                Artikel Lesen
+            </a>
         </article>
         {% endfor %}
     </section>
