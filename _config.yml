@@ -3,12 +3,13 @@ lessc: /usr/local/bin/lessc
 exclude:
     - Vagrantfile
     - Rakefile.rb
-    - .vagrant
     - chef
     - css/vendor/
     - css/sections/
     - css/variables.less
     - css/mixins.less
+
+include: [.htaccess]
 
 markdown: redcarpet
 
