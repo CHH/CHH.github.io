@@ -41,7 +41,7 @@ Here are some suggestions:
 ## Provide a changelog
 
 A changelog simply makes updates a bit more predictable &mdash; and
-therefore you make it easier to upgrade to the latest version if your 
+therefore you make it easier to upgrade to the latest version if you
 clearly state what's new and what has changed from previous versions. 
 
 _You want your users to be on the latest version, or do you?_

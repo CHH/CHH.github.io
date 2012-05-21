@@ -61,10 +61,28 @@
 $(function() {
     hljs.initHighlightingOnLoad();
 
-    $("[data-behavior=project-list]").each(function(i, el) {
+    $("[data-behavior*=project-list]").each(function(i, el) {
         new ProjectList(el);
     });
 
     $("nav[role=navigation] a[href='" + document.location.pathname + "']").first().addClass("active");
+
+    $(document).on('click', 'a[data-behaviour*=twitter-comment-button]', function(event) {
+        event.preventDefault();
+
+        var url = encodeURI(
+            document.location.protocol + '//' + document.location.host + 
+            $(this).attr('data-url')
+        );
+
+        var follow = encodeURI('@yuri41 ');
+        var intent = "https://twitter.com/intent/tweet?url=" + url + '&text=' + follow;
+
+        var w = window.open(
+            intent, 'Kommentiere auf Twitter', 'width=550,height=260,scrollbars=no'
+        );
+
+        w.focus();
+    });
 });
 
