@@ -75,8 +75,8 @@ $(function() {
             $(this).attr('data-url')
         );
 
-        var follow = encodeURI('@yuri41 ');
-        var intent = "https://twitter.com/intent/tweet?url=" + url + '&text=' + follow;
+        var text = encodeURI($(this).attr("data-text"));
+        var intent = "https://twitter.com/intent/tweet?url=" + url + '&text=' + text;
 
         var w = window.open(
             intent, 'Kommentiere auf Twitter', 'width=550,height=260,scrollbars=no'
