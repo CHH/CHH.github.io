@@ -1,5 +1,11 @@
 
-(function() {
+$(function() {
+    hljs.initHighlightingOnLoad();
+
+    $("nav[role=navigation] a[href='" + document.location.pathname + "']").first().addClass("active");
+});
+
+(function(global) {
     var ProjectList = function(el) {
         this.el = $(el);
         this.init();
@@ -26,7 +32,7 @@
         },
 
         getProjects: function(fn) {
-            $.getJSON("https://api.github.com/users/CHH/repos", function(data) {
+            $.getJSON("https://api.github.com/users/CHH/repos?callback=?", function(data) {
                 var projects = [];
 
                 $.each(data, function(i, repo) {
@@ -55,18 +61,17 @@
         }
     });
 
-    window.ProjectList = ProjectList;
-})();
-
-$(function() {
-    hljs.initHighlightingOnLoad();
-
-    $("[data-behavior*=project-list]").each(function(i, el) {
-        new ProjectList(el);
+    $(function() {
+        $("[data-behavior*=project-list]").each(function(i, el) {
+            new ProjectList(el);
+        });
     });
 
-    $("nav[role=navigation] a[href='" + document.location.pathname + "']").first().addClass("active");
+    global.ProjectList = ProjectList;
+})(window);
 
+// Custom twitter share button, using web intents.
+$(function() {
     $(document).on('click', 'a[data-behaviour*=twitter-comment-button]', function(event) {
         event.preventDefault();
 
@@ -79,10 +84,9 @@ $(function() {
         var intent = "https://twitter.com/intent/tweet?url=" + url + '&text=' + text;
 
         var w = window.open(
-            intent, 'Kommentiere auf Twitter', 'width=550,height=260,scrollbars=no'
+            intent, 'Auf Twitter teilen', 'width=550,height=260,scrollbars=no'
         );
 
         w.focus();
     });
 });
-
