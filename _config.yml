@@ -8,6 +8,7 @@ exclude:
     - css/sections/
     - css/variables.less
     - css/mixins.less
+    - images/favicons.sketch/
 
 include: [.htaccess]
 
