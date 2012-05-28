@@ -1,0 +1,36 @@
+// Mobile styles
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+    body {
+        width: auto;
+        padding: 0 0.5em;
+    }
+
+    header[role=banner] {
+        > h1 {
+            padding-right: 0;
+        }
+
+        .avatar {
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+    }
+
+    #homepage {
+        #intro > section {
+            float: none;
+        }
+
+        .row > section {
+            float: none;
+            width: auto;
+        }
+
+        #manifesto {
+            width: auto;
+        }
+        #facts {
+            width: auto;
+        }
+    }
+}
