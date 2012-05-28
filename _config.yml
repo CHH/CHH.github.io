@@ -11,7 +11,7 @@ exclude:
 
 include: [.htaccess]
 
-markdown: redcarpet
+markdown: rdiscount
 
 lsi: true
 

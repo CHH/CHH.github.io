@@ -2,12 +2,16 @@
 published: false
 title: Test Page
 layout: post
+excerpt: >
+    Foo
 ---
 <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
 <h3>This is some code within a figure</h3>
 
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+    <?php
 
     class VersionExpression {
         protected $expr;
@@ -25,6 +29,12 @@ layout: post
 
 <h2>Header Level 2</h2>
 
+<blockquote>
+<p>If you build your business around being the lowest-cost provider, that's all you've got. Everything you do has to be a race in that direction, because if you veer toward anything else (service, workforce, impact, design, etc.) then a competitor with a more single-minded focus will sell your commodity cheaper than you.
+</p>
+<i>Seth Godin</i>
+</blockquote>
+
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
 <ul>
@@ -35,6 +45,7 @@ layout: post
 </ul>
             
 <aside>
+
 <h3>This is an Aside</h3>
 
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></aside>
@@ -46,6 +57,7 @@ Das ist eine Auflistung:
  3. Michael Schumacher
  4. Niki Lauda
  5. Fernando Alonso
+
 
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
@@ -60,6 +72,7 @@ Das ist eine Auflistung:
    <li>Aliquam tincidunt mauris eu risus.</li>
 </ul>
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
 <pre><code>
 #header h1 a { 
 	display: block; 
@@ -75,18 +88,18 @@ Das ist eine Auflistung:
         Youth is a wonderful thing. What a crime to waste it on
         children.
     </p>
-    <span>George Bernard Shaw</span>
+    <i>George Bernard Shaw</i>
 </blockquote>
 
 <p>Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
 <figure>
-    <img src="/images/glass_cockpit.jpg" />
+<img src="/images/glass_cockpit.jpg" />
 
-    <figcaption><em>Abb. 2:</em> Das Glas Cockpit vereinfacht die Bedienung
-    eines Flugzeuges erheblich. Es reduziert die Anzahl
-    von Schaltern um bis zu <em>80%</em>. Bei diesem Jet 
-    wurde das Glas Cockpit ca. 2008 nachgerüstet.</figcaption>
+<figcaption><em>Abb. 2:</em> Das Glas Cockpit vereinfacht die Bedienung
+eines Flugzeuges erheblich. Es reduziert die Anzahl
+von Schaltern um bis zu <em>80%</em>. Bei diesem Jet 
+wurde das Glas Cockpit ca. 2008 nachgerüstet.</figcaption>
 </figure>
 
 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
