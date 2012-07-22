@@ -3,6 +3,10 @@ task :default do
     puts "Hello World\n"
 end
 
+task :foo do
+    sh "ls -l"
+end
+
 namespace :post do
     desc "Creates an empty post"
     task :create, [:title] do |t, args|

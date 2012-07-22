@@ -1,7 +1,5 @@
 
 $(function() {
-    hljs.initHighlightingOnLoad();
-
     $("nav[role=navigation] a[href='" + document.location.pathname + "']").first().addClass("active");
 });
 

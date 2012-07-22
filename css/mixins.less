@@ -15,12 +15,11 @@
     letter-spacing: 0.1em;
     cursor: pointer;
 
-    > i[class^="icon-"],
-    > i[class*=" icon-"] {
+    > i.ss-icon, i.ss-social, i.ss-social-circle {
         width: 24px;
-        font-size: 24px;
+        font-size: 20px;
         position: relative;
-        top: 4px;
+        top: 5px;
         margin-right: 5px;
     }
 
@@ -84,6 +83,37 @@
         
         > strong {
             font-family: @fontstack_sans;
+        }
+    }
+}
+
+.contact-bar {
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            width: 140px;
+
+            a {
+                display: block;
+                border: none;
+                text-align: center;
+
+                > strong {
+                    display: block;
+                    line-height: 1.0;
+                    font-size: 64px;
+                }
+
+                > i {
+                    .font_sans_serif;
+                    font-style: normal;
+                    font-size: 12px;
+                    display: block;
+                }
+            }
         }
     }
 }
