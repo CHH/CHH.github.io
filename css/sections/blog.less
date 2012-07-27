@@ -73,7 +73,7 @@
                 margin: 2em 0 0 -1.4em;
             }
 
-            > div {
+            > .info {
                 display: block;
                 padding: 0.5em 0;
                 margin: 2em 0 0.5em;
@@ -226,6 +226,13 @@
             font-size: 1.4em;
         }
 
+        * code {
+            font-size: 0.8em;
+            font-family: @fontstack_monospace;
+            color: @color_rusticotta;
+            white-space: nowrap;
+        }
+
         pre {
             margin: 0 0 1em -2em;
             border-left: 10px solid lighten(#002B36, 10);
@@ -288,13 +295,6 @@
                     font-weight: bold;
                 }
             }
-        }
-
-        p code {
-            font-size: 0.8em;
-            font-family: @fontstack_monospace;
-            color: @color_rusticotta;
-            white-space: nowrap;
         }
     }
 

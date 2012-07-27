@@ -14,7 +14,7 @@ include: [.htaccess]
 
 markdown: rdiscount
 
-lsi: true
+# lsi: true
 
 title: "Christoph Hochstrasser, Web Creator"
 

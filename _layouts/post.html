@@ -24,7 +24,15 @@
         <section class="content">
             <article>
                 <header>
-                    <div>
+                    {% if page.draft %}
+                    <div class="alert warning">
+                        This article is a <strong>Draft</strong>. It
+                        may be <strong>incomplete</strong> and contain information
+                        which is plain <strong>wrong</strong>.
+                    </div>
+                    {% endif %}
+
+                    <div class="info">
                         <time class="created-at" datetime="{{ page.date }}">
                             <span class="month">{{ page.date | date: "%m" }}</span>/<span class="year">{{ page.date | date: "%Y" }}</span>
                         </time>
@@ -59,7 +67,7 @@
                             <li>
                             <a href="#" data-behaviour="twitter-comment-button" 
                                 data-url="{{ page.url }}"
-                                data-text='Just read "{{ page.title }}" by @yuri41, awesometastic! '>
+                                data-text='Just read "{{ page.title }}" by @hochchristoph, awesometastic! '>
                                     <i class="ss-social-circle ss-twitter"></i>
                                     Auf Twitter teilen
                                 </a>
@@ -97,7 +105,7 @@
                                 </li>
                                 <li>
                                 <a href="#" data-behaviour="twitter-comment-button" data-url="{{ page.url }}" 
-                                    data-text='Just read "{{ page.title }}" by @yuri41, awesometastic! '>
+                                    data-text='Just read "{{ page.title }}" by @hochchristoph, awesometastic! '>
                                         <i class="ss-social-circle ss-twitter"></i>
                                         Auf Twitter teilen
                                     </a>

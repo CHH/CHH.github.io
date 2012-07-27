@@ -85,6 +85,7 @@ title: Start
             </header>
 
             {% for post in site.posts limit:3 %}
+            {% unless post.draft %}
             <article>
                 <header>
                     <time datetime="{{ post.date }}">
@@ -94,6 +95,7 @@ title: Start
                 </header>
                 <p>{{ post.excerpt | markdownify }}</p>
             </article>
+            {% endunless %}
             {% endfor %}
 
             <footer>
