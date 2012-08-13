@@ -226,11 +226,16 @@
             font-size: 1.4em;
         }
 
-        * code {
+        code {
             font-size: 0.8em;
             font-family: @fontstack_monospace;
-            color: @color_rusticotta;
-            white-space: nowrap;
+        }
+
+        p, li {
+            code {
+                color: @color_rusticotta;
+                white-space: nowrap;
+            }
         }
 
         pre {
