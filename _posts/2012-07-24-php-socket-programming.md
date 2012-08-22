@@ -7,7 +7,6 @@ excerpt: >
     the unfriendliest and most cumbersome way to work with Sockets
     in modern PHP. Let me introduce you to something, which apparently 
     is pretty unknown among PHP programmers &mdash; __Stream Sockets__.
-draft: true
 ---
 ## What is a Socket?
 
@@ -66,11 +65,15 @@ where protocol is one of the following:
    socket, which is internal to the operating system's network stack. Slightly more
    efficient, because no network interface is involved.
 
-A simple example for making an HTTP request:
+You can read more about the supported socket transports for
+`stream_socket_` functions [in the Manual][socket_transports].
+
+Here's a simple example for making an HTTP request:
 
     <?php
 
     $addr = gethostbyname("www.example.com");
+
     $client = stream_socket_client("tcp://$addr:80", $errno, $errorMessage);
 
     if ($client === false) {
@@ -83,33 +86,33 @@ A simple example for making an HTTP request:
 
 Let's go through this, step by step.
 
+    $addr = gethostbyname("www.example.com");
+
 First you need the IP address of the host you want to connect to. This
 is done with the `gethostbyname` function.
 
-    $addr = gethostbyname("www.example.com");
-
-Then we create the socket connection with `stream_socket_client`. When
-it returns false, it means there was an error &mdash; so we throw an exception. 
-`stream_socket_client` allows to pass references as second and third arguments, which get then set
-with the error code and the error message when an error occurs.
-    
     $client = stream_socket_client("tcp://$addr:80", $errno, $errorMessage);
 
     if ($client === false) {
         throw new UnexpectedValueException("Failed to connect: $errorMessage");
     }
 
+Then we create the socket connection with `stream_socket_client`. When
+it returns false, it means there was an error &mdash; so we throw an exception. 
+`stream_socket_client` allows to pass references as second and third arguments, which get then set
+with the error code and the error message when an error occurs.
+    
+    fwrite($client, "GET / HTTP/1.0\r\nHost: www.example.com\r\nAccept: */*\r\n\r\n");
+    echo stream_get_contents($client);
+
 Socket connections created by `stream_socket_client` are streams, just
 like files opened via `fopen`. This means we can use `fwrite` to write
 bytes to the socket and we can use the convenient `stream_get_contents`
 function for reading the whole response.
 
-    fwrite($client, "GET / HTTP/1.0\r\nHost: www.example.com\r\nAccept: */*\r\n\r\n");
-    echo stream_get_contents($client);
+    fclose($client);
 
 Stream sockets can be closed, just like files, by `fclose`.
-
-    fclose($client);
 
 ## Servers
 
@@ -143,14 +146,14 @@ Here is a simple echo server:
     <?php
     # server.php
     
-    $server = stream_socket_server("tcp://127.0.0.1:1337");
+    $server = stream_socket_server("tcp://127.0.0.1:1337", $errno, $errorMessage);
 
     if ($server === false) {
-        throw new UnexpectedValueException("Could not bind to socket.");
+        throw new UnexpectedValueException("Could not bind to socket: $errorMessage");
     }
 
     for (;;) {
-        $client = stream_socket_accept($server);
+        $client = @stream_socket_accept($server);
 
         if ($client) {
             stream_copy_to_stream($client, $client);
@@ -167,3 +170,67 @@ Then start another terminal and type this:
     % echo "Hello World" | nc 127.0.0.1 1337
     Hello World
 
+_Windows users:_ You can open a telnet connection on `127.0.0.1` and
+port `1337`, type something in and press enter. You should see the same
+text appear.
+
+Lets walk through this, step by step:
+
+    $server = stream_socket_server("tcp://127.0.0.1:1337", $errno, $errorMessage);
+
+First bind on the `tcp` socket on address `127.0.0.1` and port `1337`.
+This is the network socket, which can be used by clients to connect to
+our server. Just like `stream_socket_client`, two arguments can be
+passed by reference, which then get filled with the error number and
+human readable error message.
+
+    if ($server === false) {
+        throw new UnexpectedValueException("Could not bind to socket: $errorMessage");
+    }
+
+If an error occured, the function returns `false`, so we quit here by
+throwing an exception. It makes no sense to start waiting for connections when we
+couldn't register ourselves for the socket.
+
+    for (;;) {
+
+Using `for` without statements causes it to loop forever. We need this,
+because the server should run until we decide to kill it.
+
+    $client = @stream_socket_accept($server);
+
+`stream_socket_accept` blocks until a client connects to the socket or
+the timeout expires. Error suppresssion is intentional here, because this function likes to 
+spit out unnecessary warnings.
+
+    if ($client) {
+
+The call to `stream_socket_accept` either returns a connection or `null`
+when the timeout expired. So we want only to do something when a client
+actually connected, which is when the return value was "truthy".
+
+    stream_copy_to_stream($client, $client);
+
+This gem is very handy for our echo server. It copies bytes from the
+stream given as first argument, to the stream given as second argument.
+So it actually sends everything back, what the client sent.
+
+    fclose($client);
+
+Last, but not least, we close the connection to the client. This is not
+always necessary, because in some scenarios you want to let the client
+close the connection (e.g. FTP).
+
+## Further Reading
+
+Manual Pages:
+
+- [List of supported socket transports][socket_transports]
+- [All Stream Socket Functions](http://php.net/results.php?q=stream_socket_&l=en&p=local)
+
+Functions for connecting/binding to sockets:
+
+- [stream_socket_server][]
+- [stream_socket_client][]
+
+[socket_transports]: http://php.net/manual/en/transports.php
