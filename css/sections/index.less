@@ -25,6 +25,12 @@ body {
 footer[role=contentinfo] {
     padding: 3em 0; margin-top: 1em;
     clear: both;
+    opacity: 0.6;
+    .transition(0.4s);
+
+    &:hover {
+        opacity: 1.0;
+    }
 
     > .copyright {
         .column(2);
@@ -129,12 +135,6 @@ li {
     margin: 0 0 0.45em;
 }
 
-.caption {
-    text-align: center;
-    font-style: italic;
-    font-size:  2em;
-}
-
 .share {
     ul {
         list-style: none;
@@ -230,10 +230,6 @@ header[role=banner] {
         h3 {
             font-size: 2.1em;
         }
-
-        > header > p {
-            .caption;
-        }
     }
 
     hr {
@@ -285,34 +281,36 @@ header[role=banner] {
     }
 }
 
-#articles_brief, #contact, #projects {
-    > header > h2 {
-        text-align: center;
-        font-size: 2.8em;
-    }
-
-    .column(4);
-}
-
 /**
  * Short ellipsis of the blog's articles
  */
 #articles_brief {
+    .row;
+
+    > header {
+        .column(4);
+        > h2 {
+        }
+    }
+
     article {
-        margin: 0 0 2em;
+        .column(8);
+        .right;
+        margin: 4em auto 0em;
         font-size: 1em;
 
-        header {
+        > header {
             h3 {
                 text-align: center;
                 color: #888;
                 line-height: 1.4em;
+                font-size: 2.4em;
             }
 
             time {
                 display: block;
                 margin: 0 0 0.5em;
-                text-align: center;
+                text-align: right;
                 font-family: @fontstack_sans;
                 font-size: 1.4em;
                 color: #666;
@@ -320,11 +318,33 @@ header[role=banner] {
         }
 
         p {
-            font-size: 1.6em;
+            font-size: 2em;
+            font-family: @fontstack_sans;
+        }
+
+        > footer {
+            border-top: 1px dashed #ccc;
+            padding-top: 1em;
+
+            .more {
+                margin-right: 20px;
+            }
+
+            > span {
+                font-size: 16px;
+                color: #888;
+                font-family: @fontstack_sans;
+
+                > em {
+                    color: #333;
+                    font-style: normal;
+                }
+            }
         }
     }
 
-    footer {
+    > footer {
+        clear: both;
         text-align: center;
     }
 
