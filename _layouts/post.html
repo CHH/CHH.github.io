@@ -4,6 +4,13 @@
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <meta charset="utf-8">
 
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:url" content="http://christophh.net/{{ page.url }}">
+        <meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | truncate: 200 | escape }}">
+        <meta name="twitter:creator" content="@hochchristoph">
+        <meta name="twitter:site" content="@hochchristoph">
+
         <title>
             {{ page.title }} &mdash;
             {{ site.title }}
@@ -11,7 +18,7 @@
 
         <link rel="alternate" type="application/atom+xml" 
               title="Christoph Hochstrasser Blog Feed"
-              href="http://feeds.feedburner.com/christoph-hochstrasser" />
+              href="/atom.xml" />
 
         {% include layout/styles.html %}
         {% include layout/ga.html %}
