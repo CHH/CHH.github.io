@@ -1,0 +1,115 @@
+---
+title: 2012
+layout: post
+excerpt: >
+    This was 2012
+---
+
+Let's look back at the year 2012. It was a very succesful year, for me,
+though we had some ups and downs at [IWA-Tech][]. People came and people
+left. I took over a new role and learned many things.
+
+## IWA-Tech
+
+At IWA-Tech we had a good start into 2012, then some minor troubles and
+unexpected changes in Product Leadership midway through, and then
+regained our strength in the finish.
+
+I started off in 2012, as one of four web developers and then with a
+deadline in sight, was asked to take over Product Design — which I did.
+
+So suddenly I, the "Greenhorn", was in charge of the product. Something
+which I very much dreamed of. It was a unique chance, to substantially
+change the way we work to the better, and I've learned many things in
+the last 3 months.
+
+With only six weeks until the deadline, we moved again to weekly
+iterations, to focus more on shipping. At the beginning of the year we
+changed from Scrum to Kanban, which meant going from a two week time
+limit for all tasks, to _no_ limit.
+
+We noticed that, instead of shipping, features went to "Done" unnoticed,
+and then stayed there. So what we tried is, that we make weekly
+iterations, so everyone is aware of the state of things, what's done,
+what's in review and what's next. This iterations are not exactly like
+Scrum sprints — they are much more loose. Stories don't have to be
+finished at the end of the iteration — there ain't something like a
+"Failed Sprint".
+
+This is better in several ways:
+
+* Let's face it: _Things don't go as you expect._ If you've a rather
+  unstable product stakeholders, which change and are kind of in
+  "pivoting" mode, then many things come in at short notice. This
+  results in the team not making it to the commitment, which in turn
+  results in a major drop in motivation.
+* Planning and review is the main benefit of making weekly iterations,
+  and communication is much better, because we sit together and everyone
+  sees and talks about the state of affairs. There's less chance that
+  features go to "Done" unnoticed.
+* It creates a frame for time. If you've no time frames, time goes by
+  unnoticed, and you hardly notice that you're sitting 3 weeks at the
+  story, though you could've finished earlier. But this is only one part
+  of the story, the other is that if the effort is high to start something
+  new, then it's hard to move on to the next thing. This is one area which
+  ain't quite there yet, and I'd like to improve further in 2013
+
+Though, managing the development of a product is very stressful and hard
+at times, it continues to be a very rewarding experience. I'm really
+starting to like connecting people, and designing interfaces. One thing
+that worries me, is that I'm no longer really able to contribute to
+backend tasks. I've spent the last one and a half years doing it, and
+now I have to talk to a real developer to accomplish anything serious.
+
+So this was long enough, I probably should write another post about my
+Product Design experiences.
+
+[IWA-Tech]: http://iwa-tech.com
+
+## Open Source
+
+In 2012 I have started several new projects:
+
+* [php-build][], which saw __11__ releases during 2012, attracted __15__
+  contributors, was starred __145__ times, and has __24__ forks. It's a
+  real open source project, and the single project of me which had the
+  most impact on the overall community. It's used by [Travis CI][] for
+  the PHP support. _I'd like to thank the people, which
+  contributed to php-build in 2012!_
+* [Pipe][]: I overhauled the asset deployment for [our][IWA-Tech] [main
+  project][talenthouse], and was very frustated that [Assetic][] didn't
+  really fit the way I like to work with assets. I really liked how
+  [Sprockets][] works, so I took the things I did like from Sprockets —
+  like the Directives and Dependency Management — and tried porting this
+  to Assetic, but it was really ugly and didn't really fit how
+  Assetic was designed. So I set aside some time and made Pipe. After falling in love with [Silex][], I also created a [Silex Service Provider for Pipe](http://github.com/CHH/pipe-silex).
+* [Spark][]: I admit it: I'm in love with [Silex][]. So Spark is a proof
+  of concept, for building a full stack framework on top of it. It uses
+  some of my components like [Pipe][], and many other community
+  developed Service Providers. 2013 will hopefully bring Active Record
+  to Spark, and hopefully the first Beta release.
+
+[Silex]: http://silex.sensiolabs.org
+[Pipe]: http://github.com/CHH/pipe
+[Spark]: http://github.com/CHH/spark
+[php-build]: http://github.com/CHH/php-build
+[Travis CI]: http://travis-ci.org
+[talenthouse]: http://talenthouse.com
+[Assetic]: http://github.com/kriswallsmith/assetic
+[Sprockets]: http://github.com/sstephenson/sprockets
+
+## 2013
+
+This was 2012, and I really look forward to 2013!
+
+Few things which you can anticipate:
+
+* _A responsive redesign of this site_, after dipping my toes into
+  responsive web design with the redesign of the [IWA-Tech][] site, I
+  really want to also make this page usable to phones and tablets.
+* Spark Beta: The first beta of the Spark framework, a full stack
+  framework built on top of Silex.
+* [php-build][] v1.0.0, which will see some restructuring, and will be
+  the first release which breaks backwards compatibility with the dev
+  versions.
+
