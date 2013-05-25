@@ -3,7 +3,7 @@ layout: post
 title: Time is money
 tags:
     - Opinion
-excerpt: >
+custom_excerpt: >
     or why **no** corporation will fork your permissively licensed
     open source project _without_ contributing back upstream.
 ---

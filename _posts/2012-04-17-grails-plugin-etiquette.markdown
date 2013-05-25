@@ -4,7 +4,7 @@ title: Grails Plugin Etiquette
 layout: post
 tags:
     - Opinion
-excerpt: >
+custom_excerpt: >
     At work we use a _lot_ of Grails plugins. Recently one of our most
     important Plugins broke functionality in our app in a _minor_
     release, does not tag the releases in the repository and doesn't

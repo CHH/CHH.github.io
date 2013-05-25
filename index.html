@@ -94,7 +94,6 @@ title: Start
         </header>
 
         {% for post in site.posts limit:3 %}
-        {% unless post.draft %}
         <article>
             <header>
                 <time datetime="{{ post.date }}">
@@ -102,7 +101,14 @@ title: Start
                 </time>
                 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             </header>
-            <p>{{ post.excerpt | markdownify }}</p>
+
+            <p>
+            {% if post.custom_excerpt %}
+                {{ post.custom_excerpt | markdownify }}
+            {% else %}
+                {{ post.excerpt | markdownify }}
+            {% endif %}
+            </p>
 
             <footer>
                 <a href="{{ post.url }}" class="more">
@@ -117,7 +123,6 @@ title: Start
                 </span>
             </footer>
         </article>
-        {% endunless %}
         {% endfor %}
 
         <footer>

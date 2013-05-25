@@ -1,13 +1,18 @@
 ---
 layout: post
 title: PHP Socket Programming, done the Right Way™
-excerpt: >
-    When writing about socket programming with PHP, nearly
+custom_excerpt: >
+    When it comes to socket programming with PHP, nearly
     all articles are about the Socket Extension, despite it's
     the unfriendliest and most cumbersome way to work with Sockets
     in modern PHP. Let me introduce you to something, which apparently 
     is pretty unknown among PHP programmers &mdash; __Stream Sockets__.
 ---
+
+- - -
+This article is also available in [Serbo-Croatian](http://science.webhostinggeeks.com/php-soket-programiranje).
+- - -
+
 ## What is a Socket?
 
 The [IP Address][] is the identification of a network device within a

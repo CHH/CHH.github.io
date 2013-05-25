@@ -1,7 +1,5 @@
 ---
 title: PHP Programming with Assertions
-excerpt:
-published: false
 ---
 I recently read a piece on [Idiomatic Code][idio1] on Hacker News, so
 I started thinking of how some things can be useful in PHP programming.

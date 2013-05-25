@@ -60,7 +60,11 @@
 
                 <section class="article-info">
                     <div class="excerpt">
+                        {% if page.custom_excerpt %}
+                        {{ page.custom_excerpt | markdownify }}
+                        {% else %}
                         {{ page.excerpt | markdownify }}
+                        {% endif %}
                     </div>
 
                     <nav class="share">

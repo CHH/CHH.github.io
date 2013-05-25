@@ -3,7 +3,7 @@ title: What I like about Tilt
 layout: post
 tags:
     - Opinion
-excerpt: > 
+custom_excerpt: > 
     Tilt is a templating library for Ruby. It's kind of an 
     aggregator for templating engines &mdash; and I like it.
 ---

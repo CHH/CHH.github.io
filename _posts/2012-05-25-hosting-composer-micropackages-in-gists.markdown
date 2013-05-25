@@ -3,7 +3,7 @@ title: Hosting Composer Micropackages in Gists
 layout: post
 tags: 
     - Programming
-excerpt: >
+custom_excerpt: >
     Recently I once again came across [an article](http://jeffkreeftmeijer.com/2011/microgems-five-minute-rubygems/) 
     by [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com/) in which he
     explains how to host micro libraries just in one Github Gist. I

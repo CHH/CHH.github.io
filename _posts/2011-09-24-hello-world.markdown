@@ -5,8 +5,8 @@ layout: post
 Willkommen auf meinem neuen Blog!
 
 Es hat ein wenig gedauert, aber jetzt ist es endlich online. Die
-Entscheidung für ein Blogging-System ist mir einfach nicht leicht
-gefallen. Letzendlich hab ich mich dann für
+Entscheidung fÃ¼r ein Blogging-System ist mir einfach nicht leicht
+gefallen. Letzendlich hab ich mich dann fÃ¼r
 [Jekyll](http://jekyllrb.com) entschieden und dann gleich die
 ganze Seite drauf umgestellt.
 
@@ -16,19 +16,19 @@ Das mag ich an Jekyll:
    Alles ist Text. Keine Datenbank. Alles nur generiertes HTML.
    Jekyll ist pure Einfachheit.
  * Liquid: Die eingebaute Templating Engine, mit der man auch relative
-   "dynamische" Sachen machen kann. Mir gefällt auch wie Jekyll zum
-   Beispiel die Blog Einträge als Liquid Variable zur Verfügung stellt.
+   "dynamische" Sachen machen kann. Mir gefÃ¤llt auch wie Jekyll zum
+   Beispiel die Blog EintrÃ¤ge als Liquid Variable zur VerfÃ¼gung stellt.
  * Versionierte Blog Artikel: Weil die Blog Artikel nur Textdateien sind
-   kann man sie natürlich in Versionskontrolle geben.
- * Kein Web-Frontend, ich kann aber trotzdem von überall aus mein Blog
+   kann man sie natÃ¼rlich in Versionskontrolle geben.
+ * Kein Web-Frontend, ich kann aber trotzdem von Ã¼berall aus mein Blog
    verwalten. Ich brauch nur die DropBox und FTP.
 
 Hier noch ein paar andere Fakten zu meiner Seite:
 
- * Schriften: Die "Helvetica" ist Liberation Sans und die wunderschöne
+ * Schriften: Die "Helvetica" ist Liberation Sans und die wunderschÃ¶ne
    Schrift in den Titeln ist Gentium Basic. Beide von FontSquirrel.
  * Stylesheet: Ich verwende direkt [less.js](http://lesscss.org) auf der
    Seite. LESS ist einfach das bessere CSS.
- * Ich verwende überall HTML5 Elemente. Für bessere IE Kompatibilität
+ * Ich verwende Ã¼berall HTML5 Elemente. FÃ¼r bessere IE KompatibilitÃ¤t
    sorgt der Modernizr.
 

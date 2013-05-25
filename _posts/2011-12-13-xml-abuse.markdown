@@ -3,7 +3,7 @@ layout: post
 title: XML Abuse
 tags:
     - Opinion
-excerpt: >
+custom_excerpt: >
     XML Abuse is everywhere, and I'm sick of it. Everytime
     I have to use Ant, I'm feeling like I'm in **XML Hell**.<br>
     _Warning_: This can be ranty at times.

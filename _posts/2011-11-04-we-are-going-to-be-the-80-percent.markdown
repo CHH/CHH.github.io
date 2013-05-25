@@ -3,7 +3,7 @@ layout: post
 title: We Power Users are going to be the 80 percent
 tags: 
     - Opinion
-excerpt: >
+custom_excerpt: >
     Recent OS releases follow some kind of trend: 
     they all try to make the desktop more usable 
     for normal users. But with the rapid adoption 

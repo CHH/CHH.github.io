@@ -2,7 +2,7 @@
 published: false
 layout: post
 title: Writing Minimal PHP
-excerpt: >
+custom_excerpt: >
     Recently I've done a small experiment: I'm toying with a
     style of PHP programming, which I want to call "Minimal PHP".
     Minimal PHP focusses on cutting the bloat from writing

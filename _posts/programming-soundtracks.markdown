@@ -1,6 +1,6 @@
 ---
 title: Programming Soundtracks
-excerpt: > 
+custom_excerpt: > 
     Some of my favourite Soundtracks for Programming.
 tags:
     - Music

@@ -3,7 +3,7 @@ layout: post
 title: PHP Project Automation with Bob
 tags:
     - How To
-excerpt: >
+custom_excerpt: >
     After not being satisfied with Ant, Phing and Pake &mdash; I've
     scratched my own itch and made Bob &mdash; a **simple** project
     automation tool.
