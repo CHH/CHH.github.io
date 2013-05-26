@@ -208,9 +208,7 @@ This requires PHP 5.4.0 at least for the builtin CLI Web Server.
             $php, '-S', 'localhost:8080', '-t', 'public/', 'public/index.php'
         )));
 
-        # Set this to something really high, the dev server will be a
-        # rather long running process usually.
-        $process->setTimeout(10000000);
+        $process->setTimeout(null);
 
         # Write Error output to STDERR and normal output to
         # STDOUT, so we see the server's logging messages:

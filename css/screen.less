@@ -1,15 +1,45 @@
 
 @import "reset.less";
-
-// Twitter Bootstrap Files:
-@import "vendor/bootstrap/mixins.less";
-@import "vendor/bootstrap/layouts.less";
-@import "vendor/bootstrap/grid.less";
+@import "elements.less";
 
 @import "variables.less";
 @import "mixins.less";
 
-// Sections
+@import "colors.less";
+@import "typography.less";
+@import "base.less";
+
+// 480px
+@media only screen and (min-width: 480px) {
+@import "480.less";
+}
+
+// 600px
+@media only screen and (min-width: 600px) {
+@import "600.less";
+}
+
+// 768px
+@media only screen and (min-width: 768px) {
+@import "768.less";
+}
+
+// 992px
+@media only screen and (min-width: 992px) {
+@import "992.less";
+}
+
+// 1382px
+@media only screen and (min-width: 1382px) {
+@import "1382.less";
+}
+
+// 2x
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+@import "2x.less"; }
+
 @import "sections/index.less";
 @import "sections/blog.less";
-

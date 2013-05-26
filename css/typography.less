@@ -1,0 +1,81 @@
+
+.font-headline() {
+    font-family: adelle, sans-serif;
+    line-height: 1.2;
+}
+
+.font-body() {
+    font-family: ff-meta-serif-web-pro, Georgia, serif;
+    line-height: 1.4;
+}
+
+.font-monospace() {
+    font-family: "source-code-pro", monospace;
+}
+
+body {
+    .font-body;
+    font-size: 18px;
+}
+
+a:link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {}
+}
+
+h1, h2, h3, h4, h5, h6 {
+    .font-headline;
+    font-weight: 300;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+pre {
+    border-left: 4px solid @color-base;
+    margin: 0 0 1em;
+
+    > code {
+        padding-left: 20px;
+    }
+}
+
+code {
+    .font-monospace;
+    font-size: 0.9em;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style: disc;
+    padding: 0 0 0 40px;
+    margin: 0 0 1em;
+
+    li {
+        margin: 0 0 0.5em;
+    }
+}
+
+ol {
+    list-style: decimal;
+    padding: 0 0 0 40px;
+    margin: 0 0 1em;
+}

@@ -9,9 +9,9 @@ custom_excerpt: >
     is pretty unknown among PHP programmers &mdash; __Stream Sockets__.
 ---
 
-- - -
-This article is also available in [Serbo-Croatian](http://science.webhostinggeeks.com/php-soket-programiranje).
-- - -
+<div class="info-box">
+    This article is also available in <a href="http://science.webhostinggeeks.com/php-soket-programiranje">Serbo-Croatian</a>.
+</div>
 
 ## What is a Socket?
 

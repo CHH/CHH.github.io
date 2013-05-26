@@ -145,5 +145,4 @@ if a special parameter is passed, for example `-`:
 ## Fin
 
 That's it for now. If you know some more tips just let me know by mentioning
-[@yuri41](http://twitter.com/yuri41) on Twitter.
-
+[@hochchristoph](http://twitter.com/hochchristoph) on Twitter.

@@ -1,177 +1,68 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <meta charset="utf-8">
+---
+layout: default
+---
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">
+            <a href="{{ page.url }}">{{ page.title }}</a>
+        </h1>
 
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="{{ page.title }}">
-        <meta name="twitter:url" content="http://christophh.net/{{ page.url }}">
-        <meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | truncate: 200 | escape }}">
-        <meta name="twitter:creator" content="@hochchristoph">
-        <meta name="twitter:site" content="@hochchristoph">
+        <div class="post-info">
+            <div class="post-date">
+                Posted on
+                <time class="post-date" datetime="{{ page.date }}">
+                    {{ page.date | date: "%d %b %Y" }}
+                </time>
+            </div>
+        </div>
+    </header>
 
-        <title>
-            {{ page.title }} &mdash;
-            {{ site.title }}
-        </title>
+    {% if page.custom_excerpt %}
+    <section class="post-intro">
+        {{ page.custom_excerpt | markdownify }}
+    </section>
+    {% endif %}
 
-        <link rel="alternate" type="application/atom+xml" 
-              title="Christoph Hochstrasser Blog Feed"
-              href="/atom.xml" />
+    <section class="post-content">
+        {{ content }}
+    </section>
 
-        {% include layout/styles.html %}
-        {% include layout/ga.html %}
+    <footer class="post-footer" style="clear: both;">
+        <div class="related-articles">
+            <h1>You might be also interested in:</h1>
+            <ul>
+            {% for post in site.related_posts limit:5 offset:1 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
 
-        <link rel="stylesheet" type="text/css" href="/css/vendor/highlight_styles/solarized_dark.css" />
-    </head>
-    <body class="blog">
-        {% include layout/header.html %}
+        <div class="comments">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = '{{ site.disqus.shortname }}'; // required: replace example with your forum shortname
+                var disqus_identifier = "{{ page.id }}";
 
-        <section class="content">
-            <article>
-                <header>
-                    {% if page.draft %}
-                    <div class="alert warning">
-                        This article is a <strong>Draft</strong>. It
-                        may be <strong>incomplete</strong> and contain information
-                        which is plain <strong>wrong</strong>.
-                    </div>
-                    {% endif %}
+                {% if site.server %}
+                var disqus_developer = 1;
+                {% endif %}
 
-                    <div class="info">
-                        <time class="created-at" datetime="{{ page.date }}">
-                            <span class="month">{{ page.date | date: "%m" }}</span>/<span class="year">{{ page.date | date: "%Y" }}</span>
-                        </time>
-                        {% if page.tags != empty %}
-                        in
-                        <ul class="tags">
-                            {% for tag in page.tags %}
-                            <li>{{ tag }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div>
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </footer>
+</article>
 
-                    <h1>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                    </h1>
-                </header>
-
-                <section class="article-info">
-                    <div class="excerpt">
-                        {% if page.custom_excerpt %}
-                        {{ page.custom_excerpt | markdownify }}
-                        {% else %}
-                        {{ page.excerpt | markdownify }}
-                        {% endif %}
-                    </div>
-
-                    <nav class="share">
-                        <ul>
-                            <li>
-                                <a href="{{ page.url }}">
-                                    <i class="ss-icon ss-bookmark"></i>
-                                    Permalink
-                                </a>
-                            </li>
-                            <li>
-                            <a href="#" data-behaviour="twitter-comment-button" 
-                                data-url="{{ page.url }}"
-                                data-text='Just read "{{ page.title }}" by @hochchristoph, awesometastic! '>
-                                    <i class="ss-icon ss-social ss-twitter"></i>
-                                    Auf Twitter teilen
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="article-list">
-                        <h1>Mehr Artikel</h1>
-                        <ul>
-                        {% for post in site.related_posts limit:5 offset:1 %}
-                            <li>
-                                <a href="{{ post.url }}">{{ post.title }}</a>
-                            </li>
-                        {% endfor %}
-                        </ul>
-                    </div>
-
-                    {% include widgets/flattr_widget.html %}
-                </section>
-
-                <section>
-                    {{ content }}
-                </section>
-
-                <footer style="clear: both;">
-                    <div class="left">
-                        <nav class="share">
-                            <ul>
-                                <li>
-                                    <a href="{{ page.url }}">
-                                        <i class="ss-icon ss-bookmark"></i>
-                                        Permalink
-                                    </a>
-                                </li>
-                                <li>
-                                <a href="#" data-behaviour="twitter-comment-button" data-url="{{ page.url }}" 
-                                    data-text='Just read "{{ page.title }}" by @hochchristoph, awesometastic! '>
-                                        <i class="ss-icon ss-social ss-twitter"></i>
-                                        Auf Twitter teilen
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/writes" class="back">
-                                        <i class="ss-icon ss-notebook"></i>
-                                        Alle Artikel
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <div class="article-list">
-                            <h1>Mehr Artikel</h1>
-                            <ul>
-                            {% for post in site.related_posts limit:5 offset:1 %}
-                                <li>
-                                    <a href="{{ post.url }}">{{ post.title }}</a>
-                                </li>
-                            {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="comments">
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                            var disqus_shortname = '{{ site.disqus.shortname }}'; // required: replace example with your forum shortname
-                            var disqus_identifier = "{{ page.id }}";
-
-                            {% if site.server %}
-                            var disqus_developer = 1;
-                            {% endif %}
-
-                            /* * * DON'T EDIT BELOW THIS LINE * * */
-                            (function() {
-                                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                            })();
-                        </script>
-                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-                    </div>
-                </footer>
-            </article>
-        </section>
-
-        <script type="text/javascript" src="/js/vendor/highlight.pack.js"></script>
-        <script type="text/javascript">
-            hljs.initHighlightingOnLoad();
-        </script>
-
-        {% include layout/footer.html %}
-    </body>
-</html>
+<script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+</script>

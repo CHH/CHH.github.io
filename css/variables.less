@@ -1,27 +1,14 @@
-
-@import "http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Poly:400,400italic";
-
 // Colors
-//
-@color_rusticotta: darken(#E86B35, 10);
-@color_darker_rusticotta: darken(@color_rusticotta, 15);
-@color_sands: #f2ecdf;
-@color_bright_lights: #FFF1CC;
-@color_black: #0D0201;
 
-@gridColumns: 12;
-@gridGutterWidth: 20px;
-@gridColumnWidth: 60px;
+// Base Colors
+@color-base: #2ef265;
+@color-complement1: #ff307f;
+@color-complement2: #ff4430;
 
-// Font stacks
-//
-@fontstack_serif:     "Poly", "Georgia", "Palatino", "Times New Roman", "Baskerville", "Hoefler Text", serif;
-@fontstack_sans:      "Lato", sans-serif;
-@fontstack_monospace: "Monaco", "Consolas", monospace;
-@fontstack_headline:  "Lato", sans-serif;
+// Links
+@color-link: darken(@color-base, 20%);
+@color-link-visited: @color-link;
+@color-link-hover: @color-link;
 
-// Legacy Mixins for font stacks
-//
-.font_serif { font-family: @fontstack_serif; }
-.font_sans_serif { font-family: @fontstack_sans; }
-.font_monospace { font-family: @fontstack_monospace; }
+// Text
+@color-text-faded: #888;

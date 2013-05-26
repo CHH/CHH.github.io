@@ -1,0 +1,105 @@
+
+\@-webkit-viewport { 
+width : device-width; }
+
+\@-moz-viewport { 
+width : device-width; }
+
+\@-ms-viewport { 
+width : device-width; }
+
+\@-o-viewport { 
+width : device-width; }
+
+\@viewport { 
+width : device-width; }
+
+html {
+-webkit-overflow-scrolling : touch;
+-webkit-text-size-adjust : 100%;
+-ms-text-size-adjust : 100%; }
+
+body {
+}
+
+hr {
+    border: none;
+    border-top: 1px solid @color-base;
+}
+
+.site-header,
+.main-content,
+.site-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.site-header {
+    .clearfix;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .avatar {
+        .box-sizing(border-box);
+        .round_all(1000px);
+        overflow: hidden;
+        display: block;
+        position: relative;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        background: url(/images/me_new_quadrat.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    > h1 {
+        margin: 20px 0 0;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.main-content {
+}
+
+.site-footer {
+    margin: 40px 0;
+    font-size: 16px;
+
+    .copyright {
+        margin: 0 0 5px;
+        color: @color-text-faded;
+    }
+
+    .footer-nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            margin: 0 0 5px;
+        }
+    }
+}
+
+.info-box {
+    .font-headline;
+    background: @color-base;
+    color: white;
+    padding: 10px;
+}
+
+.post-list {
+    list-style: disc;
+    padding: 0 0 0 40px;
+    margin: 0 0 1em;
+
+    > li {
+        > time {
+            color: @color-text-faded;
+            margin: 0 10px 0 0;
+        }
+    }
+}

@@ -10,6 +10,8 @@ exclude:
     - css/mixins.less
     - css/reset.less
     - images/favicons.sketch/
+    - Gemfile
+    - Gemfile.lock
 
 include: [.htaccess]
 markdown: rdiscount
