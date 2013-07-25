@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <h1 class="post-title">
-            <a href="{{ page.url }}">{{ page.title }}</a>
+            <a href="{{ page.url }}" itemprop="headline">{{ page.title }}</a>
         </h1>
+
+        <meta itemprop="name" content="{{ page.title }}" />
+        <meta itemprop="url" content="{{ page.url }}" />
+        <meta itemprop="datePublished" content="{{ page.date }}" />
 
         <div class="post-info">
             <div class="post-date">
@@ -18,18 +22,22 @@ layout: default
     </header>
 
     {% if page.custom_excerpt %}
-    <section class="post-intro">
+    <section class="post-intro" itemprop="description">
         {{ page.custom_excerpt | markdownify }}
     </section>
+    {% elsif page.excerpt %}
+    <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html }}">
     {% endif %}
 
-    <section class="post-content">
+    <section class="post-content" itemprop="articleBody">
         {{ content }}
     </section>
 
     <footer class="post-footer" style="clear: both;">
         <div class="related-articles">
-            <h1>You might be also interested in:</h1>
+            <header>
+                <h1>You might be also interested in:</h1>
+            </header>
             <ul>
             {% for post in site.related_posts limit:5 offset:1 %}
                 <li>
@@ -37,9 +45,15 @@ layout: default
                 </li>
             {% endfor %}
             </ul>
+
+            <a href="/blog">See all posts &rarr;</a>
         </div>
 
         <div class="comments">
+            <header>
+                <h1 class="headline-decorated">Reader Reactions</h1>
+            </header>
+
             <div id="disqus_thread"></div>
             <script type="text/javascript">
                 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -65,4 +79,8 @@ layout: default
 
 <script type="text/javascript">
     hljs.initHighlightingOnLoad();
+
+    $(function() {
+        $(document).scrollTop($(".site-header").outerHeight() - 5)
+    });
 </script>

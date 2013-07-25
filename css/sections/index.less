@@ -8,17 +8,19 @@
 }
 
 #manifesto {
+    h2 {
+        margin-bottom: 2em;
+    }
     > ul {}
 
-    .font-headline;
     line-height: 1.4;
-    color: #555;
-    font-weight: 400;
 }
 
 #blog_preview {
+    margin: 2em 0 0;
+
     .post-preview {
-        margin-bottom: 40px;
+        margin-bottom: 2em;
 
         .post-header {}
 
@@ -29,16 +31,32 @@
         .post-date {
             margin: 0 0 10px 0;
             color: #aaa;
+            font-size: 0.8em;
         }
 
         .post-excerpt {
-            .font-headline;
             line-height: 1.4;
             margin: 0;
+            > p {
+                margin: 0 0 10px;
+            }
+        }
+
+        .post-footer {
+            .continue {
+                font-size: 0.8em;
+            }
         }
     }
 
     .show-all-posts {
-        font-size: 116%;
+    }
+
+    > footer {
+        border: 3px double #ddd;
+        border-left: none; border-right: none;
+        text-align: center;
+        margin: 0 2em;
+        padding: 0.5em 1em;
     }
 }

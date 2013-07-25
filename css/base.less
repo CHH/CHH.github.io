@@ -20,24 +20,59 @@ html {
 -ms-text-size-adjust : 100%; }
 
 body {
+    padding: 0;
 }
 
 hr {
     border: none;
-    border-top: 1px solid @color-base;
+    border-top: 2px solid @color-base;
+}
+
+.row {
+    .clearfix;
+}
+
+.page-wrapper {
+    position: relative;
 }
 
 .site-header,
 .main-content,
 .site-footer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .site-header {
     .clearfix;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-weight: 300;
+    color: white;
+    position: relative;
+    text-shadow: 0 1px 1px fade(black, 50%);
+    margin: 0 0 2em;
+    background-color: #555d55;
+
+    .header-wrapper {
+    }
+
+    .bg-image {
+        background: no-repeat center bottom;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        .transform(translate3d(0, 0, 0));
+
+        &.loaded {
+            .transition(0.6s 0.1s);
+            opacity: 1;
+        }
+    }
 
     .avatar {
         .box-sizing(border-box);
@@ -45,17 +80,28 @@ hr {
         overflow: hidden;
         display: block;
         position: relative;
-        margin: 20px auto;
+        margin: 10px auto 30px;
         width: 100px;
         height: 100px;
         background: url(/images/me_new_quadrat.jpg) center center no-repeat;
-        background-size: cover;
+        background-size: 105px 105px;
+        border: 2px solid fade(white, 10%);
+        .drop-shadow;
     }
 
-    > h1 {
-        margin: 20px 0 0;
-        font-size: 30px;
+    .tagline {
+        margin: 20px 0 30px;
+        font-size: 18px;
+        font-weight: 300;
         text-align: center;
+    }
+
+    a { color: white; }
+
+    .about-me {
+        strong {
+            font-weight: bold;
+        }
     }
 }
 
@@ -64,7 +110,10 @@ hr {
 
 .site-footer {
     margin: 40px 0;
-    font-size: 16px;
+
+    * {
+        font-size: 16px;
+    }
 
     .copyright {
         margin: 0 0 5px;
@@ -76,6 +125,11 @@ hr {
             list-style: none;
             padding: 0;
             margin: 0;
+
+            li {
+                padding: 0.5em 0 0;
+                margin: -0.5em 0 0;
+            }
         }
 
         .nav-item {
@@ -91,15 +145,19 @@ hr {
     padding: 10px;
 }
 
-.post-list {
-    list-style: disc;
-    padding: 0 0 0 40px;
+.post-archive {
     margin: 0 0 1em;
+    list-style: none;
+    padding: 0;
 
-    > li {
-        > time {
+    .post {
+        .post-date {
             color: @color-text-faded;
-            margin: 0 10px 0 0;
+            font-size: 0.85em;
+        }
+
+        .post-title {
+            font-size: 1em;
         }
     }
 }

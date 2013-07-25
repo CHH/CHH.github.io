@@ -10,6 +10,21 @@
             {{ site.title }}
         </title>
 
+        <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+        <meta name="author" content="Christoph Hochstrasser">
+
+        {% if page.custom_excerpt %}
+        {% assign page_desc = page.custom_excerpt | markdownify | strip_html %}
+        {% elsif page.excerpt %}
+        {% assign page_desc = page.excerpt | markdownify | strip_html %}
+        {% else %}
+        {% assign page_desc = site.description %}
+        {% endif %}
+
+        <meta name="description" content="{{ page_desc }}">
+
+        <link rel="author" href="https://plus.google.com/110702168673763667617">
+
         <link rel="alternate" type="application/atom+xml"
               title="Christoph Hochstrasser Blog Feed"
               href="/atom.xml">
@@ -36,39 +51,85 @@
     </head>
 
     <body>
-        <header role="banner" class="site-header">
-            <div class="avatar">
+        <header itemscope itemtype="http://schema.org/Person" role="banner" class="site-header">
+            <div class="bg-image" style="background-image: url(/images/hero2.jpg);"></div>
+            <div class="header-wrapper">
+                <div class="page-wrapper">
+                    <div class="row">
+                        <a href="/" class="avatar">
+                        </a>
+                        <h1 class="tagline">
+                            Hi, I'm <a itemprop="name" href="/">Christoph Hochstrasser</a>. I design and build Web Sites and Web Applications
+                            at <a href="http://iwa-tech.com" itemprop="affiliation">IWA Technologies</a>.
+                        </h1>
+                    </div>
+
+                    <div class="about-me">
+                        <ul>
+                            <li>I’m an expert PHP developer, throwing Go, JavaScript and Shell scripts into the mix sometimes</li>
+                            <li>I <strong>design</strong> and <strong>build</strong> User Interfaces with a diverse set of devices in mind</li>
+                            <li>I <strong>manage</strong> projects using techniques of SCRUM, Kanban and Xtreme Programming</li>
+                            <li>I improve software development by <strong>creating</strong> and <strong>contributing</strong> to
+                                <a href="https://github.com/CHH">Open Source Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <h1>
-                Hi, I'm <a href="/">Christoph Hochstrasser</a>. I design and build Web Sites and Web Applications
-                at <a href="http://iwa-tech.com">IWA Technologies</a>.
-            </h1>
         </header>
 
-        <section class="main-content">
-            {{ content }}
-        </section>
+        <div class="page-wrapper">
+            <section class="main-content">
+                {{ content }}
+            </section>
 
-        <footer role="contentinfo" class="site-footer">
-            <p class="copyright">
-                &copy;2011–2013 Christoph Hochstrasser
-            </p>
-            <nav class="footer-nav">
-                <ul>
-                    <li class="nav-item">
-                        <a href="/imprint">Imprint</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="http://github.com/CHH">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="http://twitter.com/hochchristoph">Follow me on Twitter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="mailto:hello@christophh.net">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
+            <footer role="contentinfo" class="site-footer">
+                <p class="copyright">
+                    &copy;2011–2013 Christoph Hochstrasser
+                </p>
+                <nav class="footer-nav">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="/imprint">Imprint</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://github.com/CHH">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://twitter.com/hochchristoph">Follow me on Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto:hello@christophh.net">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+            (function() {
+                var images = [
+                    'hero1.jpg',
+                    'hero2.jpg',
+                    'hero3.jpg'
+                ];
+
+                function getRandomInt(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1) + min);
+                }
+
+                $(function() {
+                    var image = images[getRandomInt(0, images.length - 1)];
+                    var img = new Image();
+                    img.onload = function() {
+                        $(".site-header .bg-image")
+                            .css({"background-image": "url(/images/" + image + ")"});
+
+                        $('.site-header .bg-image').addClass('loaded');
+                    };
+                    img.src = "/images/" + image;
+                });
+            })();
+        </script>
     </body>
 </html>

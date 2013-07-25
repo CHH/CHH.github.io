@@ -4,81 +4,77 @@ title: Start
 ---
 <div id="homepage">
     <section id="manifesto">
-        <p>I&#8217;m an expert PHP developer, throwing in Go, JavaScript and Shell
-            scripts every now and then. I design and build User Interfaces with a diverse set 
-            of devices in mind,
-            manage projects and occasionally do the one or 
-            other Ops thing with SmartOS, Amazon Web Services or Puppet.</p>
+        <header>
+            <h2 class="headline-decorated">I believe</h2>
+        </header>
 
-        <p>I created open source tools and libraries to 
-            <a href='https://github.com/CHH/php-build'>make it easy to get the latest PHP</a>,
-            to <a href='https://github.com/CHH/pipe'>manage front end assets</a> 
-            and <a href='https://github.com/CHH/bob'>automate projects</a>. 
-            I&#8217;m also a contributor to open source projects like 
-            <a href='http://getcomposer.org'>Composer</a> 
-            or <a href='http://stackphp.com'>Stack</a>. You can find 
-            out more about me at <a href='https://github.com/CHH'>Github</a>.</p>
-
-        <p>I believe:</p>
-
-        <ul>
+        <ol>
             <li>
-                <strong>Web Designers must be able to code.</strong> Being able to code
-                let's Designers prototype ideas longer &mdash; which leads to better thought
+                <strong>Web Designers should be able to code.</strong> Being able to code
+                lets Designers prototype ideas longer &mdash; which leads to better thought
                 out ideas, and thus to better products.</li>
             <li>
-                <strong>Designing in the browser is superior to designing Photoshop.</strong>
+                <strong>Designing in the browser is superior to designing in Photoshop.</strong>
                 A <em>drawing</em> of a web site is never able to communicate the full 
                 breadth of possible interactions, and is a far cry from the result.</li>
             <li>
                 Tell people <strong>what</strong> to do and <strong>why</strong>
                 &mdash;not <strong>how</strong>.</li>
             <li>
-                <strong>Involve engineering as early in the design process as possible 
-                yields the best results.</strong> Programmers often have 
-                valuable feedback, and often are as &#8220;design-minded&#8221; as 
+                <strong>Involving engineering as early in the design process as possible
+                yields the best results.</strong> Programmers often have
+                valuable feedback, and often are as &#8220;design-minded&#8221; as
                 people who call themselves Designers.</li>
             <li>
                 <strong>Project managers are not able to tell the future.</strong>
-                Development processes should be made for adapting to changing requirements.</li>
-        </ul>
+                Development processes should deal well with changing requirements.</li>
+        </ol>
     </section>
 
     {% if site.posts != empty %}
-    <section id="blog_preview">
+    <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
         <header>
             <h1>Blog Posts</h1>
         </header>
 
-        {% for post in site.posts limit:6 %}
-        <article class="post-preview">
-            <header class="post-header">
-                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="post-date">
-                    Posted on
-                    <time datetime="{{ post.date }}">
-                        {{ post.date | date: "%d %b %Y" }}
-                    </time>
+        <div itemprop="blogPosts">
+            {% for post in site.posts limit:6 %}
+            <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview">
+                <header class="post-header">
+                    <meta itemprop="url" content="{{ post.url }}" />
+                    <meta itemprop="datePublished" content="{{ post.date }}" />
+                    <meta itemprop="headline" content="{{ post.title }}" />
+
+                    <h2 class="post-title"><a href="{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
+
+                    <div class="post-date">
+                        Posted on
+                        <time datetime="{{ post.date }}">
+                            {{ post.date | date: "%d %b %Y" }}
+                        </time>
+                    </div>
+                </header>
+
+                <div class="post-excerpt" itemprop="description">
+                {% if post.custom_excerpt %}
+                    {{ post.custom_excerpt | markdownify }}
+                {% else %}
+                    {{ post.excerpt | markdownify }}
+                {% endif %}
                 </div>
-            </header>
 
-            <div class="post-excerpt">
-            {% if post.custom_excerpt %}
-                {{ post.custom_excerpt | markdownify }}
-            {% else %}
-                {{ post.excerpt | markdownify }}
-            {% endif %}
-            </div>
+                <footer class="post-footer">
+                    <a class="continue" href="{{ post.url }}">
+                        Continue reading »
+                    </a>
+                </footer>
+            </article>
+            {% endfor %}
+        </div>
 
-            <footer class="post-footer">
-                <a class="continue" href="{{ post.url }}">
-                    Continue reading »
-                </a>
-            </footer>
-        </article>
-        {% endfor %}
-
-        <a href="/blog" class="show-all-posts">See all posts &rarr;</a>
+        <footer>
+            <a href="/blog" class="show-all-posts">See all posts &rarr;</a>
+        </footer>
     </section>
     {% endif %}
 </div>

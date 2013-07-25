@@ -1,8 +1,6 @@
 ---
 title: 2012
 layout: post
-custom_excerpt: >
-    This was 2012
 ---
 
 Let's look back at the year 2012. It was a very succesful year, for me,

@@ -5,18 +5,28 @@ body {
 .site-header,
 .main-content,
 .site-footer {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 .site-header {
-    .avatar {
-        float: left;
-        margin-right: 40px;
+    min-height: 700px;
+
+    .page-wrapper {
     }
 
-    h1 {
+    .avatar {
+        float: left;
+        margin-top: 0px;
+        margin-right: 30px;
+    }
+
+    .tagline {
         text-align: left;
+        font-size: 28px;
+    }
+
+    .about-me {
     }
 }
 
@@ -31,5 +41,21 @@ body {
             float: left;
             margin: 0 0 0 20px;
         }
+    }
+}
+
+.post {
+    .post-header {
+        text-align: left;
+    }
+}
+
+pre {
+    //margin-right: 2em;
+}
+
+#blog_preview {
+    > footer {
+        margin: 0 4em;
     }
 }
