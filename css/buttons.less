@@ -1,0 +1,30 @@
+.btn {
+    border: 1px solid #ccc;
+    color: #222;
+    .rounded(3px);
+    padding: 5px 10px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        .transition(0.05s);
+    }
+}
+
+.btn-inverted {
+    border-color: fade(white, 70%);
+    color: fade(white, 90%);
+
+    &:active {
+        color: fade(black, 60%);
+        background: fade(white, 50%);
+        border-color: fade(white, 50%);
+        text-shadow: none;
+    }
+}

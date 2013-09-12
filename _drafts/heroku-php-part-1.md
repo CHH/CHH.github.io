@@ -10,7 +10,7 @@ Heroku is a Platform as a Service (_PAAS_) provider, and has support for
 many languages like Ruby, Python and Node. But many people don't know
 that Heroku also has basic support for PHP.
 
-Though it's very basic:
+This is what I mean with "basic":
 
 * Uses Apache with the "Prefork" MPM and `mod_php`, which is not
   the most memory efficient setup. This is an issue because dynos only
