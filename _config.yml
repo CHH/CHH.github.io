@@ -22,3 +22,14 @@ title: "Christoph Hochstrasser, Web Creator"
 
 disqus:
     shortname: "christophhochstrasser"
+
+navigation:
+    - label: Home
+      link: /
+      icon: ss-home
+    - label: About me
+      link: /about/me/
+      icon: ss-heart
+    - label: All articles
+      link: /blog/
+      icon: ss-notebook

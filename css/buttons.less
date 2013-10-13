@@ -1,30 +1,75 @@
-.btn {
-    border: 1px solid #ccc;
-    color: #222;
-    .rounded(3px);
-    padding: 5px 10px;
-    font-size: 0.6em;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.2em;
+.button-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        padding: 0;
+        margin: 0;
+        margin: 0 0 0.5em;
+    }
+
+    .button {
+        display: block;
+    }
+}
+
+.button-bar-horizontal {
+    display: table;
+    width: 100%;
+    margin: 0 0 0 -0.2em;
+
+    > li {
+        display: table-cell;
+        padding: 0 0 0 0.2em;
+    }
+    .button {
+        margin: 0;
+    }
+}
+
+.button {
+    @button-primary-background: @color-base;
+    @button-background: fade(black, 10%);
+
+    .rounded(4px);
+    .box-sizing(border-box);
+    .transition(0.2s);
+    display: inline-block;
+    background: @button-background;
+    padding: 0.5em 1em;
+    line-height: 1.2;
+    font-weight: 400;
 
     &:hover {
+        .transition(0.2s);
+        text-decoration: none !important;
+        background: fade(black, 12%);
         cursor: pointer;
     }
 
     &:active {
-        .transition(0.05s);
+        background: fade(black, 20%);
     }
-}
 
-.btn-inverted {
-    border-color: fade(white, 70%);
-    color: fade(white, 90%);
+    .icon {
+        margin-right: 0.2em;
+        position: relative;
+        top: 0.1em;
+        font-size: 1em;
+    }
 
-    &:active {
-        color: fade(black, 60%);
-        background: fade(white, 50%);
-        border-color: fade(white, 50%);
-        text-shadow: none;
+    &.button-primary {
+        background: @button-primary-background;
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+            background: darken(@button-primary-background, 10%);
+        }
+    }
+
+    &.button-small {
+        font-size: 0.8em;
     }
 }
