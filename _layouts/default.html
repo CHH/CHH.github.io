@@ -181,21 +181,26 @@
                     });
                 });
 
+                /*
                 $(function() {
                     var scrollPosition = sessionStorage.getItem('scrollPosition');
-                    if (scrollPosition !== null) {
+                    if (document.location.href === sessionStorage.getItem('lastPage') && scrollPosition !== null) {
                         $(".main-wrapper").scrollTop(scrollPosition);
+                    } else {
+                        sessionStorage.setItem('scrollPosition', null);
                     }
+
+                    sessionStorage.setItem('lastPage', document.location.href);
 
                     $(document).unload(function() {
                         sessionStorage.setItem('scrollPosition', null);
                     });
 
                     $(".main-wrapper").scroll(debounce(function() {
-                        console.log("saving scroll position")
                         sessionStorage.setItem('scrollPosition', $(".main-wrapper").scrollTop());
                     }, 200));
                 });
+                */
             })();
         </script>
     </body>
