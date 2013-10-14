@@ -170,6 +170,27 @@
                         $("body").removeClass("reveal-sidebar");
                     });
                 });
+
+                $(function() {
+                    var scrollPosition = sessionStorage.getItem('scrollPosition');
+                    if (scrollPosition !== null) {
+                        $(".main-wrapper").scrollTop(scrollPosition);
+                    }
+
+                    $(document).unload(function() {
+                        sessionStorage.setItem('scrollPosition', null);
+                    });
+
+                    (function() {
+                        var timeout;
+                        $(".main-wrapper").scroll(function(ev) {
+                            clearTimeout(timeout);
+                            timeout = setTimeout(function() {
+                                sessionStorage.setItem('scrollPosition', $(".main-wrapper").scrollTop());
+                            }, 200);
+                        });
+                    })();
+                });
             })();
         </script>
     </body>
