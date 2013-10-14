@@ -1,4 +1,42 @@
 // Blog
+.post-list {
+    .post-preview {
+        margin-bottom: 2em;
+
+        .post-header {}
+
+        .post-title {
+            margin: 0 0 10px;
+        }
+
+        .post-date {
+            margin: 0 0 10px 0;
+            color: #aaa;
+            font-size: 0.8em;
+        }
+
+        .post-excerpt {
+            line-height: 1.4;
+            margin: 0;
+            > p {
+                margin: 0 0 10px;
+            }
+        }
+
+        .post-footer {
+            .continue {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+.post-list-compact {
+    .post-preview {
+        margin-bottom: 1em;
+    }
+}
+
 .post {
     .post-intro {
         line-height: 1.4;
@@ -10,20 +48,18 @@
     }
 
     .post-header {
-        margin: 40px 0;
         text-align: center;
+
+        > .post-title {
+            > a {
+                color: #222;
+            }
+        }
     }
 
     .post-info {
-        margin: 10px 0 40px;
-        color: @color-text-faded;
-        font-size: 18px;
-    }
-
-    .post-title {
         margin: 0;
-        font-weight: 300;
-        font-size: 42px;
+        color: @color-text-faded;
     }
 
     .post-content {
@@ -31,22 +67,16 @@
             list-style: disc;
             margin: 0 0 1em;
         }
+
+        margin-bottom: 2em;
+    }
+}
+
+.blog-post-view {
+    .related-articles {
+        margin: 0 0 2em;
     }
 
-    .post-footer {
-        margin: 40px 0 0;
-
-        .related-articles {
-            > h1 {
-            }
-
-            ul {
-                list-style: disc;
-            }
-        }
-
-        .comments {
-            margin: 2em 0 0;
-        }
+    .comments {
     }
 }

@@ -1,0 +1,22 @@
+{
+  "name": "Homepage2",
+  "version": "0.0.0",
+  "homepage": "https://github.com/CHH/christophh.net",
+  "authors": [
+    "Christoph Hochstrasser <christoph.hochstrasser@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fastclick": "~0.6.10",
+    "filament-sticky": "~0.1.2",
+    "less-elements": "*"
+  }
+}

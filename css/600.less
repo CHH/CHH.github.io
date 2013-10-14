@@ -2,45 +2,28 @@ body {
     font-size: 21px;
 }
 
-.site-header,
-.main-content,
-.site-footer {
-    padding-left: 5em;
-    padding-right: 5em;
+body.reveal-sidebar {
+    #page-top-bar {
+        .transform(translate(50%, 0));
+    }
+}
+
+#nav-main {
+    margin: 0 -2.333333333em;
+
+    .nav-item {
+        > a {
+            padding-left: 2.333333333em;
+            padding-right: 2.333333333em;
+        }
+    }
 }
 
 .site-header {
-    min-height: 700px;
+    width: 50%;
 
-    .page-wrapper {
-    }
-
-    .avatar {
-        float: left;
-        margin-top: 0px;
-        margin-right: 30px;
-    }
-
-    .tagline {
-        text-align: left;
-        font-size: 28px;
-    }
-
-    .about-me {
-    }
-}
-
-.site-footer {
-    .footer-nav {
-        > ul {
-            .clearfix;
-            margin: 0 0 0 -20px;
-        }
-
-        .nav-item {
-            float: left;
-            margin: 0 0 0 20px;
-        }
+    .bg-image {
+        display: block;
     }
 }
 

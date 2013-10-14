@@ -1,43 +1,15 @@
 ---
 layout: default
-title: Start
+title: Home
 ---
 <div id="homepage">
-    <section id="manifesto">
-        <header>
-            <h2 class="headline-decorated">I believe</h2>
-        </header>
-
-        <ol>
-            <li>
-                <strong>Web Designers should be able to code.</strong> Being able to code
-                lets Designers prototype ideas longer &mdash; which leads to better thought
-                out ideas, and thus to better products.</li>
-            <li>
-                <strong>Designing in the browser is superior to designing in Photoshop.</strong>
-                A <em>drawing</em> of a web site is never able to communicate the full 
-                breadth of possible interactions, and is a far cry from the result.</li>
-            <li>
-                Tell people <strong>what</strong> to do and <strong>why</strong>
-                &mdash;not <strong>how</strong>.</li>
-            <li>
-                <strong>Involving engineering as early in the design process as possible
-                yields the best results.</strong> Programmers often have
-                valuable feedback, and often are as &#8220;design-minded&#8221; as
-                people who call themselves Designers.</li>
-            <li>
-                <strong>Project managers are not able to tell the future.</strong>
-                Development processes should deal well with changing requirements.</li>
-        </ol>
-    </section>
-
     {% if site.posts != empty %}
     <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
-        <header>
+        <header class="page-title">
             <h1>Blog Posts</h1>
         </header>
 
-        <div itemprop="blogPosts">
+        <div itemprop="blogPosts" class="post-list">
             {% for post in site.posts limit:6 %}
             <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview">
                 <header class="post-header">

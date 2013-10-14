@@ -34,6 +34,7 @@
         <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/github.min.css">
 
         <link rel="stylesheet" href="/css/screen.css">
+        <link rel="stylesheet" href="/bower_components/filament-sticky/fixedsticky.css">
 
         <link rel="apple-touch-icon-precomposed" type="image/png" href="/images/apple-touch-icon-precomposed.png">
         <link rel="icon" type="image/png" href="/images/favicon_16.png">
@@ -45,12 +46,25 @@
         <script type="text/javascript" src="//use.typekit.net/eaa7vsc.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="/bower_components/filament-sticky/fixedsticky.js"></script>
+        <script type="text/javascript" src="/bower_components/fastclick/lib/fastclick.js"></script>
         <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 
         {% include layout/ga.html %}
     </head>
 
     <body>
+        <div id="page-top-bar" class="fixedsticky">
+            <a id="reveal-sidebar">
+                <i class="ss-icon ss-columns"></i>
+            </a>
+
+            <a href="/">Christoph Hochstrasser</a>
+        </div>
+
         <header itemscope itemtype="http://schema.org/Person" role="banner" class="site-header">
             <div class="bg-image"></div>
             <div class="header-wrapper">
@@ -64,53 +78,63 @@
                         </h1>
                     </div>
 
-                    <div class="about-me">
+                    <nav id="nav-main">
+                        {% assign url = page.url ? page.url : '/' %}
                         <ul>
-                            <li>I’m an expert PHP developer, throwing Go, JavaScript and Shell scripts into the mix sometimes</li>
-                            <li>I <strong>design</strong> and <strong>build</strong> User Interfaces with a diverse set of devices in mind</li>
-                            <li>I <strong>manage</strong> projects using techniques of SCRUM, Kanban and Xtreme Programming</li>
-                            <li>I improve software development by <strong>creating</strong> and <strong>contributing</strong> to
-                                <a href="https://github.com/CHH">Open Source Projects</a>
+                        {% for link in site.navigation %}
+                            {% assign active = nil %}
+                            {% if url == link.link or page.layout == link.layout %}
+                                {% assign active = 'active' %}
+                            {% endif %}
+                            <li class="nav-item {{ active }}">
+                                <a href="{{ link.link }}">
+                                    {% if link.icon %}
+                                    <i class="icon ss-icon {{ link.icon }}"></i>
+                                    {% endif %}
+                                    {{ link.label }}
+                                </a>
                             </li>
+                        {% endfor %}
                         </ul>
-                    </div>
+                    </nav>
+
+                    <footer role="contentinfo" class="site-footer">
+                        <p class="copyright">
+                            &copy;2011–2013 Christoph Hochstrasser
+                        </p>
+                        <nav class="footer-nav">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="/imprint">Imprint</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://github.com/CHH">Github</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://twitter.com/hochchristoph">Follow me on Twitter</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()">Follow this site
+                                </li>
+                                <li class="nav-item">
+                                    <a href="mailto:hello@christophh.net">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </footer>
                 </div>
             </div>
 
             <div class="buttons">
-                <a class="btn btn-follow btn-inverted" onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()">Follow</a>
+                <a class="button button-follow button-small" onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()">
+                    <i class="icon ss-icon ss-plus"></i> Follow</a>
             </div>
         </header>
 
-        <div class="page-wrapper">
+        <div class="page-wrapper main-wrapper">
             <section class="main-content">
                 {{ content }}
             </section>
-
-            <footer role="contentinfo" class="site-footer">
-                <p class="copyright">
-                    &copy;2011–2013 Christoph Hochstrasser
-                </p>
-                <nav class="footer-nav">
-                    <ul>
-                        <li class="nav-item">
-                            <a href="/imprint">Imprint</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://github.com/CHH">Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://twitter.com/hochchristoph">Follow me on Twitter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()">Follow this site
-                        </li>
-                        <li class="nav-item">
-                            <a href="mailto:hello@christophh.net">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
         </div>
 
         <script type="text/javascript">
@@ -135,6 +159,16 @@
                         $('.site-header .bg-image').addClass('loaded');
                     };
                     img.src = "/images/" + image;
+
+                    $("#page-top-bar").fixedsticky();
+                    $("#reveal-sidebar").on('click', function(ev) {
+                        ev.preventDefault();
+                        ev.stopImmediatePropagation();
+                        $("body").toggleClass("reveal-sidebar");
+                    });
+                    $(".main-wrapper").on('click', function(ev) {
+                        $("body").removeClass("reveal-sidebar");
+                    });
                 });
             })();
         </script>
