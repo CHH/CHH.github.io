@@ -149,6 +149,16 @@
                     return Math.floor(Math.random() * (max - min + 1) + min);
                 }
 
+                function debounce(fn, msec) {
+                    return function() {
+                        if (typeof this.timeout !== "undefined") {
+                            clearTimeout(this.timeout);
+                        }
+
+                        this.timeout = setTimeout(fn, msec);
+                    };
+                }
+
                 $(function() {
                     var image = images[getRandomInt(0, images.length - 1)];
                     var img = new Image();
@@ -181,15 +191,10 @@
                         sessionStorage.setItem('scrollPosition', null);
                     });
 
-                    (function() {
-                        var timeout;
-                        $(".main-wrapper").scroll(function(ev) {
-                            clearTimeout(timeout);
-                            timeout = setTimeout(function() {
-                                sessionStorage.setItem('scrollPosition', $(".main-wrapper").scrollTop());
-                            }, 200);
-                        });
-                    })();
+                    $(".main-wrapper").scroll(debounce(function() {
+                        console.log("saving scroll position")
+                        sessionStorage.setItem('scrollPosition', $(".main-wrapper").scrollTop());
+                    }, 200));
                 });
             })();
         </script>
