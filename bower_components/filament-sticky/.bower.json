@@ -1,0 +1,26 @@
+{
+  "name": "filament-sticky",
+  "version": "0.1.2",
+  "main": [
+    "fixedsticky.js",
+    "fixedsticky.css"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.1 <2.0.0",
+    "filament-fixed": ">=0.1.1"
+  },
+  "homepage": "https://github.com/filamentgroup/fixed-sticky",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.2",
+    "commit": "24b9d219343936cb7de87eb6c60afe9b8c26b54b"
+  },
+  "_source": "git://github.com/filamentgroup/fixed-sticky.git",
+  "_target": "~0.1.2",
+  "_originalSource": "filament-sticky",
+  "_direct": true
+}
