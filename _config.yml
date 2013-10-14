@@ -19,6 +19,7 @@ safe: true
 # lsi: true
 
 title: "Christoph Hochstrasser, Web Creator"
+homepage_post_count: 6
 
 disqus:
     shortname: "christophhochstrasser"

@@ -5,12 +5,8 @@ title: Home
 <div id="homepage">
     {% if site.posts != empty %}
     <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
-        <header class="page-title">
-            <h1>Blog Posts</h1>
-        </header>
-
         <div itemprop="blogPosts" class="post-list">
-            {% for post in site.posts limit:6 %}
+            {% for post in site.posts limit:site.homepage_post_count %}
             <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview">
                 <header class="post-header">
                     <meta itemprop="url" content="{{ post.url }}" />
