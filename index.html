@@ -3,11 +3,11 @@ layout: default
 title: Home
 ---
 <div id="homepage">
-    {% if site.posts != empty %}
+    {% if paginator.posts != empty %}
     <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
         <div itemprop="blogPosts" class="post-list">
-            {% for post in site.posts limit:site.homepage_post_count %}
-            <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview">
+            {% for post in paginator.posts %}
+            <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview {% if post.short %} short {% endif %}">
                 <header class="post-header">
                     <meta itemprop="url" content="{{ post.url }}" />
                     <meta itemprop="datePublished" content="{{ post.date }}" />
@@ -24,7 +24,9 @@ title: Home
                 </header>
 
                 <div class="post-excerpt" itemprop="description">
-                {% if post.custom_excerpt %}
+                {% if post.short %}
+                    {{ post.content }}
+                {% elsif post.custom_excerpt %}
                     {{ post.custom_excerpt | markdownify }}
                 {% else %}
                     {{ post.excerpt | markdownify }}
@@ -32,16 +34,28 @@ title: Home
                 </div>
 
                 <footer class="post-footer">
+                    {% if post.short != true %}
                     <a class="continue" href="{{ post.url }}">
                         Continue reading »
                     </a>
+                    {% endif %}
                 </footer>
             </article>
             {% endfor %}
         </div>
 
         <footer>
-            <a href="/blog" class="show-all-posts">See all posts &rarr;</a>
+            <div class="pagination">
+                {% if paginator.next_page_path %}
+                <a class="next" href="{{ paginator.next_page_path }}">« Older</a>
+                {% endif %}
+
+                {% if paginator.previous_page_path %}
+                <a class="prev" href="{{ paginator.previous_page_path }}">Newer »</a>
+                {% endif %}
+            </div>
+
+            <!--<a href="/blog" class="show-all-posts">See all posts &rarr;</a>-->
         </footer>
     </section>
     {% endif %}

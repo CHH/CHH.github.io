@@ -20,6 +20,8 @@ safe: true
 
 title: "Christoph Hochstrasser"
 homepage_post_count: 6
+paginate: 5
+markdown: redcarpet
 
 disqus:
     shortname: "christophhochstrasser"
