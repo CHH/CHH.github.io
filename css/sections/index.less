@@ -19,15 +19,25 @@
 #blog_preview {
     margin: 2em 0 0;
 
-
     .show-all-posts {
     }
 
     > footer {
-        border: 3px double #ddd;
-        border-left: none; border-right: none;
+        border-top: 1px solid #ddd;
         text-align: center;
-        margin: 0 2em;
-        padding: 0.5em 1em;
+        margin: 0 -1em;
+        padding: 0.5em 0em;
+    }
+
+    .pagination {
+        .clearfix;
+
+        .next {
+            float: left;
+        }
+
+        .prev {
+            float: right;
+        }
     }
 }
