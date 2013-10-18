@@ -18,7 +18,7 @@ ErrorLogHandler:
         }
     }
 
-Then in your `config_prod.yml` and `config_dev.yml` change type of the Monolog
+Then in your `config_prod.yml` and `config_dev.yml` change the type of the Monolog
 handlers to `error_log` and you are all set. For example, the Monolog
 config in `config_dev.yml` would look like this:
 
