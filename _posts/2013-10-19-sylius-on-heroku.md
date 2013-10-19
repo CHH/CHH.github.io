@@ -4,7 +4,7 @@ layout: post
 ---
 [Sylius](http://sylius.org) is a modern ecommerce solution for PHP,
 built on Symfony 2. In this post I will show you how simple it's to
-use [Heroku](http://heroku.com) to setup a free installation of Sylius.
+use [Heroku](http://heroku.com) to setup your very own shop with Sylius.
 
 # What you need
 
@@ -15,9 +15,15 @@ use [Heroku](http://heroku.com) to setup a free installation of Sylius.
 
 # Getting setup
 
-First setup a Sylius Standard Edition project with Composer:
+<p>
+    <div class="info-box">
+        TL;DR: Check out the <a href="https://github.com/CHH/Sylius-Heroku">Github repo</a>.
+    </div>
+</p>
 
-    $ composer create-project sylius/sylius-standard -s dev myshop
+First setup a Sylius project with Composer:
+
+    $ composer create-project sylius/sylius -s dev myshop
 
 Grab some coffee. This takes a while. When asked about the database
 driver enter `pdo_pgsql`, and when asked about the mailer host enter
@@ -28,6 +34,9 @@ Now create a free Heroku Account and create an app with the `heroku`
 tool:
 
     $ heroku create --buildpack git://github.com/CHH/heroku-buildpack-php
+
+_(If you are located in Europe add `--region eu` to the latter command
+to get a speedier setup)_
 
 To run Sylius we need a database and a mail server, so let's add the
 Heroku Postgres and the Mandrill addons to our app:
@@ -130,7 +139,7 @@ the composer.json stored in `extra.heroku`.
 }
 ```
 
-We are almost done now! Now we need to deploy the code to Heroku.
+We are almost done! Now we need to deploy the code to Heroku.
 Deploying to Heroku is done with a `git push` of the master branch to the `heroku` remote.
 
     $ git push heroku master

@@ -250,10 +250,18 @@ body.reveal-sidebar {
 }
 
 .info-box {
-    .font-headline;
-    background: @color-base;
-    color: white;
+    background: darken(@color-base, 5%);
+    color: fade(white, 90%);
     padding: 10px;
+    font-weight: 400;
+
+    a {
+        color: fade(white, 90%);
+        text-decoration: underline;
+        &:hover {
+            color: white;
+        }
+    }
 }
 
 .post-archive {
