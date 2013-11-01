@@ -3,10 +3,10 @@ title: Running Sylius on Heroku
 layout: post
 ---
 [Sylius](http://sylius.org) is a modern ecommerce solution for PHP,
-built on Symfony 2. In this post I will show you how simple it's to
-use [Heroku](http://heroku.com) to setup your very own shop with Sylius.
+built on Symfony 2. In this post we will explore together how simple it's to
+use [Heroku](http://heroku.com) to setup your own shop with Sylius.
 
-# What you need
+# What we need
 
 * At least PHP 5.3.3
 * [Composer](http://getcomposer.org)
