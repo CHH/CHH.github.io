@@ -81,9 +81,8 @@ h2 {
 
 h3 {
     font-size: 100%;
-    font-weight: 400;
-    color: #888;
-    color: @color-complement1;
+    font-weight: bold;
+    // color: @color-complement1;
 }
 
 p {
@@ -129,4 +128,19 @@ ol {
 
 strong {
     font-weight: 500;
+}
+
+blockquote {
+    border-left: 0.2em solid lighten(@color-complement1, 20%);
+    padding-left: 1.8em;
+    margin: 0 0 1em;
+
+    p {
+        color: @color-complement1;
+        font-size: 1.2em;
+        font-family: Adelle, Georgia, serif;
+    }
+
+    > i {
+    }
 }

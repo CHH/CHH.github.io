@@ -12,6 +12,7 @@ exclude:
     - images/favicons.sketch/
     - Gemfile
     - Gemfile.lock
+    - vendor/
 
 include: [.htaccess]
 safe: true
