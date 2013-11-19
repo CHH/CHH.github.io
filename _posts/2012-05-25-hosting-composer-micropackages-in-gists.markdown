@@ -11,7 +11,7 @@ custom_excerpt: >
     to [Composer](http://getcomposer.org) it works! So here is how to do
     it.
 ---
-Sometimes there're simply _small_ bits of code which you create and then
+Sometimes there're simply small bits of code which you create and then
 want to use in another project too. The bits are mostly too small
 to run a real project for it and the code is so simple, it doesn't 
 need much maintenance.

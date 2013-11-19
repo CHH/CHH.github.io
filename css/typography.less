@@ -14,15 +14,14 @@
 }
 
 .headline-decorated {
-    border: 3px double #ddd;
-    border-left: none; border-right: none;
-    margin-right: 2em;
-    margin-left: 2em;
-    padding: 0.5rem;
-    text-align: center;
-    font-style: italic;
-    font-weight: 300;
-    color: #555;
+    .font-headline;
+    border: none;
+    border-top: 0.2em solid darken(@color-base, 10%);
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0.5em 0 0em;
+    font-weight: 500;
+    margin: 1em 0 1em;
 }
 
 body {
@@ -51,15 +50,34 @@ a {
 
 a:link {
     text-decoration: none;
+    border-bottom: 1px solid @color-text-faded;
 
     &:hover {
-        text-decoration: underline;
+        border-color: fade(black, 30%);
+        text-decoration: none;
     }
-    &:visited {}
+    &:visited {
+        border-color: fade(black, 10%);
+    }
+}
+
+&.inverse-links {
+    a {
+        color: white;
+        border-color: fade(white, 20%);
+
+        &:hover {
+            border-color: fade(white, 40%);
+        }
+
+        &:visited {
+            border-color: fade(white, 10%);
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 2em 0 1em;
+    margin: 2em 0 0.5em;
 }
 
 header {

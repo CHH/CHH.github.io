@@ -22,11 +22,7 @@ layout: default
             </div>
         </header>
 
-        {% if page.custom_excerpt %}
-        <section class="post-intro" itemprop="description">
-            {{ page.custom_excerpt | markdownify }}
-        </section>
-        {% elsif page.excerpt %}
+        {% if page.excerpt %}
         <meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html }}">
         {% endif %}
 

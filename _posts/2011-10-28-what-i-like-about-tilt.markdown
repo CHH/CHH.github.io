@@ -7,9 +7,9 @@ custom_excerpt: >
     Tilt is a templating library for Ruby. It's kind of an 
     aggregator for templating engines &mdash; and I like it.
 ---
-[Tilt](https://github.com/rtomayko/tilt) is a templating *library* for **Ruby**. It's not an 
+[Tilt](https://github.com/rtomayko/tilt) is a templating library for **Ruby**. It's not an 
 engine, but kind of an aggregator for templating engines and provides
-adapters to Erubis, Markdown and even for LESS and SASS. It's kind of
+adapters to _Erubis_, _Markdown_ and even for _LESS_ and _SASS_. It's kind of
 a "Meta" Templating Engine. Here is what I like about it.
 
 ## Democratizes Writing of View Templates

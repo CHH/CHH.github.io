@@ -12,7 +12,7 @@ custom_excerpt:
 
 For the people who read PHP's `NEWS` file, it's no surprise &mdash; but
 for all who don't here's is probably one of the biggest features of PHP
-5\.4: *Closure Object Support is back*. For me it's something I missed
+5\.4: Closure Object Support is back. For me it's something I missed
 the most, when Closures were introduced in PHP 5.3. So I'm
 very happy, that's finally here (or back).
 

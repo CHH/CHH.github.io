@@ -28,23 +28,26 @@
     }
 }
 
-.button {
-    @button-primary-background: @color-base;
+.button,
+a.button {
+    @button-primary: lighten(@color-link, 5%);
     @button-background: fade(black, 10%);
+    @button-primary-background: fade(black, 80%);
 
     .rounded(4px);
     .box-sizing(border-box);
     .transition(0.2s);
+    color: @button-primary;
     display: inline-block;
-    background: @button-background;
     padding: 0.5em 1em;
     line-height: 1.2;
     font-weight: 400;
+    border: 1px solid;
 
     &:hover {
         .transition(0.2s);
         text-decoration: none !important;
-        background: fade(black, 12%);
+        background: fade(black, 5%);
         cursor: pointer;
     }
 

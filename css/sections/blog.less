@@ -3,7 +3,8 @@
     .post-preview {
         margin-bottom: 2em;
 
-        .post-header {}
+        .post-header {
+        }
 
         .post-title {
             margin: 0 0 10px;
@@ -38,13 +39,19 @@
 }
 
 .post {
-    .post-intro {
-        line-height: 1.4;
-        font-size: 24px;
-        color: @color-text-faded;
+    .post-content p:first-child {
+        font-size: 1.1em;
+        font-weight: 400;
         margin: 0 0 1em 0;
-        padding: 0 0 0;
-        border-bottom: 3px double #ddd;
+
+        em {
+            //text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 0.9em;
+            background: fade(black, 5%);
+        }
     }
 
     .post-header {
@@ -53,6 +60,7 @@
         > .post-title {
             > a {
                 color: #222;
+                border: none;
             }
         }
     }

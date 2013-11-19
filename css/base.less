@@ -95,6 +95,7 @@ hr {
             font-size: 1em;
             display: block;
             padding: 0.5em 2em;
+            border: none;
 
             &:hover {
                 background: fade(black, 40%);
@@ -161,6 +162,15 @@ body.reveal-sidebar {
         position: absolute;
         top: 10px;
         right: 10px;
+
+        .button-follow {
+            color: white;
+            border-color: fade(white, 30%);
+
+            &:hover {
+                border-color: fade(white, 60%);
+            }
+        }
     }
 
     .bg-image {
@@ -203,7 +213,7 @@ body.reveal-sidebar {
         font-size: 1em;
     }
 
-    a { color: white; }
+    .inverse-links;
 
     .about-me {
         strong {
