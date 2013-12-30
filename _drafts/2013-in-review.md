@@ -6,13 +6,44 @@ With 2013 nearly at its end, let's look back.
 
 # Life
 
-# Blog
+# Open Source
 
-2013 was a good year for my blog, all in all.
+Early 2013 I've contributed my [Stack/UrlMap][] middleware component to
+the [Stack][] project and became a member of the organization. Besides
+that I was not really active in this project due to personal reasons,
+which I plan to improve in 2014.
 
+[Stack/UrlMap]: https://github.com/stackphp/url-map
+[Stack]: http://stackphp.com
+
+In mid 2013 I've launched my take on a [PHP Buildpack for Heroku][] which
+was has **74** stars and **46** forks at the time of this writing,
+became the default PHP buildpack in [Dokku](https://github.com/progrium/dokku) and
+was even recognized by Heroku. Not a bad start.
+
+Thank you Peter van Hardenberg for the lovely chats and the Heroku swag pack!
+
+My most popular project of all time is still [php-build][] with **283**
+stars and **38** forks, followed by [phpenv][] with **225** stars.
+
+[php-build]: https://github.com/CHH/php-build
+[phpenv]: https://github.com/CHH/phpenv
+[PHP Buildpack for Heroku]: https://github.com/CHH/heroku-buildpack-php
+
+# Web Site
+
+In 2013 I made two major iterations on the design of the site. The
+site is now responsive and the articles are front and center. I've also
+laid the foundations for writing shorter and more frequent posts.
+
+Some numbers:
+
+* **21355** visits with **16401** unique visitors. This is **30\.11%** less[^1] than in 2012. 
+* Returning visitors is up to **23.4%** from previously **10.9%**
+* Average visit duration did improve about 300%
+* Average Bounce rate improved to about 33% instead of 91%[^2]
 * **7** posts published
 * **3** draft posts still in the queue
-* **21355** visits with **16401** unique visitors. This is **30\.11%** less[^1] than in 2012. 
 
 The most popular posts of 2013:
 
@@ -20,4 +51,28 @@ The most popular posts of 2013:
 2. [Closure Object Binding in PHP 5.4](/2011/10/26/closure-object-binding-in-php-54/) with 1727 visits
 3. [PHP Unix Programming](/2012/02/01/php-unix-programming/) with 1705 visits
 
-[^1]: This is largely because in 2013 I've stopped syndicating my posts to Hacker News, because the generated traffic isn't worth much. I've observed much higher bounce rate and less visit duration for vistors coming from HackerNews.
+In browsers Chrome and Firefox switched positions, and Safari gained
+1\.41%. This is in line with the decreasing market share of
+Firefox overall. It's sad, but Mozilla needs to fix their browser
+to be a worthy contender to Chrome.
+
+|#|Browser|2013|2012|
+|-|:------|---:|---:|
+|1.|Chrome|55.37%|26.44%|
+|2.|Firefox|31.44%|59.87%|
+|3.|Safari|6.31%|4.90%|
+
+Operating System wise Windows is still dominating but both Mac and Linux
+support increased. Surprisinlgly Linux took the 2nd place from the Mac
+this year. I didn't see this coming, because many programmers I know
+continue to switch from Linux to Mac.
+
+|#|Operating System|2013|2012|
+|-|:---------------|---:|---:|
+|1.|Windows|57.71%|68.54%|
+|2.|Linux|18.34%|10.22%|
+|3.|Mac|17.27%|12.60%|
+|4.|iOS|3.44%|3.07%|
+
+[^1]: This is largely because in 2013 I've stopped syndicating my posts to Hacker News, because the generated traffic isn't worthwile. I've observed much higher bounce rate and less visit duration for vistors coming from Hacker News.
+[^2]: This is the average of 2013. I deployed a fix to record bounce rates more accurately in mid 2013 and since then it averages around 8-15%. See [this post](http://drawingablank.me/blog/fix-your-bounce-rate.html) for more info.
