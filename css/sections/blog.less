@@ -39,7 +39,7 @@
 }
 
 .post {
-    .post-content p:first-child {
+    .post-content > p:first-child {
         font-size: 1.1em;
         font-weight: 400;
         margin: 0 0 1em 0;
@@ -77,6 +77,14 @@
         }
 
         margin-bottom: 2em;
+    }
+
+    .footnotes {
+        border-top: 1px solid @color-text-faded;
+        padding-top: 1em;
+        margin-top: 4em;
+        font-size: 0.8em;
+        color: fade(black, 50%);
     }
 }
 

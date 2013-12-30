@@ -144,6 +144,15 @@ ol {
     }
 }
 
+sup {
+    vertical-align: super;
+    font-size: 0.8em;
+
+    .footnote {
+        border: none;
+    }
+}
+
 strong {
     font-weight: 500;
 }
@@ -160,5 +169,20 @@ blockquote {
     }
 
     > i {
+    }
+}
+
+figure {
+    margin: 0 -2em 1em;
+    background: #efefef;
+
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: 0.8em;
+        color: fade(black, 60%);
+        padding: 0 2.5em 1em;
     }
 }

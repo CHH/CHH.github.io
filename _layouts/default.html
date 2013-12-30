@@ -28,6 +28,14 @@
         <link rel="alternate" type="application/atom+xml"
               title="Christoph Hochstrasser Blog Feed"
               href="/atom.xml">
+        <link rel="apple-touch-icon-precomposed" type="image/png" href="/images/apple-touch-icon-precomposed.png">
+        <link rel="icon" type="image/png" href="/images/favicon_16.png">
+
+        <script type="text/javascript" src="//use.typekit.net/eaa7vsc.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+        <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+        <script type="text/javascript" src="/js/application-min.js"></script>
 
         <link rel="stylesheet" href="/fonts/symbolset-social/ss-social.css">
         <link rel="stylesheet" href="/fonts/symbolset-standard/ss-standard.css">
@@ -36,22 +44,9 @@
         <link rel="stylesheet" href="/css/screen.css">
         <link rel="stylesheet" href="/bower_components/filament-sticky/fixedsticky.css">
 
-        <link rel="apple-touch-icon-precomposed" type="image/png" href="/images/apple-touch-icon-precomposed.png">
-        <link rel="icon" type="image/png" href="/images/favicon_16.png">
-
         {% for link in page.stylesheet_links %}
         <link rel="stylesheet" href="{{ link }}">
         {% endfor %}
-
-        <script type="text/javascript" src="//use.typekit.net/eaa7vsc.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
-        <!--
-        <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
-        -->
-        <script type="text/javascript" src="/bower_components/filament-sticky/fixedsticky.js"></script>
-        <script type="text/javascript" src="/bower_components/fastclick/lib/fastclick.js"></script>
-        <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 
         {% include layout/ga.html %}
     </head>

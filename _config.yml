@@ -1,5 +1,4 @@
 permalink: pretty
-lessc: /usr/local/bin/lessc
 exclude:
     - Vagrantfile
     - Rakefile.rb
@@ -12,7 +11,7 @@ exclude:
     - images/favicons.sketch/
     - Gemfile
     - Gemfile.lock
-    - vendor/
+    - vendor
 
 include: [.htaccess]
 safe: true
@@ -22,7 +21,12 @@ safe: true
 title: "Christoph Hochstrasser"
 homepage_post_count: 6
 paginate: 5
-markdown: redcarpet
+
+markdown: kramdown
+
+kramdown:
+    input: GFM
+    hard_wrap: false
 
 disqus:
     shortname: "christophhochstrasser"
