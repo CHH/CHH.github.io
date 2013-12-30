@@ -1,16 +1,16 @@
 
 .font-headline() {
-    font-family: adelle, sans-serif;
+    font-family: @font-headline;
     line-height: 1.2;
 }
 
 .font-body() {
-    font-family: "adelle-sans", sans-serif;
+    font-family: @font-body;
     line-height: 1.5;
 }
 
 .font-monospace() {
-    font-family: "source-code-pro", monospace;
+    font-family: @font-code;
 }
 
 .headline-decorated {
@@ -117,7 +117,11 @@ pre {
 }
 
 code {
+    .rounded(2px);
+    padding: 0 0.2em;
     font-size: 0.9em;
+    color: fade(black, 80%);
+    background: fade(@color-base, 10%);
 }
 
 ul {
@@ -146,9 +150,9 @@ ol {
 
 sup {
     vertical-align: super;
-    font-size: 0.8em;
+    font-size: 0.6em;
 
-    .footnote {
+    a.footnote {
         border: none;
     }
 }
@@ -169,6 +173,27 @@ blockquote {
     }
 
     > i {
+    }
+}
+
+table {
+    margin: 0 0 1em;
+    background: fade(black, 2%);
+    border-collapse: collapse;
+
+    th {
+        border-bottom: 3px double fade(black, 5%);
+        font-weight: 300;
+        color: fade(black, 50%);
+    }
+
+    td {
+        font-weight: 400;
+        border-bottom: 1px solid fade(black, 3%);
+    }
+
+    td, th {
+        padding: 0.2em 0.8em;
     }
 }
 

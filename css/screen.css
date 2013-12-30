@@ -130,7 +130,7 @@ a:visited {
   border-bottom-color: rgba(0, 0, 0, 0.1);
 }
 .headline-decorated {
-  font-family: adelle, sans-serif;
+  font-family: "adelle", sans-serif;
   line-height: 1.2;
   border: none;
   border-top: 0.2em solid #0edf49;
@@ -220,7 +220,13 @@ pre > code {
   font-size: 0.8em;
 }
 code {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 0.2em;
   font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(46, 242, 101, 0.1);
 }
 ul {
   list-style: disc;
@@ -244,9 +250,9 @@ ol li {
 }
 sup {
   vertical-align: super;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
-sup .footnote {
+sup a.footnote {
   border: none;
 }
 strong {
@@ -261,6 +267,24 @@ blockquote p {
   color: #ff307f;
   font-size: 1.2em;
   font-family: Adelle, Georgia, serif;
+}
+table {
+  margin: 0 0 1em;
+  background: rgba(0, 0, 0, 0.02);
+  border-collapse: collapse;
+}
+table th {
+  border-bottom: 3px double rgba(0, 0, 0, 0.05);
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+table td {
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+table td,
+table th {
+  padding: 0.2em 0.8em;
 }
 figure {
   margin: 0 -2em 1em;
@@ -771,6 +795,13 @@ a.button.button-small {
   margin-top: 4em;
   font-size: 0.8em;
   color: rgba(0, 0, 0, 0.5);
+}
+.post .footnotes li:target {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background: rgba(255, 255, 0, 0.2);
 }
 .blog-post-view .related-articles {
   margin: 0 0 2em;
