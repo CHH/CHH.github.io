@@ -22,7 +22,7 @@ title: "Christoph Hochstrasser"
 homepage_post_count: 6
 paginate: 5
 
-markdown: kramdown
+markdown: redcarpet
 
 kramdown:
     input: GFM
