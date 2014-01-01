@@ -45,6 +45,8 @@ title: Home
         </div>
 
         <footer>
+            {% include email_signup.html %}
+
             <div class="pagination">
                 {% if paginator.next_page_path %}
                 <a class="next" href="{{ paginator.next_page_path }}">« Older Posts</a>

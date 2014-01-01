@@ -659,7 +659,9 @@ body.reveal-sidebar #page-top-bar {
   margin: 0;
 }
 .button,
-a.button {
+a.button,
+input[type=submit],
+button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -677,9 +679,12 @@ a.button {
   line-height: 1.2;
   font-weight: 400;
   border: 1px solid;
+  background: transparent;
 }
 .button:hover,
-a.button:hover {
+a.button:hover,
+input[type=submit]:hover,
+button:hover {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -689,37 +694,71 @@ a.button:hover {
   cursor: pointer;
 }
 .button:active,
-a.button:active {
+a.button:active,
+input[type=submit]:active,
+button:active {
   background: rgba(0, 0, 0, 0.2);
 }
 .button .icon,
-a.button .icon {
+a.button .icon,
+input[type=submit] .icon,
+button .icon {
   margin-right: 0.2em;
   position: relative;
   top: 0.1em;
   font-size: 1em;
 }
 .button.button-primary,
-a.button.button-primary {
+a.button.button-primary,
+input[type=submit].button-primary,
+button.button-primary {
   background: rgba(0, 0, 0, 0.8);
   color: white;
 }
 .button.button-primary:hover,
-a.button.button-primary:hover {
+a.button.button-primary:hover,
+input[type=submit].button-primary:hover,
+button.button-primary:hover {
   text-decoration: none;
   background: rgba(0, 0, 0, 0.8);
 }
 .button.button-small,
-a.button.button-small {
+a.button.button-small,
+input[type=submit].button-small,
+button.button-small {
   font-size: 0.8em;
+}
+form {
+  font-size: 0.8em;
+}
+form label {
+  display: block;
+}
+form input[type=text],
+form input[type=password],
+form textarea,
+form input[type=email] {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  font-size: 100%;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+form input[type=submit],
+form button {
+  font-size: 100%;
+  margin: 0;
 }
 #blog_preview {
   margin: 2em 0 0;
 }
-#blog_preview > footer {
-  border-top: 1px solid #ddd;
-  text-align: center;
+#blog_preview .pagination {
   margin: 0 -1em;
+  border-top: 1px solid #ddd;
   padding: 0.5em 0em;
 }
 #blog_preview .pagination:after {
@@ -806,6 +845,29 @@ a.button.button-small {
 .blog-post-view .related-articles {
   margin: 0 0 2em;
 }
+#mc_embed_signup {
+  border: 1px solid #ddd;
+  margin: 0 0 2em;
+  padding: 6px;
+}
+#mc-embedded-subscribe-form {
+  border: 1px solid #ddd;
+  padding: 2em;
+}
+#mc-embedded-subscribe-form .indicates-required {
+  color: rgba(0, 0, 0, 0.2);
+  margin: 0 0 1em;
+  font-size: 0.8em;
+}
+#mc-embedded-subscribe-form .asterisk {
+  color: red;
+}
+#mc-embedded-subscribe-form > h2 {
+  margin-top: 0;
+}
+.mc-field-group {
+  margin: 0 0 1em;
+}
 @media only screen and (min-width: 600px) {
   body {
     font-size: 18px;
@@ -877,7 +939,7 @@ a.button.button-small {
   .button-bar .button {
     margin: 0;
   }
-  #blog_preview > footer {
+  #blog_preview > footer .pagination {
     margin-left: -2em;
     margin-right: -2em;
   }

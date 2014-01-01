@@ -29,7 +29,9 @@
 }
 
 .button,
-a.button {
+a.button,
+input[type=submit],
+button {
     @button-primary: lighten(@color-link, 5%);
     @button-background: fade(black, 10%);
     @button-primary-background: fade(black, 80%);
@@ -43,6 +45,7 @@ a.button {
     line-height: 1.2;
     font-weight: 400;
     border: 1px solid;
+    background: transparent;
 
     &:hover {
         .transition(0.2s);

@@ -1,0 +1,29 @@
+.form-layout-side-by-side {
+    label {
+    }
+}
+
+form {
+    font-size: 0.8em;
+
+    label {
+        display: block;
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea,
+    input[type=email] {
+        border: 1px solid #ddd;
+        padding: 0.5em;
+        font-size: 100%;
+        .box-sizing(border-box);
+        display: block;
+        width: 100%;
+    }
+
+    input[type=submit], button {
+        font-size: 100%;
+        margin: 0;
+    }
+}
