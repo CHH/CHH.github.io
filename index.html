@@ -13,7 +13,13 @@ title: Home
                     <meta itemprop="datePublished" content="{{ post.date }}" />
                     <meta itemprop="headline" content="{{ post.title }}" />
 
-                    <h2 class="post-title"><a href="{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
+                    <h2 class="post-title">
+                        {% if post.type == 'link' %}
+                        <i class="post-type-icon ss-icon ss-link"></i>
+                        {% endif %}
+                        <a href="{% if post.type == 'link' %} {{post.href}} {% else %}
+                            {{post.url}} {% endif %}" itemprop="name">{{ post.title }}</a>
+                    </h2>
 
                     <div class="post-date">
                         Posted on

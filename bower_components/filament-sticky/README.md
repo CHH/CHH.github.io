@@ -70,11 +70,10 @@ These tests were performed using fixed-sticky with fixed-fixed. It’s safest to
 
 ## TODO
 
-* Tests (of course). I have a serious case of developer guilt releasing this without tests.
 * Add support for table headers.
-* Method to unbind scroll/resize events.
 * Vanilla JS version.
 
 ## Release History
 
 * `v0.1.0`: Initial release.
+* `v0.1.3`: Bug fixes, rudimentary tests, destroy method.

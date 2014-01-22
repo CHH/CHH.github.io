@@ -21,6 +21,10 @@
 			clone: 'fixedsticky-dummy',
 			withoutFixedFixed: 'fixedsticky-withoutfixedfixed'
 		},
+		keys: {
+			offset: 'fixedStickyOffset',
+			position: 'fixedStickyPosition'
+		},
 		tests: {
 			sticky: featureTest( 'position', 'sticky' ),
 			fixed: featureTest( 'position', 'fixed', true )
@@ -33,39 +37,58 @@
 				win.document.documentElement[ method ] :
 				win.document.body[ method ];
 		},
+		hasFixSticky: function() {
+			// Check  native sticky, check fixed and if fixed-fixed is also included on the page and is supported
+			return !!( S.tests.sticky || !S.tests.fixed || win.FixedFixed && !$( win.document.documentElement ).hasClass( 'fixed-supported' ) );
+		},
 		update: function( el ) {
-			// Only exec if native sticky isn’t supported, fixed is supported,
-			// and if fixed-fixed is also included on the page and is supported
-			if( S.tests.sticky || !S.tests.fixed || win.FixedFixed && !$( win.document.documentElement ).hasClass( 'fixed-supported' ) ) {
-				return;
-			}
-
-			if( !el.offsetWidth ) {
-				return;
-			}
+			if( !el.offsetWidth ) return;
 
 			var $el = $( el ),
-				keys = {
-					offset: 'fixedStickyOffset'
-				},
 				height = $el.outerHeight(),
-				initialOffset = $el.data( keys.offset ),
+				initialOffset = $el.data( S.keys.offset ),
 				scroll = S.getScrollTop(),
 				isAlreadyOn = $el.is( '.' + S.classes.active ),
 				toggle = function( turnOn ) {
 					$el[ turnOn ? 'addClass' : 'removeClass' ]( S.classes.active );
 				},
-				viewportHeight = $( window ).height();
+				viewportHeight = $( window ).height(),
+				position = $el.data( S.keys.position ),
+				skipSettingToFixed,
+				elTop,
+				elBottom;
 
 			if( !initialOffset ) {
 				initialOffset = $el.offset().top;
-
-				$el.data( keys.offset, initialOffset );
+				$el.data( S.keys.offset, initialOffset );
 				$el.after( $( '<div>' ).addClass( S.classes.clone ).height( height ) );
 			}
 
-			if( $el.css( 'top' ) !== 'auto' && initialOffset < scroll || 
-				$el.css( 'bottom' ) !== 'auto' && initialOffset > scroll + viewportHeight - ( height || 0 ) ) {
+			if( !position ) {
+				// Some browsers require fixed/absolute to report accurate top/left values.
+				skipSettingToFixed = $el.css( 'top' ) !== 'auto' || $el.css( 'bottom' ) !== 'auto';
+
+				if( !skipSettingToFixed ) {
+					$el.css( 'position', 'fixed' );
+				}
+
+				position = {
+					top: $el.css( 'top' ) !== 'auto',
+					bottom: $el.css( 'bottom' ) !== 'auto'
+				};
+
+				if( !skipSettingToFixed ) {
+					$el.css( 'position', '' );
+				}
+
+				$el.data( S.keys.position, position );
+			}
+
+			elTop = parseInt( $( el ).css( 'top' ), 10 ) || 0;
+			elBottom = parseInt( $( el ).css( 'bottom' ), 10 ) || 0;
+
+			if( position.top && initialOffset < ( scroll + elTop ) ||
+				position.bottom && initialOffset > scroll + viewportHeight - ( height || 0 ) - elBottom ) {
 
 				if( !isAlreadyOn ) {
 					toggle( true );
@@ -76,29 +99,52 @@
 				}
 			}
 		},
+		destroy: function( el ) {
+			var $el = $( el );
+			if (S.hasFixSticky()) return;
+
+			$( win ).unbind( '.fixedsticky' );
+
+			return $el.each(function() {
+				$( this )
+					.removeData( [ S.keys.offset, S.keys.position ] )
+					.removeClass( S.classes.active )
+					.nextUntil( S.classes.clone ).remove();
+			});
+		},
 		init: function( el ) {
 			var $el = $( el );
 
-			$( win ).bind( 'scroll', function() {
-				S.update( el );
-			}).trigger( 'scroll' );
+			if( S.hasFixSticky() ) {
+				return;
+			}
 
-			$( win ).bind( 'resize', function() {
-				if( $el.is( '.' + S.classes.active ) ) {
-					S.update( el );
-				}
+			return $el.each(function() {
+				var _this = this;
+				$( win ).bind( 'scroll.fixedsticky', function() {
+					S.update( _this );
+				}).trigger( 'scroll.fixedsticky' );
+
+				$( win ).bind( 'resize.fixedsticky', function() {
+					if( $el.is( '.' + S.classes.active ) ) {
+						S.update( _this );
+					}
+				});
 			});
 		}
 	};
 
-	// Expose Global
 	win.FixedSticky = S;
 
 	// Plugin
-	$.fn.fixedsticky = function(){
-		return this.each(function () {
-			S.init( this );
-		});
+	$.fn.fixedsticky = function( method ) {
+		if ( typeof S[ method ] === 'function') {
+			return S[ method ].call( S, this);
+		} else if ( typeof method === 'object' || ! method ) {
+			return S.init.call( S, this );
+		} else {
+			throw new Error( 'Method `' +  method + '` does not exist on jQuery.fixedsticky' );
+		}
 	};
 
 	// Add fallback when fixed-fixed is not available.
