@@ -5,7 +5,15 @@ layout: default
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header page-title">
             <h1 class="post-title">
+                {% if post.type == 'link' %}
+                <i class="post-type-icon ss-icon ss-link"></i>
+                {% endif %}
+
+                {% if post.type == 'link' %}
+                <a href="{{ post.href }}" itemprop="headline">{{ page.title }}</a>
+                {% else %}
                 <a href="{{ page.url }}" itemprop="headline">{{ page.title }}</a>
+                {% endif %}
             </h1>
 
             <meta itemprop="name" content="{{ page.title }}" />

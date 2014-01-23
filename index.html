@@ -19,6 +19,10 @@ title: Home
                         {% endif %}
                         <a href="{% if post.type == 'link' %} {{post.href}} {% else %}
                             {{post.url}} {% endif %}" itemprop="name">{{ post.title }}</a>
+
+                        {% if post.type == 'link' %}
+                        (<a href="{{ post.url }}">Permalink</a>)
+                        {% endif %}
                     </h2>
 
                     <div class="post-date">
