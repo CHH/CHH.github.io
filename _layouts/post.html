@@ -38,9 +38,11 @@ layout: default
             {{ content }}
         </section>
 
+        {% unless page.emailsignup == false %}
         <footer>
             {% include email_signup.html %}
         </footer>
+        {% endunless %}
     </article>
 
     <div class="related-articles">
