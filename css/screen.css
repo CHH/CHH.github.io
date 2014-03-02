@@ -848,10 +848,10 @@ form button {
 #mc_embed_signup {
   border: 1px solid #ddd;
   margin: 0 0 2em;
-  padding: 6px;
+  padding: 10px;
 }
 #mc-embedded-subscribe-form {
-  border: 1px solid #ddd;
+  border: 1px dashed #eee;
   padding: 2em;
 }
 #mc-embedded-subscribe-form .indicates-required {
@@ -887,7 +887,7 @@ form button {
     transform: translate(50%, 0);
   }
   #nav-main {
-    margin: 0 -2.333333333em;
+    margin: 0 -2.33333333em;
   }
   #nav-main .nav-item > a {
     padding-left: 2.333333333em;
