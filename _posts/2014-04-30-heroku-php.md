@@ -14,7 +14,9 @@ You know what's really awesome about it? You can require
 your apps locally with a `Procfile` and Foreman, just like every other
 supported language on Heroku.
 
-_PSA: Once the official PHP buildpack is stable, I plan to no longer support [my
-own PHP buildpack](https://github.com/CHH/heroku-buildpack-php)._
+_Congrats [David Zülke](https://twitter.com/dzuelke)!_
+
+PSA: Once the official PHP buildpack is stable, I plan to no longer support [my
+own PHP buildpack](https://github.com/CHH/heroku-buildpack-php).
 
 [heroku php doc]: https://devcenter.heroku.com/categories/php?utm_source=pardot&utm_medium=email&utm_campaign=php
