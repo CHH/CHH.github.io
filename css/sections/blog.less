@@ -6,8 +6,29 @@
         .post-header {
         }
 
+        .permalink-icon {
+            color: fade(black, 30%);
+            border: none;
+            vertical-align: middle;
+            transition: 0.3s all;
+            margin-left: 0.5em;
+
+            &:hover {
+                transition: 0.3s all;
+                color: @color-complement1;
+            }
+        }
+
         .post-title {
             margin: 0 0 10px;
+            position: relative;
+
+            > .ss-icon {
+                color: @color-complement1;
+                position: absolute;
+                top: 0.2em;
+                left: -1.5em;
+            }
         }
 
         .post-date {

@@ -15,13 +15,16 @@ title: Home
 
                     <h2 class="post-title">
                         {% if post.type == 'link' %}
-                        <i class="post-type-icon ss-icon ss-link"></i>
+                        <i class="ss-icon ss-redirect"></i>
                         {% endif %}
+
                         <a href="{% if post.type == 'link' %} {{post.href}} {% else %}
                             {{post.url}} {% endif %}" itemprop="name">{{ post.title }}</a>
 
                         {% if post.type == 'link' %}
-                        (<a href="{{ post.url }}">Permalink</a>)
+                        <a href="{{ post.url }}"
+                            class="permalink-icon" title="Permalink"><i class="ss-icon
+                                ss-target"></i></a>
                         {% endif %}
                     </h2>
 
