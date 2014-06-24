@@ -39,6 +39,40 @@
         }
     }
 
+    .contact-card {
+        .clearfix;
+
+        @media only screen and (min-width: 480px) {
+            .address {
+                .box-sizing(border-box);
+                width: 75%;
+                padding-left: 2em;
+                font-size: 0.8em;
+                float: right;
+                font-size: 0.8em;
+            }
+
+            .map {
+                width: 25%;
+                float: left;
+                margin: 0;
+            }
+        }
+
+        .address {
+            .box-sizing(border-box);
+        }
+
+        .map {
+            margin: 0 0 1em;
+
+            > img {
+                width: 100%;
+                height: auto !important;
+            }
+        }
+    }
+
     .contact-box {
         margin: 2em 0;
         padding: 0.7em;

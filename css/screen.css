@@ -921,6 +921,43 @@ form button {
   box-sizing: border-box;
   padding-left: 2em;
 }
+.hire-me .contact-card:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media only screen and (min-width: 480px) {
+  .hire-me .contact-card .address {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+    padding-left: 2em;
+    float: right;
+    font-size: 0.8em;
+  }
+  .hire-me .contact-card .map {
+    width: 25%;
+    float: left;
+    margin: 0;
+  }
+}
+.hire-me .contact-card .address {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hire-me .contact-card .map {
+  margin: 0 0 1em;
+}
+.hire-me .contact-card .map > img {
+  width: 100%;
+  height: auto !important;
+}
 .hire-me .contact-box {
   margin: 2em 0;
   padding: 0.7em;
