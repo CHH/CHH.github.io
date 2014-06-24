@@ -180,6 +180,9 @@ a:link:visited {
 .inverse-links a:visited {
   border-color: rgba(255, 255, 255, 0.1);
 }
+small {
+  font-size: 0.8em;
+}
 h1,
 h2,
 h3,
@@ -369,6 +372,15 @@ hr {
 }
 #page-top-bar * {
   color: rgba(0, 0, 0, 0.4);
+}
+#page-top-bar.headroom {
+  transition: transform 200ms linear;
+}
+#page-top-bar.headroom--pinned {
+  transform: translateY(0%);
+}
+#page-top-bar.headroom--unpinned {
+  transform: translateY(-100%);
 }
 #reveal-sidebar {
   display: inline-block;
@@ -862,6 +874,86 @@ form button {
 }
 .blog-post-view .related-articles {
   margin: 0 0 2em;
+}
+.hire-me #logo {
+  width: 50%;
+  margin: 0 auto 2em;
+  text-align: center;
+  font-size: 1em;
+}
+.hire-me #logo > img {
+  width: 50%;
+}
+.hire-me #logo > b {
+  display: block;
+  text-align: center;
+}
+.hire-me .about-me {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.03);
+}
+.hire-me .about-me:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.hire-me .about-me .avatar {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 20%;
+  margin: 0 auto 1em;
+  padding-top: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 9999px;
+}
+.hire-me .about-me .text {
+  width: 100%;
+  text-align: center;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 2em;
+}
+.hire-me .contact-box {
+  margin: 2em 0;
+  padding: 0.7em;
+  text-align: center;
+  border: 1px solid #dedede;
+}
+.hire-me .contact-box .inner-wrapper {
+  border: 1px solid #dedede;
+  padding: 1em;
+}
+.hire-me .client-logos ul {
+  padding: 0;
+  list-style: none;
+}
+.hire-me .client-logos ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.hire-me .client-logos ul li {
+  padding: 0;
+  width: 25%;
+  float: left;
+  padding: 0.5em;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hire-me .client-logos ul li > img {
+  width: 100%;
 }
 #mc_embed_signup {
   border: 1px solid #ddd;

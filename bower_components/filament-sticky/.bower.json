@@ -20,7 +20,6 @@
     "commit": "19ec5c6b90f2ef12812f24018c9e88dbf92eade3"
   },
   "_source": "git://github.com/filamentgroup/fixed-sticky.git",
-  "_target": "~0.1.3",
-  "_originalSource": "filament-sticky",
-  "_direct": true
+  "_target": "~0.1.2",
+  "_originalSource": "filament-sticky"
 }

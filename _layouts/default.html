@@ -52,7 +52,7 @@
     </head>
 
     <body>
-        <div id="page-top-bar" class="fixedsticky">
+        <div id="page-top-bar" class="fixedsticky" data-headroom>
             <a id="reveal-sidebar">
                 <i class="ss-icon ss-columns"></i>
             </a>
@@ -174,28 +174,8 @@
                     $(".main-wrapper").on('click', function(ev) {
                         $("body").removeClass("reveal-sidebar");
                     });
+                    $("#page-top-bar").headroom();
                 });
-
-                /*
-                $(function() {
-                    var scrollPosition = sessionStorage.getItem('scrollPosition');
-                    if (document.location.href === sessionStorage.getItem('lastPage') && scrollPosition !== null) {
-                        $(".main-wrapper").scrollTop(scrollPosition);
-                    } else {
-                        sessionStorage.setItem('scrollPosition', null);
-                    }
-
-                    sessionStorage.setItem('lastPage', document.location.href);
-
-                    $(document).unload(function() {
-                        sessionStorage.setItem('scrollPosition', null);
-                    });
-
-                    $(".main-wrapper").scroll(debounce(function() {
-                        sessionStorage.setItem('scrollPosition', $(".main-wrapper").scrollTop());
-                    }, 200));
-                });
-                */
             })();
         </script>
     </body>

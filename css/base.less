@@ -1,17 +1,17 @@
 
-\@-webkit-viewport { 
+\@-webkit-viewport {
 width : device-width; }
 
-\@-moz-viewport { 
+\@-moz-viewport {
 width : device-width; }
 
-\@-ms-viewport { 
+\@-ms-viewport {
 width : device-width; }
 
-\@-o-viewport { 
+\@-o-viewport {
 width : device-width; }
 
-\@viewport { 
+\@viewport {
 width : device-width; }
 
 html {
@@ -57,6 +57,16 @@ hr {
 
     * {
         color: fade(black, 40%);
+    }
+
+    &.headroom {
+        transition: transform 200ms linear;
+    }
+    &.headroom--pinned {
+        transform: translateY(0%);
+    }
+    &.headroom--unpinned {
+        transform: translateY(-100%);
     }
 }
 
