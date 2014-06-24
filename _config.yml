@@ -38,6 +38,9 @@ navigation:
     - label: About me
       link: /about/me/
       icon: ss-heart
+    - label: Hire me
+      link: /hire/me/
+      icon: ss-briefcase
     - label: All articles
       link: /blog/
       icon: ss-notebook
