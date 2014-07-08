@@ -17,8 +17,9 @@
 
     .about-me {
         .clearfix;
-        padding: 1em;
-        background: fade(black, 3%);
+
+        > header {
+        }
 
         .avatar {
             .box-sizing(border-box);
@@ -32,10 +33,25 @@
         }
 
         .text {
+            .box-sizing(border-box);
             width: 100%;
             text-align: center;
-            .box-sizing(border-box);
-            padding-left: 2em;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .avatar {
+                float: left;
+                width: 20%;
+                margin-left: 2.5%;
+                padding-top: 20%;
+            }
+
+            .text {
+                width: 75%;
+                text-align: left;
+                float: right;
+                font-size: 0.8em;
+            }
         }
     }
 
@@ -77,10 +93,10 @@
         margin: 2em 0;
         padding: 0.7em;
         text-align: center;
-        border: 1px solid #dedede;
+        border: 1px solid fade(black, 10%);
 
         .inner-wrapper {
-            border: 1px solid #dedede;
+            border: 1px dashed fade(black, 6%);
             padding: 1em;
         }
     }
@@ -92,10 +108,9 @@
             .clearfix;
 
             li {
-                padding: 0;
+                margin-right: 2em;
                 width: 25%;
                 float: left;
-                padding: 0.5em;
                 .box-sizing(border-box);
 
                 > img {

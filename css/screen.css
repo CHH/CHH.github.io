@@ -888,10 +888,6 @@ form button {
   display: block;
   text-align: center;
 }
-.hire-me .about-me {
-  padding: 1em;
-  background: rgba(0, 0, 0, 0.03);
-}
 .hire-me .about-me:after {
   content: ".";
   display: block;
@@ -913,13 +909,26 @@ form button {
   border-radius: 9999px;
 }
 .hire-me .about-me .text {
-  width: 100%;
-  text-align: center;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 2em;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .hire-me .about-me .avatar {
+    float: left;
+    width: 20%;
+    margin-left: 2.5%;
+    padding-top: 20%;
+  }
+  .hire-me .about-me .text {
+    width: 75%;
+    text-align: left;
+    float: right;
+    font-size: 0.8em;
+  }
 }
 .hire-me .contact-card:after {
   content: ".";
@@ -962,10 +971,10 @@ form button {
   margin: 2em 0;
   padding: 0.7em;
   text-align: center;
-  border: 1px solid #dedede;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .hire-me .contact-box .inner-wrapper {
-  border: 1px solid #dedede;
+  border: 1px dashed rgba(0, 0, 0, 0.06);
   padding: 1em;
 }
 .hire-me .client-logos ul {
@@ -980,10 +989,9 @@ form button {
   visibility: hidden;
 }
 .hire-me .client-logos ul li {
-  padding: 0;
+  margin-right: 2em;
   width: 25%;
   float: left;
-  padding: 0.5em;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
