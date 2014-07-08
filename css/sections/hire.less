@@ -89,11 +89,24 @@
         }
     }
 
+    #contact {
+        background: @color-base;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
     .contact-box {
         margin: 2em 0;
         padding: 0.7em;
         text-align: center;
         border: 1px solid fade(black, 10%);
+        color: fade(black, 80%);
+
+        .button, a:link {
+            color: fade(black, 80%);
+        }
 
         .inner-wrapper {
             border: 1px dashed fade(black, 6%);

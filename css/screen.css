@@ -338,6 +338,12 @@ hr {
 .page-wrapper {
   position: relative;
 }
+.main-wrapper .fullwidth {
+  margin-left: -2em;
+  margin-right: -2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
 .main-wrapper {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -967,11 +973,23 @@ form button {
   width: 100%;
   height: auto !important;
 }
+.hire-me #contact {
+  background: #2ef265;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 .hire-me .contact-box {
   margin: 2em 0;
   padding: 0.7em;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+}
+.hire-me .contact-box .button,
+.hire-me .contact-box a:link {
+  color: rgba(0, 0, 0, 0.8);
 }
 .hire-me .contact-box .inner-wrapper {
   border: 1px dashed rgba(0, 0, 0, 0.06);
@@ -1064,6 +1082,12 @@ form button {
 @media only screen and (min-width: 768px) {
   body {
     font-size: 21px;
+  }
+  .main-wrapper .fullwidth {
+    margin-left: -4em;
+    margin-right: -4em;
+    padding-left: 4em;
+    padding-right: 4em;
   }
   .site-header,
   #nav-main {
