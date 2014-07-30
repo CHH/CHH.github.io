@@ -62,7 +62,7 @@ try to get you into the right direction.
 You receive the _complete Basic Package_ and I'll follow up and set aside some
 time to do a _1-on-1 session_ with me, via Skype or Hangout.
 
-<p><a href="/php-socket-programming-handbook/subscribe/" class="button">Buy for 299$</a></p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button">Buy for 299$</a></p>
 
 ### Basic
 
@@ -75,7 +75,7 @@ time to do a _1-on-1 session_ with me, via Skype or Hangout.
 * _Got stuck?_ Send me an email and I'll try to answer your question. If it's
   too complex, we can discuss it via a _payed 1-on-1._
 
-<p><a href="/php-socket-programming-handbook/subscribe/" class="button">Buy for 47$</a></p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button">Buy for 47$</a></p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
