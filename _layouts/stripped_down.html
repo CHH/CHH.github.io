@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>
+            {{ page.title }} &mdash;
+            {{ site.title }}
+        </title>
+
+        <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+        <meta name="author" content="Christoph Hochstrasser">
+
+        {% if page.custom_excerpt %}
+        {% assign page_desc = page.custom_excerpt | markdownify | strip_html %}
+        {% elsif page.excerpt %}
+        {% assign page_desc = page.excerpt | markdownify | strip_html %}
+        {% else %}
+        {% assign page_desc = site.description %}
+        {% endif %}
+
+        <meta name="description" content="{{ page_desc }}">
+
+        <link rel="author" href="https://plus.google.com/110702168673763667617">
+
+        <link rel="alternate" type="application/atom+xml"
+              title="Christoph Hochstrasser Blog Feed"
+              href="/atom.xml">
+        <link rel="apple-touch-icon-precomposed" type="image/png" href="/images/apple-touch-icon-precomposed.png">
+        <link rel="icon" type="image/png" href="/images/favicon_16.png">
+
+        <script type="text/javascript" src="//use.typekit.net/eaa7vsc.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+        <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+        <script type="text/javascript" src="/js/application-min.js"></script>
+
+        <link rel="stylesheet" href="/fonts/symbolset-social/ss-social.css">
+        <link rel="stylesheet" href="/fonts/symbolset-standard/ss-standard.css">
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/github.min.css">
+
+        <link rel="stylesheet" href="/css/screen.css">
+        <link rel="stylesheet" href="/bower_components/filament-sticky/fixedsticky.css">
+
+        {% for link in page.stylesheet_links %}
+        <link rel="stylesheet" href="{{ link }}">
+        {% endfor %}
+
+        {% include layout/ga.html %}
+    </head>
+
+    <body class="site-stripped-down">
+        <header>
+            <div class="row">
+                <p><a href="/">&larr; Back to christophh.net</a></p>
+            </div>
+        </header>
+
+        <main class="row">{{ content }}</main>
+
+        <footer>
+            <div class="row">
+                <p>
+                    &copy; 2014 Christoph Hochstrasser.
+                    A <a href="//hochstrasser.io">hochstrasser.io</a> adventure.
+                    <a href="/imprint">Imprint</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
