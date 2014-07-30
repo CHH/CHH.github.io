@@ -301,6 +301,15 @@ figure figcaption {
   color: rgba(0, 0, 0, 0.6);
   padding: 0 2.5em 1em;
 }
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
 \@-webkit-viewport {
   width: device-width;
 }

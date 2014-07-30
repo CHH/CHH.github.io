@@ -26,11 +26,11 @@ programming, nearly 10 years ago.
 
 What if you had a book, that…
 
-1. …tells you the right way to approach socket programming in PHP.
-2. …teaches you that basic networking terminology that fills in the gaps.
-3. …provides simple, tweakable examples, which you can use as a base for your
+1. …_tells you the right way_ to approach socket programming in PHP.
+2. …_starts bottom up,_ beginning with the basic networking terminology.
+3. …_provides simple, tweakable examples,_ which you can use as a base for your
    stuff.
-4. …and has someone who is available for all your questions, if you are stuck.
+4. …_and has someone who is available for all your questions_, if you are stuck.
 
 ## The little PHP Socket Programming Handbook
 
@@ -38,19 +38,46 @@ What if you had a book, that…
     <p><img src="/images/socket-book/Cover.png" alt=""></p>
 </div>
 
-__Available in Fall 2014 for 47$__, your guide to building awesome things with sockets
+__Available in Fall 2014 starting at 47$__, your guide to building awesome things with sockets
 in PHP.
 
 * 60+ page guide to socket programming in PHP
 * Start with networking basics and work your way up with tweakable examples
-* _Signup for the mailing list and receive the entire first chapter free._
+* _[Signup for the mailing list](/php-socket-programming-handbook/subscribe/) and receive the entire first chapter free._
   Additionally you get early access to the launch and receive a special discount code
   for __20% off__.
 * DRM Free, PDF for easy reading on your computer, iPad or other tablet.
 
 <div style="clear: both;"></div>
 
-<div style="margin-top: 2em;">
+## Packages
+
+### Enhanced
+
+This package is best suited for consultants or agencies which have a specific
+use case and want a pointer on how to get there quickly. I'll talk with you
+about your use case. You can ask everything about socket programming and I'll
+try to get you into the right direction.
+
+You receive the _complete Basic Package_ and I'll follow up and set aside some
+time to do a _1-on-1 session_ with me, via Skype or Hangout.
+
+<p><a href="/php-socket-programming-handbook/subscribe/" class="button">Buy for 299$</a></p>
+
+### Basic
+
+* _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
+  tablets.
+* 60+ page guide to socket programming in PHP
+* _Tweakable examples_
+* _Starts bottom up,_ beginning with networking basics up to multiprocessing and
+  Async IO and frameworks.
+* _Got stuck?_ Send me an email and I'll try to answer your question. If it's
+  too complex, we can discuss it via a _payed 1-on-1._
+
+<p><a href="/php-socket-programming-handbook/subscribe/" class="button">Buy for 47$</a></p>
+
+<div style="margin-top: 4em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	<h2>Subscribe to get the entire first chapter free, and get early access to the launch in Fall 2014 with a 20% discount.</h2>
