@@ -5,13 +5,24 @@ custom_excerpt: >
     When it comes to socket programming with PHP, nearly
     all articles are about the Socket Extension, despite it's
     the unfriendliest and most cumbersome way to work with Sockets
-    in modern PHP. Let me introduce you to something, which apparently 
+    in modern PHP. Let me introduce you to something, which apparently
     is pretty unknown among PHP programmers &mdash; __Stream Sockets__.
 ---
 
-<div class="info-box">
-    This article is also available in <a href="http://science.webhostinggeeks.com/php-soket-programiranje">Serbo-Croatian</a>.
-</div>
+Want a more comprehensive guide to PHP socket programming?
+
+I'm writing a book about it, the "[PHP Socket Programming Handbook](/php-socket-programming-handbook)".
+Subscribe now and get the entire first chapter for free, early access to the
+launch in Fall 2014, and an exclusive discount code for 20% off.
+
+[Learn more](/php-socket-programming-handbook)
+
+- - -
+
+<p class="info-box">
+This article is also available in
+<a href="http://science.webhostinggeeks.com/php-soket-programiranje">Serbo-Croatian</a>.
+</p>
 
 ## What is a Socket?
 
@@ -103,10 +114,10 @@ is done with the `gethostbyname` function.
     }
 
 Then we create the socket connection with `stream_socket_client`. When
-it returns false, it means there was an error &mdash; so we throw an exception. 
+it returns false, it means there was an error &mdash; so we throw an exception.
 `stream_socket_client` allows to pass references as second and third arguments, which get then set
 with the error code and the error message when an error occurs.
-    
+
     fwrite($client, "GET / HTTP/1.0\r\nHost: www.example.com\r\nAccept: */*\r\n\r\n");
     echo stream_get_contents($client);
 
@@ -150,7 +161,7 @@ Here is a simple echo server:
 
     <?php
     # server.php
-    
+
     $server = stream_socket_server("tcp://127.0.0.1:1337", $errno, $errorMessage);
 
     if ($server === false) {
@@ -205,7 +216,7 @@ because the server should run until we decide to kill it.
     $client = @stream_socket_accept($server);
 
 `stream_socket_accept` blocks until a client connects to the socket or
-the timeout expires. Error suppresssion is intentional here, because this function likes to 
+the timeout expires. Error suppresssion is intentional here, because this function likes to
 spit out unnecessary warnings.
 
     if ($client) {

@@ -1132,6 +1132,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/php-socket-programming-handbook\/subscribe.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php-socket-programming-handbook\/subscribe.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vendor\/ruby\/2.0.0\/gems\/commander-4.1.5\/lib\/commander\/help_formatters\/terminal\/command_help.erb": {
 		"fileType": 8192,
 		"ignore": 0,
