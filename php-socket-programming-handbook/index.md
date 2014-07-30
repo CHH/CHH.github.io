@@ -46,6 +46,7 @@ in PHP.
 * _Signup for the mailing list and receive the entire first chapter free._
   Additionally you get early access to the launch and receive a special discount code
   for __20% off__.
+* DRM Free, PDF for easy reading on your computer, iPad or other tablet.
 
 <div style="clear: both;"></div>
 
