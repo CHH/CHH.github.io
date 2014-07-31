@@ -2,7 +2,7 @@
 title: I'm writing a book about socket programming in PHP
 short: true
 type: link
-href: "/php-socket-programming-handbook/"
+href: "/php-socket-programming-handbook/?utm_source=blog&utm_medium=blogpost&utm_campaign=phpsphb"
 layout: post
 ---
 Since 2012 lots of people have read [this blog post]({% post_url 2012-07-24-php-socket-programming %})
