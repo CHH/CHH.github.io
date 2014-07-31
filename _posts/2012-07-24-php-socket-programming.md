@@ -10,15 +10,15 @@ custom_excerpt: >
 ---
 
 <div class="book-cover" style="max-width: 8em;">
-<a href="/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_cover&utm_campaign=phpsphb"><img src="/images/socket-book/Cover.png" alt=""></a>
+<a href="/php-socket-programming-handbook/"><img src="/images/socket-book/Cover.png" alt=""></a>
 </div>
 
 _Want a more comprehensive guide to PHP socket programming?_
 
-I'm writing a book about it, the "[PHP Socket Programming Handbook](/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_link&utm_campaign=phpsphb)".
+I'm writing a book about it, the "[PHP Socket Programming Handbook](/php-socket-programming-handbook/)".
 Subscribe now and get the entire first chapter for free, early access to the
 launch in Fall 2014, and an exclusive discount code for 20% off.
-[Learn more](/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_learnmore&utm_campaign=phpsphb)
+[Learn more](/php-socket-programming-handbook/)
 
 - - -
 
