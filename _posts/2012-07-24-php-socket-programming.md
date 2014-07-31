@@ -9,7 +9,7 @@ custom_excerpt: >
     is pretty unknown among PHP programmers &mdash; __Stream Sockets__.
 ---
 
-<div class="book-cover" style="width: 8em;">
+<div class="book-cover" style="max-width: 8em;">
 <a href="/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_cover&utm_campaign=phpsphb"><img src="/images/socket-book/Cover.png" alt=""></a>
 </div>
 
