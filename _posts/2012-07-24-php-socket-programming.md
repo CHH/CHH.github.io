@@ -9,13 +9,16 @@ custom_excerpt: >
     is pretty unknown among PHP programmers &mdash; __Stream Sockets__.
 ---
 
-Want a more comprehensive guide to PHP socket programming?
+<div class="book-cover" style="width: 8em;">
+<a href="/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_cover&utm_campaign=phpsphb"><img src="/images/socket-book/Cover.png" alt=""></a>
+</div>
 
-I'm writing a book about it, the "[PHP Socket Programming Handbook](/php-socket-programming-handbook)".
+_Want a more comprehensive guide to PHP socket programming?_
+
+I'm writing a book about it, the "[PHP Socket Programming Handbook](/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_link&utm_campaign=phpsphb)".
 Subscribe now and get the entire first chapter for free, early access to the
 launch in Fall 2014, and an exclusive discount code for 20% off.
-
-[Learn more](/php-socket-programming-handbook)
+[Learn more](/php-socket-programming-handbook/?utm_source=blog&utm_medium=socketprogrammingpost_learnmore&utm_campaign=phpsphb)
 
 - - -
 
