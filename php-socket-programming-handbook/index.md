@@ -4,7 +4,7 @@ title: PHP Socket Programming Handbook
 ---
 <header class="page-title">
     <h1>
-        To this day my <a href="{% post_url 2012-07-24-php-socket-programming %}">post</a> about socket programming in PHP was viewed 45.685 times.
+        To this day my post about socket programming in PHP was viewed 45.685 times.
     </h1>
 </header>
 
@@ -12,7 +12,7 @@ It's an article about the basics of socket programming in PHP, and how to get on
 the right track. I thought this was interesting.
 
 Then I thought back, how I struggled with this concept when I started out
-programming, nearly 10 years ago.
+programming, nearly 10 years ago. Servers are mindblowing at first.
 
 1. There are two ways to do this in PHP. And you have to discover the pleasant
    way yourself (it's not the obvious one).
