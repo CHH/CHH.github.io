@@ -3,10 +3,6 @@ layout: default
 title: Home
 ---
 <div id="homepage">
-    <header>
-    {% include email_signup.html %}
-    </header>
-
     {% if paginator.posts != empty %}
     <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
         <div itemprop="blogPosts" class="post-list">
@@ -62,6 +58,7 @@ title: Home
         </div>
 
         <footer>
+            {% include email_signup.html %}
 
             <div class="pagination">
                 {% if paginator.next_page_path %}
