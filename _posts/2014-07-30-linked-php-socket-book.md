@@ -2,7 +2,7 @@
 title: I'm writing a book about socket programming in PHP
 short: true
 type: link
-href: "/php-socket-programming-handbook/"
+href: "/php-socket-programming-handbook/?icn=phpsphb&ici=post20140730_link"
 layout: post
 ---
 Since 2012 lots of people have read [this blog post]({% post_url 2012-07-24-php-socket-programming %})
@@ -18,6 +18,6 @@ to get the entire first chapter for free, get early access to the launch, and a
 code for a 20% discount.
 
 <p>
-<a href="/php-socket-programming-handbook/subscribe/" class="button">Get your
+<a href="/php-socket-programming-handbook/subscribe/?icn=phpsphb&ici=post20140730_button" class="button">Get your
 free sample chapter now!</a>
 </p>

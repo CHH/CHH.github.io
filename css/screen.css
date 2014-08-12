@@ -801,6 +801,14 @@ form button {
 #blog_preview .pagination .prev {
   float: right;
 }
+.book-promo-box {
+  padding: 2em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 0 2em;
+}
+.book-promo-box p {
+  font-size: 0.8em;
+}
 .post-list .post-preview {
   margin-bottom: 4em;
 }
