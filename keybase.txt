@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/chh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.christophh.net
+  * I am chh (https://keybase.io/chh) on keybase.
+  * I have a public key with fingerprint F6E8 DB92 D268 19A8 18BF  EA8F 551C 6B7C FF55 E3C7
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "f6e8db92d26819a818bfea8f551c6b7cff55e3c7",
+            "host": "keybase.io",
+            "key_id": "551c6b7cff55e3c7",
+            "uid": "3091cbc413abc6330dd7bf69472a1d00",
+            "username": "chh"
+        },
+        "service": {
+            "hostname": "www.christophh.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1408439516,
+    "expire_in": 157680000,
+    "prev": "84044d707b86e9c4a34427f89b8a0c36162ed40b2dae32eec52e3b6477e1b2e3",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.3.1
+Comment: https://keybase.io/crypto
+
+yMHpAnicbVFdSBRRFN41dWvDypJQVnSbqNAWm7+dmd3aikyiSAhMijS3uTN3dgZt
+Zp0ddxVTLCooA5F60SIoguqhMhGpoBDzr0wFFUrXtJ83wcoUsmizO2Jv3Zd7zvl+
+zjmcrqQVFrsVtjX/bosNllr7O75XWArmUiaqMaCJVZi3GiuFS5+kqAGoB3VFNTAv
+JjGQE4GHFEmGIzw8R3BAgjwnud2EwABWkFAEKYHFXJishUwFsgF8COYoGqqhxK+I
+qPoffsUSQOEeQgACTVA8EBiKwkWRBRLjoVmSJ0QcN4khqKv8aYjYgixjNS4MFcKK
+AM1xza7LYCQSyRFkXQkZWlCWc1RoIHFQ1wxN0MoQLhtG0GvKjargEh8C/7KTHyiq
+iBZHgjDUQ4qmYl4CMQVDMa0JGudoyuMmGBcGK4OKDv2KyXCzDIejZ7aBYWTJ0ThN
+iyzOAo6BHoHmKZomWYnzAI7HBYohGBKKNA5IkYcUCaHgJiEFGJplIQFQiJm7lasa
+5nWjMfkAsgwpAZU3KnSI1XR2FMdbrHZLYkKceTqLfdW6fwfteWX7s2PL6lty59UW
+66Nzm+ssl3YeHW4Mp6eVNJJ7o583ZEzdqZWeXexyZq0fuu97F50eeNifm9ln+9ow
+M5/XO1o73ZrxtnDt876bvbG5ezHH8f22oaJPX2IFzp4PXSWLk7MRe9OLhtR28unH
+zFQx6fKNLPc+x4GxY/Lh2ezztclMy8LgsKNo1/Smiehk9MGebVPXR8ucv4ZOpVnf
+j9yNfxwFzYtx38ZTFlwL3dKFTtviDPzZfXt3obOu2McEEn54TrZkna1IXrlduzaZ
+nR/aSHU78sXccSP9UNPYSNUZ39aRN/7X9Rb2xEDSy7wB40hu7zx0qYk+ruxJe7nz
+ysE1lfWtsb8KMRqz
+=y1+R
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chh
+
+==================================================================

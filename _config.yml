@@ -13,7 +13,7 @@ exclude:
     - Gemfile.lock
     - vendor
 
-include: [.htaccess]
+include: [.htaccess, .well-known]
 safe: true
 
 # lsi: true
