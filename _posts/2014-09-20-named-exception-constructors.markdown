@@ -9,6 +9,8 @@ practical, and that it has the potential for making code much more readable.
 However, it can be also used to make generating Exception messages less
 repititive.
 
+{% include posts/socket-book.html %}
+
 [named constructors]: http://verraes.net/2014/06/named-constructors-in-php/
 
 This technique can be used to improve code a lot, like Beau Simensen
