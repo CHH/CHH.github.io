@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Motiv"
+date: "Mi Sep 24 17:34 +0200 2014"
+---
+
+Recently something dawned upon me. All activities that encompass
+design share one term: Motiv.
+
+In German we have the word "[Motiv](https://translate.google.com/#de/en/Motiv)". It has multiple meanings in English, for
+example _subject_ of a photograph[^subject] or the _motive_ for the actions one takes.
+
+But in German all these meanings are represented by this single word.
+
+What was astounding to me was that we have _one_ word for all these meanings. It's
+the link between all these activities, like photography, graphic design, and web
+design. This fact hides in plain sight and wasn't obvious to me at first.
+
+For example in photography, if you take the background of a portrait away the photo still is meaningful. But strip out the subject and you don't know what the picture is all about. It's the Motiv.
+
+Photography also taught me another lesson about the Motiv and design in general.
+Making a good photograph is easier if you are concentrating on a single subject. Put the focus on as less things as possible, and it is easier to make something good.
+
+In User Interface Design, the Motiv is essentially equal to the _motive_. What does the user want to achieve? Why do they want to do this? What is their _motivation?_
+
+Let's look at designing websites. When designing a website there are also things which can't be removed and are essential. They are the Motiv.
+Take away the navigation on Facebook and it will stay Facebook. But take
+away the Newsfeed and you don't know what to do there[^facebook].
+
+The beauty of the "Motiv" also lies in something else. If you are asking what
+the motive is, you are always looking for the essence.
+
+And this is always a good thing to do when designing something.
+
+[^facebook]: Assuming that you know what you do there in the first place.
+[^subject]:
+    Though, you can also argue, that the Motiv in photography is also
+    something deeper. It's not the thing itself, but you do the photograph
+    _because_ of the thing. It's the _reason_ you do the photograph, the _motivation_.
+
