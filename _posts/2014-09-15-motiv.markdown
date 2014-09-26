@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Motiv"
-date: "Mi Sep 24 17:34 +0200 2014"
+date: "Mi Sep 26 20:30 +0200 2014"
 ---
 
 Recently something dawned upon me. All activities that encompass
