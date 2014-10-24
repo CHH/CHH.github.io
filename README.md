@@ -3,7 +3,8 @@
 This is the Jekyll site which powers <christophh.net>. Feel free to extend and
 remix. Make sure to remove the Typekit tag in the layout's header and please use
 your own images for the sidebar. And make sure to replace my avatar
-with yours.
+with yours. And remove the keybase verification files with your own, or remove
+them please.
 
 ## License
 
