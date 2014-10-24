@@ -14,4 +14,4 @@ with yours.
 
 ### Code
 
-All code, including the HTML templates, is licensed under the MIT License included in `LICENSE.txt`.
+All code, including the HTML templates (but not the copy in there), is licensed under the MIT License included in `LICENSE.txt`.
