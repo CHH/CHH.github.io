@@ -9,7 +9,10 @@ them please.
 ## How to remix for yourself
 
 * Make sure you add your own webfonts to the `<head>` tag in
-  `_layouts/default.html` and `_layouts/stripped_down.html`.
+  `_layouts/default.html` and `_layouts/stripped_down.html`. You can change the
+  font stacks in `css/variables.less`. Recompile your LESS.
+* You should be able to change the colors in `css/variables.less`. Then
+  recompile your LESS.
 * Either remove or modify `.well-known/keybase.txt` and `keybase.txt` to have your keybase public key
 * Replace the avatar in the sidebar with yours by replacing the URL of the `img`
   element.
