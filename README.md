@@ -6,6 +6,12 @@ your own images for the sidebar. And make sure to replace my avatar
 with yours. And remove the keybase verification files with your own, or remove
 them please.
 
+## How to write a guest post
+
+* Fork this repository
+* Add your post to `_posts`
+* Submit a pull request to this repository
+
 ## How to remix for yourself
 
 * Make sure you add your own webfonts to the `<head>` tag in
