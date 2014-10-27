@@ -4,3 +4,13 @@ AddType application/x-font-ttf ttf
 AddType application/vnd.ms-fontobject eot
 AddType image/svg+xml svg
 
+SetEnvIfNoCase Via evil-spam-proxy spammer=yes
+SetEnvIfNoCase Referer evil-spam-domain.com spammer=yes
+SetEnvIfNoCase Referer evil-spam-keyword spammer=yes
+SetEnvIfNoCase Via pinappleproxy spammer=yes
+SetEnvIfNoCase Referer semalt.com spammer=yes
+SetEnvIfNoCase Referer poker spammer=yes
+
+Order allow,deny
+Allow from all
+Deny from env=spammer
