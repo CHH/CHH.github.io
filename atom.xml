@@ -8,6 +8,10 @@ layout: nil
     <link href="http://christophh.net/atom.xml" rel="self"/>
     <link href="http://christophh.net/"/>
 
+    <!-- PubSubHubbub Discovery -->
+    <link rel="hub" href="http://christophh.superfeedr.com/" />
+    <!-- End Of PubSubHubbub Discovery -->
+
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>http://christophh.net</id>
 
