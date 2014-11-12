@@ -34,11 +34,11 @@ What if you had a book, that…
 
 ## The little PHP Socket Programming Handbook
 
-<div class="book-cover">
+<div class="book-cover left">
     <p><img src="/images/socket-book/Cover.png" alt=""></p>
 </div>
 
-__Available in Fall 2014 starting at 47$__, your guide to building awesome things with sockets
+__Available in Spring 2015 starting at 47$__, your guide to building awesome things with sockets
 in PHP.
 
 * 60+ page guide to socket programming in PHP
@@ -64,7 +64,17 @@ time to do a _1-on-1 session_ with me, via Skype or Hangout.
 
 <p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button">Buy for 299$</a></p>
 
-### Basic
+### Guided
+
+This package is for people who need a bit more guidance on achieving their goal.
+
+* Includes the complete “Self-Learner” package
+* Includes 1 free one-on-one via Skype or Hangouts
+* Send your questions per email
+
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button">Buy for 49$</a></p>
+
+### Self-Learner
 
 * _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
   tablets.
@@ -72,15 +82,13 @@ time to do a _1-on-1 session_ with me, via Skype or Hangout.
 * _Tweakable examples_
 * _Starts bottom up,_ beginning with networking basics up to multiprocessing and
   Async IO and frameworks.
-* _Got stuck?_ Send me an email and I'll try to answer your question. If it's
-  too complex, we can discuss it via a _payed 1-on-1._
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button">Buy for 47$</a></p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button">Buy for 29$</a> (That’s less than a movie ticket, softdrink plus popcorn!)</p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<h2>Subscribe to get the entire first chapter free, and get early access to the launch in Fall 2014 with a 20% discount.</h2>
+	<h2>Subscribe to get the entire first chapter free, and get early access to the launch in Spring 2015 with a 20% discount.</h2>
 <p><em>We never share your data with anyone and hate Spam just like you
 do.</em></p>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>

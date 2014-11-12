@@ -32,6 +32,14 @@ hr {
     .clearfix;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 .page-wrapper {
     position: relative;
 }
@@ -312,5 +320,22 @@ body.reveal-sidebar {
         .post-title {
             font-size: 1em;
         }
+    }
+}
+
+.list-checkmarks {
+    list-style: none;
+
+    li {
+        position: relative;
+    }
+
+    li:before {
+        content: "\2713";
+        font-family: "SSStandard";
+        position: absolute;
+        top: 0.2em;
+        left: -1em;
+        color: @color-checkmarks-green;
     }
 }

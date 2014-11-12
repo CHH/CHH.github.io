@@ -344,6 +344,12 @@ hr {
   clear: both;
   visibility: hidden;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .page-wrapper {
   position: relative;
 }
@@ -663,6 +669,20 @@ body.reveal-sidebar #page-top-bar {
 }
 .post-archive .post .post-title {
   font-size: 1em;
+}
+.list-checkmarks {
+  list-style: none;
+}
+.list-checkmarks li {
+  position: relative;
+}
+.list-checkmarks li:before {
+  content: "\2713";
+  font-family: "SSStandard";
+  position: absolute;
+  top: 0.2em;
+  left: -1em;
+  color: #2ef265;
 }
 .button-bar {
   list-style: none;
@@ -1079,7 +1099,6 @@ body.site-stripped-down #mc_embed_signup {
   margin: 0 auto;
 }
 .book-cover {
-  float: left;
   max-width: 20em;
   margin-right: 4em;
 }
