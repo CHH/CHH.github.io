@@ -32,6 +32,54 @@ What if you had a book, that…
    stuff.
 4. …_and has someone who is available for all your questions_, if you are stuck.
 
+<div style="margin-top: 2em;">
+<div id="mc_embed_signup">
+<form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h2>
+        Subscribe now and get:
+    </h2>
+
+    <ul class="list-checkmarks">
+        <li>An exclusive free sample chapter</li>
+        <li>Early access to the launch of the book</li>
+        <li>A special discount on the launch day, and for future product launches</li>
+    </ul>
+
+<p><em>We never share your data with anyone and hate Spam just like you
+do.</em></p>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+    <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+</label>
+    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+    <label for="mce-LNAME">Last Name </label>
+    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d87aafa86509e5206d575da4c_e81c880932" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+(function($) {
+window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';
+}(jQuery));
+var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+</div>
+
 ## The little PHP Socket Programming Handbook
 
 <div class="book-cover left">
@@ -62,7 +110,7 @@ try to get you into the right direction.
 You receive the _complete Basic Package_ and I'll follow up and set aside some
 time to do a _1-on-1 session_ with me, via Skype or Hangout.
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button">Buy for 299$</a></p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button">Buy for 299$</a> (available on January 15 2015)</p>
 
 ### Guided
 
@@ -72,7 +120,7 @@ This package is for people who need a bit more guidance on achieving their goal.
 * Includes 1 free one-on-one via Skype or Hangouts
 * Send your questions per email
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button">Buy for 49$</a></p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button">Buy for 49$</a> (available on January 15 2015)</p>
 
 ### Self-Learner
 
@@ -83,12 +131,20 @@ This package is for people who need a bit more guidance on achieving their goal.
 * _Starts bottom up,_ beginning with networking basics up to multiprocessing and
   Async IO and frameworks.
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button">Buy for 29$</a> (That’s less than a movie ticket, softdrink plus popcorn!)</p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button">Buy for 29$</a> (That’s less than a movie ticket, softdrink plus popcorn! Available January 15 2015)</p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<h2>Subscribe to get the entire first chapter free, and get early access to the launch in Spring 2015 with a 20% discount.</h2>
+	<h2>
+     Subscribe now and get:
+ </h2>
+
+ <ul class="list-checkmarks">
+     <li>An exclusive free sample chapter</li>
+     <li>Early access to the launch of the book</li>
+     <li>A special discount on the launch day, and for future product launches</li>
+ </ul>
 <p><em>We never share your data with anyone and hate Spam just like you
 do.</em></p>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
