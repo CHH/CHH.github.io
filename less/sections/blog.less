@@ -107,7 +107,9 @@
             margin: 0 0 1em;
         }
 
-        margin-bottom: 2em;
+        > p:last-child {
+            margin-bottom: 4em;
+        }
     }
 
     .footnotes {
@@ -130,5 +132,11 @@
     }
 
     .comments {
+    }
+
+    > footer {
+        border-top: 2px solid fade(black, 10%);
+        background: #f5f5f5;
+        padding-top: 2em;
     }
 }
