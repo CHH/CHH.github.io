@@ -60,17 +60,15 @@ title: Home
         <footer>
             {% include email_signup.html %}
 
-            <div class="pagination">
+            <div class="pagination fullwidth">
                 {% if paginator.next_page_path %}
-                <a class="next" href="{{ paginator.next_page_path }}">« Older Posts</a>
+                <a class="next button" href="{{ paginator.next_page_path }}">« Older Posts</a>
                 {% endif %}
 
                 {% if paginator.previous_page_path %}
-                <a class="prev" href="{{ paginator.previous_page_path }}">Newer Posts »</a>
+                <a class="prev button" href="{{ paginator.previous_page_path }}">Newer Posts »</a>
                 {% endif %}
             </div>
-
-            <!--<a href="/blog" class="show-all-posts">See all posts &rarr;</a>-->
         </footer>
     </section>
     {% endif %}
