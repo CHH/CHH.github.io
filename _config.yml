@@ -3,15 +3,12 @@ exclude:
     - Vagrantfile
     - Rakefile.rb
     - chef
-    - css/vendor/
-    - css/sections/
-    - css/variables.less
-    - css/mixins.less
-    - css/reset.less
+    - less
     - images/favicons.sketch/
     - Gemfile
     - Gemfile.lock
     - vendor
+    - .codekit-cache
 
 include: [.htaccess, .well-known]
 safe: true
