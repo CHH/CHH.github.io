@@ -18,6 +18,6 @@ to get the entire first chapter for free, get early access to the launch, and a
 code for a 20% discount.
 
 <p>
-<a href="/php-socket-programming-handbook/subscribe/?icn=phpsphb&ici=post20140730_button" class="button">Get your
+<a href="/php-socket-programming-handbook/subscribe/?icn=phpsphb&ici=post20140730_button" class="button button-primary">Get your
 free sample chapter now!</a>
 </p>
