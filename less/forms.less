@@ -55,12 +55,17 @@ form {
     .form-row-label,
     .form-row-inputs {
         display: table-cell;
-        padding: 1em;
+        padding: 0.5em;
     }
 
     .form-row-label {
         width: 30%;
         text-align: right;
         font-weight: bold;
+    }
+
+    .form-row-label-auto {
+        .form-row-label;
+        width: auto;
     }
 }
