@@ -1,15 +1,8 @@
 ---
-layout: post
+layout: question
 title: "Ask Christoph: Symfony over Laravel?"
 date: "Mi Aug 20 11:40:34 +0200 2014"
 ---
-Sometimes people write emails to me with questions. I started thinking that some
-of these answers could be valuable to a broader audience. So I'm going to
-publish some of these questions and answers on my blog with permission of the
-respective author. Have a question? Write to <ask@christophh.net>.
-
-Today's question is:
-
 > Is learning Symfony2 over Laravel a good thing to do this year? As I mentioned I'm looking to get more opportunities, and I saw that Symfony2 is the right choice for business!
 
 First, I understand that you feel lost. I felt this way too when I started out.
@@ -50,11 +43,3 @@ you tend to get something done in less time, because Laravel is developed more
 for rapid application development (like Rails).
 
 But regardless of the choice you make — _have fun and build things._
-
-- - -
-
-_Do you have a question about PHP or Web Development? Need some mentoring? Write to
-<ask@christophh.net> and I'll answer your question as fast as I can._
-
-_I will only publish your question with your permission._
-
