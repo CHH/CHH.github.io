@@ -67,7 +67,7 @@ do.</em></p>
         <div class="response" id="mce-success-response" style="display:none"></div>
     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_d87aafa86509e5206d575da4c_e81c880932" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
 </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -107,10 +107,10 @@ use case and want a pointer on how to get there quickly. I'll talk with you
 about your use case. You can ask everything about socket programming and I'll
 try to get you into the right direction.
 
-You receive the _complete Basic Package_ and I'll follow up and set aside some
-time to do a _1-on-1 session_ with me, via Skype or Hangout.
+* Includes the complete “Guided” package
+* Includes free one-on-ones via Skype or Hangouts for 6 months
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button">Buy for 299$</a> (available on January 15 2015)</p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button button-primary">Buy for 299$</a> (available on January 15 2015)</p>
 
 ### Guided
 
@@ -120,7 +120,7 @@ This package is for people who need a bit more guidance on achieving their goal.
 * Includes 1 free one-on-one via Skype or Hangouts
 * Send your questions per email
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button">Buy for 49$</a> (available on January 15 2015)</p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button button-primary">Buy for 49$</a> (available on January 15 2015)</p>
 
 ### Self-Learner
 
@@ -131,7 +131,7 @@ This package is for people who need a bit more guidance on achieving their goal.
 * _Starts bottom up,_ beginning with networking basics up to multiprocessing and
   Async IO and frameworks.
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button">Buy for 29$</a> (That’s less than a movie ticket, softdrink plus popcorn! Available January 15 2015)</p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button button-primary">Buy for 29$</a> (That’s less than a movie ticket, softdrink plus popcorn! Available January 15 2015)</p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
@@ -167,7 +167,7 @@ do.</em></p>
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_d87aafa86509e5206d575da4c_e81c880932" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
 </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
