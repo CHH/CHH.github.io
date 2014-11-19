@@ -116,6 +116,7 @@
         border-top: 1px solid @color-text-faded;
         padding-top: 1em;
         margin-top: 4em;
+        margin-bottom: 3em;
         font-size: 0.8em;
         color: fade(black, 50%);
 
@@ -127,6 +128,38 @@
 }
 
 .blog-post-view {
+    .posts-navigation {
+        display: table;
+        table-layout: fixed;
+        margin: 0 0 2em;
+        width: 100%;
+
+        .label {
+            color: fade(black, 40%);
+            font-size: 0.8em;
+        }
+
+        .previous, .next {
+            display: table-cell;
+            box-sizing: border-box;
+            width: 50%;
+            text-align: center;
+            padding: 0 0.5em;
+        }
+
+        a {
+            .font-headline;
+        }
+
+        .previous {
+            border-right: 1px solid fade(black, 10%);
+        }
+
+        .next {
+
+        }
+    }
+
     .related-articles {
         margin: 0 0 2em;
     }

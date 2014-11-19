@@ -46,10 +46,33 @@ layout: default
     </article>
 
     <footer class="fullwidth" style="background: #f5f5f5;">
+        <nav class="posts-navigation">
+            <div class="previous">
+                {% if page.previous %}
+                <p class="label">
+                    Older Post
+                </p>
+                <p>
+                    <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+                </p>
+                {% endif %}
+            </div>
+
+            <div class="next">
+                {% if page.next %}
+                <p class="label">
+                    Newer Post
+                </p>
+
+                <p>
+                    <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+                </p>
+                {% endif %}
+            </div>
+        </nav>
+
         {% unless page.emailsignup == false %}
-        <footer>
-            {% include email_signup.html %}
-        </footer>
+        {% include email_signup.html %}
         {% endunless %}
 
         <div class="related-articles">
