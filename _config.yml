@@ -21,6 +21,10 @@ paginate: 5
 asset_base_urls:
     fonts: //assets.christophh.net.s3.amazonaws.com/fonts
 
+assets:
+    css_version: 1
+    js_version: 1    
+
 markdown: kramdown
 
 kramdown:
