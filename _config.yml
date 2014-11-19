@@ -17,13 +17,14 @@ safe: true
 title: "Christoph Hochstrasser"
 homepage_post_count: 6
 paginate: 5
+paginate_path: "page/:num/"
 
 asset_base_urls:
     fonts: //assets.christophh.net.s3.amazonaws.com/fonts
 
 assets:
     css_version: 1
-    js_version: 1    
+    js_version: 1
 
 markdown: kramdown
 
