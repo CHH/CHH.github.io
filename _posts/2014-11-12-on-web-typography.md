@@ -8,6 +8,8 @@ Recently I read “[On Web Typography][]” by [Jason Santa Maria][jsm]. I'm now
 [jsm]: http://jasonsantamaria.com
 [On Web Typography]: http://www.abookapart.com/products/on-web-typography
 
+<img src="/images/posts/on-web-typography/on-web-typography-cover.jpg" alt="On Web Typography Cover" style="max-width: 8em; float: left; margin: 0 2em 1em 0;">
+
 ## “On Web Typography” changed the way I work with type
 
 I don’t want to write a review. I want to write about how “On Web Typography” changed the way I work with type.
