@@ -33,3 +33,5 @@ Drupal is a large application.
 When building large applications, you tend to make similar architectural decisions like when you are building a framework. Therefore experience with a framework gains you an deeper understanding about how an app like Drupal works internally and how it’s designed. This is especially helpful when things don’t work like they should.
 
 The conclusion is, you don’t need framework experience, but you gain a better understanding how an app like Drupal is made and how it works.
+
+{% include posts/socket-book.html %}
