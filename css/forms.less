@@ -27,3 +27,40 @@ form {
         margin: 0;
     }
 }
+
+.form-row {
+    padding: 0.5em 0;
+    border-bottom: 1px solid fade(black, 5%);
+}
+
+.form-row-label,
+.form-row-inputs {
+}
+
+.form-row-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-row-inputs.last {
+}
+
+@media only screen and (min-width: 600px) {
+    .form-row {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .form-row-label,
+    .form-row-inputs {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .form-row-label {
+        width: 30%;
+        text-align: right;
+        font-weight: bold;
+    }
+}

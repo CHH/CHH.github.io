@@ -32,9 +32,8 @@
 a.button,
 input[type=submit],
 button {
-    @button-primary: lighten(@color-link, 5%);
+    @button-primary: black;
     @button-background: fade(black, 10%);
-    @button-primary-background: fade(black, 80%);
 
     .rounded(4px);
     .box-sizing(border-box);
@@ -44,7 +43,7 @@ button {
     padding: 0.5em 1em;
     line-height: 1.2;
     font-weight: 400;
-    border: 1px solid;
+    border: 1px solid lighten(@button-primary, 80%);
     background: transparent;
 
     &:hover {
@@ -52,6 +51,7 @@ button {
         text-decoration: none !important;
         background: fade(black, 5%);
         cursor: pointer;
+        border-color: 1px solid lighten(@button-primary, 90%);
     }
 
     &:active {
@@ -66,12 +66,16 @@ button {
     }
 
     &.button-primary {
-        background: @button-primary-background;
+        border: 1px solid darken(@color-link, 10%);
+        background: linear-gradient(top, lighten(@color-link, 5%), @color-link);
         color: white;
+
+        &:active {
+            background: linear-gradient(bottom, lighten(@color-link, 5%), @color-link);
+        }
 
         &:hover {
             text-decoration: none;
-            background: darken(@button-primary-background, 10%);
         }
     }
 
