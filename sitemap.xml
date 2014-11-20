@@ -1,4 +1,5 @@
 ---
+# http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
