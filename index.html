@@ -9,7 +9,7 @@ title: Home
             {% for post in paginator.posts %}
             <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview {% if post.short %} short {% endif %}">
                 <header class="post-header">
-                    <meta itemprop="url" content="{{ post.url }}" />
+                    <meta itemprop="url" content="{{ site.site_url }}{{ post.url }}" />
                     <meta itemprop="datePublished" content="{{ post.date }}" />
                     <meta itemprop="headline" content="{{ post.title }}" />
 
