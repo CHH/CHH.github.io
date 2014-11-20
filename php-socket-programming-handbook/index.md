@@ -109,6 +109,7 @@ try to get you into the right direction.
 
 * Includes the complete “Guided” package
 * Includes free one-on-ones via Skype or Hangouts for 6 months
+* _Only 10 packages available!_
 
 <p><a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button button-primary">Buy for 299$</a> (available on January 15 2015)</p>
 
@@ -119,6 +120,7 @@ This package is for people who need a bit more guidance on achieving their goal.
 * Includes the complete “Self-Learner” package
 * Includes 1 free one-on-one via Skype or Hangouts
 * Send your questions per email
+* _Only 50 packages available!_
 
 <p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button button-primary">Buy for 49$</a> (available on January 15 2015)</p>
 
@@ -136,9 +138,11 @@ This package is for people who need a bit more guidance on achieving their goal.
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<h2>
-     Subscribe now and get:
- </h2>
+    <h1 class="box-title">Subscribe to get your free sample chapter</h1>
+
+    <h2>
+         Subscribe now and get:
+    </h2>
 
  <ul class="list-checkmarks">
      <li>An exclusive free sample chapter</li>
