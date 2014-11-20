@@ -19,6 +19,8 @@ homepage_post_count: 6
 paginate: 5
 paginate_path: "page/:num/"
 
+site_url: "https://www.christophh.net"
+
 asset_base_urls:
     fonts: //d3rgic9i48f56z.cloudfront.net/fonts
 

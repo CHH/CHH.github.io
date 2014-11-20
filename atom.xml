@@ -25,9 +25,9 @@ layout: nil
         <title>
             {% if post.type == 'link' %}Link:{% endif %} {{ post.title }}
         </title>
-        <link href="http://christophh.net{{ post.url }}"/>
+        <link href="{{ site.site_url }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://christophh.net{{ post.id }}</id>
+        <id>{{ site.site_url }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}

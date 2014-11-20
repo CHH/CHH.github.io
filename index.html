@@ -20,12 +20,6 @@ title: Home
 
                         <a href="{% if post.type == 'link' %} {{post.href}} {% else %}
                             {{post.url}} {% endif %}" itemprop="name">{{ post.title }}</a>
-
-                        {% if post.type == 'link' %}
-                        <a href="{{ post.url }}"
-                            class="permalink-icon" title="Permalink"><i class="ss-icon
-                                ss-target"></i></a>
-                        {% endif %}
                     </h2>
 
                     <div class="post-date">
@@ -33,6 +27,14 @@ title: Home
                         <time datetime="{{ post.date }}">
                             {{ post.date | date: "%d %b %Y" }}
                         </time>
+
+                        •
+
+                        <a href="http://www.instapaper.com/hello2?url={{ site.site_url|url_escape }}{{ post.url|url_escape }}&title={{ post.title|url_escape }}&description={{ post.excerpt|markdownify|strip_html|url_escape }}">Save to Instapaper</a>
+
+                        {% if post.type == 'link' %}
+                        <a href="{{ post.url }}" title="Permalink">Permalink</a>
+                        {% endif %}
                     </div>
                 </header>
 

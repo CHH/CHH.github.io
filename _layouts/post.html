@@ -26,6 +26,8 @@ layout: default
                     <time class="post-date" datetime="{{ page.date }}">
                         {{ page.date | date: "%d %b %Y" }}
                     </time>
+                    •
+                    <a class="button button-tiny button-middle" href="http://www.instapaper.com/hello2?url={{ site.site_url|url_escape }}{{ page.url|url_escape }}&title={{ page.title|url_escape }}&description={{ page.excerpt|markdownify|strip_html|url_escape }}">Save to Instapaper</a>
                 </div>
             </div>
         </header>
