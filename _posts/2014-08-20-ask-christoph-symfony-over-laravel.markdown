@@ -1,9 +1,9 @@
 ---
 layout: question
-title: "Ask Christoph: Symfony over Laravel?"
+title: "Ask Christoph: Symfony vs. Laravel?"
 date: "Mi Aug 20 11:40:34 +0200 2014"
 ---
-> Is learning Symfony2 over Laravel a good thing to do this year? As I mentioned I'm looking to get more opportunities, and I saw that Symfony2 is the right choice for business!
+> Is learning Symfony2 vs. Laravel a good thing to do this year? As I mentioned I'm looking to get more opportunities, and I saw that Symfony2 is the right choice for business!
 
 First, I understand that you feel lost. I felt this way too when I started out.
 There are so many ways, and all pretend to be the right one. I started out with
@@ -38,7 +38,7 @@ having a healthy variety of skills. As a company (especially as a small
 business), I'm not looking for specialists, but for people who can apply
 themselves to various different problems.
 
-The other downside is, that Laravel can be significantly easier to learn. Also
+The greatest advantage about Laravel is, that it can be significantly easier to learn. Also
 you tend to get something done in less time, because Laravel is developed more
 for rapid application development (like Rails).
 
