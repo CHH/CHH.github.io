@@ -16,14 +16,14 @@ programs can see if the command ran successfully and then can take
 action.
 
 PHP provides the [`exit`](http://at2.php.net/exit) function
-to stop script execution and return the code passed as first argument as 
+to stop script execution and return the code passed as first argument as
 Exit Code back to the system.
 
 Here's a quick overview of appropiate Exit Codes:
 
  * The Exit Code is an Integer Value between __0__ and __255__.
  * Use __0__ to indicate that the command ran _successfully_. In PHP this
-   can be done by calling `exit();` or `exit(0);`. 
+   can be done by calling `exit();` or `exit(0);`.
  * Exit Codes greather than __1__ are used to signal that your command
    failed in some way.
  * Codes between __128__ and __255__ are reserved for special purposes. Do
@@ -46,7 +46,7 @@ Script you would trap the `EXIT` signal:
 
     trap my_exit_handler EXIT
 
-You can do the same in PHP by using `register_shutdown_function` an
+You can do the same in PHP by using `register_shutdown_function` and
 passing a valid callback:
 
     #!/usr/bin/env php
@@ -82,7 +82,7 @@ your command.
 
 ## Read Input piped-in from other commands
 
-When data is piped into a script then PHP makes the input stream accessible via the `STDIN` constant. 
+When data is piped into a script then PHP makes the input stream accessible via the `STDIN` constant.
 You can use `stream_get_contents` to get all input data:
 
     #!/usr/bin/env php
@@ -117,7 +117,7 @@ Then we pass these variables to the `stream_select` function:
     }
 
 `stream_select` modifies the `$read` list to contain _only_ the
-resources which have data available for reading. When nothing 
+resources which have data available for reading. When nothing
 can be read, then the `$read` variable will contain _no_ resources.
 
 Usually it's better to switch to receiving input from the input stream
