@@ -14,12 +14,19 @@ form {
     input[type=password],
     textarea,
     input[type=email] {
-        border: 1px solid #ddd;
+        border: none;
+        border-radius: 3px;
+        background: fade(black, 7%);
         padding: 0.5em;
         font-size: 100%;
         .box-sizing(border-box);
         display: block;
         width: 100%;
+
+        &:focus {
+            box-shadow: 0 0 10px fade(darken(@color-base, 20%), 80%);
+            background: white;
+        }
     }
 
     input[type=submit], button {

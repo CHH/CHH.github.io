@@ -67,7 +67,7 @@ hr {
 #page-top-bar {
     @top-bar-color: darken(@color-base, 20%);
     z-index: 100;
-    .gradient(transparent, fade(@top-bar-color, 80%), @top-bar-color);
+    background: linear-gradient(top, @top-bar-color 0%, fade(@top-bar-color, 80%) 100%);
     color: fade(black, 40%);
 
     * {

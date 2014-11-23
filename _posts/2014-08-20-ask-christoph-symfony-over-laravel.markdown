@@ -43,5 +43,3 @@ you tend to get something done in less time, because Laravel is developed more
 for rapid application development (like Rails).
 
 But regardless of the choice you make — _have fun and build things._
-
-{% include posts/socket-book.html %}
