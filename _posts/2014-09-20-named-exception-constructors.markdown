@@ -4,7 +4,7 @@ title: "Named Exception Constructors"
 date: "Sa Sep 22 16:30 +0200 2014"
 ---
 Some time ago I read [a post][named constructors] by [Mathias Verraes](http://verraes.net) about using
-static methods as named constructors in object oriented PHP. I thought that this technique very
+static methods as named constructors in object oriented PHP. I thought that this technique is very
 practical, and that it has the potential for making code much more readable.
 However, it can be also used to make generating Exception messages less
 repititive.
