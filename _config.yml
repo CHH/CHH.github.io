@@ -24,6 +24,9 @@ paginate_path: "page/:num/"
 
 site_url: "https://www.christophh.net"
 
+collections:
+    - books
+
 asset_base_urls:
     fonts: //d3rgic9i48f56z.cloudfront.net/fonts
 
@@ -53,3 +56,6 @@ navigation:
     - label: All articles
       link: /blog/
       icon: ss-notebook
+    #- label: Favorite books
+    #  link: /books/
+    #  icon: ss-openbook

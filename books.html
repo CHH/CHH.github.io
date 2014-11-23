@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<header class="page-title">
+    <h1>Favorite books</h1>
+</header>
+
+<ul class="book-list">
+    {% for book in site.books %}
+    <li class="book">
+        <div class="book-cover">
+            <a href="{{ book.link }}"><img src="{{ book.cover }}" alt=""></a>
+        </div>
+
+        <h2 class="book-title"><a href="{{ book.link }}">{{ book.title }}</a>
+            by <span class="author">{{ book.author }}</span></h2>
+    </li>
+    {% endfor %}
+</ul>
