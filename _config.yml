@@ -15,7 +15,10 @@ safe: true
 # lsi: true
 
 title: "Christoph Hochstrasser"
-homepage_post_count: 6
+description: >
+    Christoph Hochstrasser is a Designer & Developer. He blogs about PHP, Web Development
+    and Design.
+
 paginate: 5
 paginate_path: "page/:num/"
 

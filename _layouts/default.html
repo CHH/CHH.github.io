@@ -14,9 +14,9 @@
         <meta name="author" content="Christoph Hochstrasser">
 
         {% if page.custom_excerpt %}
-        {% assign page_desc = page.custom_excerpt | markdownify | strip_html %}
+        {% assign page_desc = page.custom_excerpt|markdownify|strip_html %}
         {% elsif page.excerpt %}
-        {% assign page_desc = page.excerpt | markdownify | strip_html %}
+        {% assign page_desc = page.excerpt|markdownify|strip_html %}
         {% else %}
         {% assign page_desc = site.description %}
         {% endif %}
@@ -142,7 +142,7 @@
                     'hero3.jpg'
                 ];
 
-                function getRandomInt(min, max) {
+                function randomInt(min, max) {
                     return Math.floor(Math.random() * (max - min + 1) + min);
                 }
 
@@ -157,15 +157,15 @@
                 }
 
                 $(function() {
-                    var image = images[getRandomInt(0, images.length - 1)];
+                    var imageName = images[randomInt(0, images.length - 1)];
                     var img = new Image();
                     img.onload = function() {
                         $(".site-header .bg-image")
-                            .css({"background-image": "url(/images/" + image + ")"});
+                            .css({"background-image": "url(/images/" + imageName + ")"});
 
                         $('.site-header .bg-image').addClass('loaded');
                     };
-                    img.src = "/images/" + image;
+                    img.src = "/images/" + imageName;
 
                     $("#page-top-bar").fixedsticky();
                     $("#reveal-sidebar").on('click', function(ev) {
