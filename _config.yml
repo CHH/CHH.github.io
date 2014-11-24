@@ -54,5 +54,5 @@ navigation:
       link: /hire/me/
       icon: ss-briefcase
     - label: Favorite books
-      link: /books/
+      link: /reads/
       icon: ss-openbook
