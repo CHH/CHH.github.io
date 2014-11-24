@@ -53,9 +53,6 @@ navigation:
     - label: Hire me
       link: /hire/me/
       icon: ss-briefcase
-    - label: All articles
-      link: /blog/
-      icon: ss-notebook
-    #- label: Favorite books
-    #  link: /books/
-    #  icon: ss-openbook
+    - label: Favorite books
+      link: /books/
+      icon: ss-openbook

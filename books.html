@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Favorite books
 ---
 <header class="page-title">
     <h1>Favorite books</h1>
@@ -9,11 +10,12 @@ layout: default
     {% for book in site.books %}
     <li class="book">
         <div class="book-cover">
-            <a href="{{ book.link }}"><img src="{{ book.cover }}" alt=""></a>
+            {% if book.link %}
+            <a href="{{ book.link }}" title="{{ book.title }}"><img src="{{ book.cover }}" alt="{{ book.title }}"></a>
+            {% else %}
+            <img src="{{ book.cover }}" title="{{ book.title }}" alt="{{ book.title }}">
+            {% endif %}
         </div>
-
-        <h2 class="book-title"><a href="{{ book.link }}">{{ book.title }}</a>
-            by <span class="author">{{ book.author }}</span></h2>
     </li>
     {% endfor %}
 </ul>
