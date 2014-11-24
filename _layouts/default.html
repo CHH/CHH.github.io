@@ -135,19 +135,58 @@
         </div>
 
         <script type="text/javascript">
-            (function() {
-                var images = [
-                    'hero1.jpg',
-                    'hero2.jpg',
-                    'hero3.jpg'
-                ];
+            (function () {
+                // Main entry point
+                function app() {
+                    randomSidebarImage($(".site-header .bg-image"));
 
-                function randomInt(min, max) {
-                    return Math.floor(Math.random() * (max - min + 1) + min);
+                    $("#page-top-bar").fixedsticky();
+
+                    $("#reveal-sidebar").on('click', function (ev) {
+                        ev.preventDefault();
+                        ev.stopImmediatePropagation();
+                        $("body").toggleClass("reveal-sidebar");
+                    });
+
+                    $(".main-wrapper").on('click', function (ev) {
+                        $("body").removeClass("reveal-sidebar");
+                    });
+
+                    // Disable scrolling on iOS when offscreen nav is open to
+                    // prevent weird positioning bugs with the sidebar
+                    $(document).on("touchmove", "body.reveal-sidebar", false);
+
+                    $("#page-top-bar").headroom();
+                }
+
+                // Behavior which loads a random image into the sidebar
+                function randomSidebarImage(sidebar) {
+                    sidebar = $(sidebar);
+
+                    var images = [
+                        'hero1.jpg',
+                        'hero2.jpg',
+                        'hero3.jpg'
+                    ];
+
+                    function randomInt(min, max) {
+                        return Math.floor(Math.random() * (max - min + 1) + min);
+                    }
+
+                    $(function () {
+                        var imageName = images[randomInt(0, images.length - 1)];
+                        var img = new Image();
+                        img.onload = function () {
+                            sidebar
+                            .css({"background-image": "url(" + img.src + ")"})
+                            .addClass('loaded');
+                        };
+                        img.src = "/images/" + imageName;
+                    });
                 }
 
                 function debounce(fn, msec) {
-                    return function() {
+                    return function () {
                         if (typeof this.timeout !== "undefined") {
                             clearTimeout(this.timeout);
                         }
@@ -156,28 +195,8 @@
                     };
                 }
 
-                $(function() {
-                    var imageName = images[randomInt(0, images.length - 1)];
-                    var img = new Image();
-                    img.onload = function() {
-                        $(".site-header .bg-image")
-                            .css({"background-image": "url(/images/" + imageName + ")"});
-
-                        $('.site-header .bg-image').addClass('loaded');
-                    };
-                    img.src = "/images/" + imageName;
-
-                    $("#page-top-bar").fixedsticky();
-                    $("#reveal-sidebar").on('click', function(ev) {
-                        ev.preventDefault();
-                        ev.stopImmediatePropagation();
-                        $("body").toggleClass("reveal-sidebar");
-                    });
-                    $(".main-wrapper").on('click', function(ev) {
-                        $("body").removeClass("reveal-sidebar");
-                    });
-                    $("#page-top-bar").headroom();
-                });
+                // Start
+                app();
             })();
         </script>
     </body>
