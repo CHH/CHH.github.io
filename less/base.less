@@ -18,6 +18,12 @@ html {
 -webkit-text-size-adjust : 100%;
 -ms-text-size-adjust : 100%; }
 
+@keyframes logo {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1.0); }
+}
+
 body {
     padding: 0;
 }
@@ -37,6 +43,21 @@ hr {
 
 .right {
     float: right;
+}
+
+.box {
+    padding: 2em;
+    background: white;
+    border: 1px solid fade(black, 10%);
+}
+
+.box-fancy {
+    padding: 0.5em;
+
+    .box-inner {
+        border: 1px dashed fade(black, 7%);
+        padding: 1.5em;
+    }
 }
 
 .page-wrapper {
@@ -228,6 +249,7 @@ body.reveal-sidebar {
         background-size: 105px 105px;
         border: 2px solid fade(white, 10%);
         .drop-shadow;
+        //animation: logo 500ms;
 
         > img {
             width: 100%;
@@ -339,15 +361,77 @@ body.reveal-sidebar {
     }
 }
 
+.list-stars {
+    list-style: none;
+
+    li {
+        position: relative;
+    }
+
+    li:before {
+        content: "\22C6";
+        font-family: "SSStandard";
+        position: absolute;
+        top: 0.2em;
+        left: -1em;
+        color: @color-complement2;
+    }
+}
+
 .question-submit-box {
     background: #f5f5f5;
     padding: 2em 0;
     margin: 2em 0 0;
 
     .question-wrapper {
-        background: white;
-        padding: 2em;
-        border: 1px solid fade(black, 10%);
+        .box;
+    }
+}
+
+#search-bar {
+    position: fixed;
+    z-index: 100000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -150%);
+    background: darken(@color-base, 10%);
+    background: fade(white, 97%);
+    box-shadow: 0 10px 20px fade(black, 30%);
+    transition: transform 200ms ease-out;
+
+    input[type=text] {
+        background: transparent;
+        color: fade(white, 90%);
+        color: black;
+        font-size: 3em;
+        padding: 1em;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: fade(white, 70%);
+            color: fade(black, 30%);
+        }
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        color: fade(white, 50%);
+        color: fade(black, 30%);
+        font-size: 0.8em;
+        padding: 1em;
+        vertical-align: middle;
+    }
+
+    &.js-visible {
+        transition: transform 200ms ease-out;
+        transform: translate(0, 0);
     }
 }
 

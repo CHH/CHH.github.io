@@ -3,6 +3,26 @@ layout: default
 title: Home
 ---
 <div id="homepage">
+    <section id="blog-intro" class="box box-fancy">
+        <div class="box-inner">
+            <h1 class="box-title">New here?</h1>
+            <p>
+                Here are some of the most popular posts to get you started:
+            </p>
+            <ul class="list-stars">
+                <li>
+                    <a href="{% post_url 2012-07-24-php-socket-programming %}">PHP Socket Programming, done the Right Way™</a>
+                </li>
+                <li>
+                    <a href="{% post_url 2012-02-01-php-unix-programming %}">PHP Unix Programming</a>
+                </li>
+                <li>
+                    <a href="{% post_url 2011-10-26-closure-object-binding-in-php-54 %}">Closure Object Binding in PHP 5.4</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     {% if paginator.posts != empty %}
     <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
         <div itemprop="blogPosts" class="post-list">
