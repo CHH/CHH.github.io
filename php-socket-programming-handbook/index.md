@@ -113,8 +113,10 @@ try to get you into the right direction.
 
 <p>
     <a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button button-primary">Buy for 299$</a>
-    You make this much money probably in a couple of hours.
-    (available on January 15 2015)</p>
+</p>
+<p>
+    You make this much money probably in a couple of hours. (available on January 15 2015)
+</p>
 
 ### Guided
 
@@ -125,9 +127,10 @@ This package is for people who need a bit more guidance on achieving their goal.
 * Send your questions per email
 * _Only 50 packages available!_
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button button-primary">Buy for 49$</a>
-That's less than you make in an hour!
-(available on January 15 2015)</p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button button-primary">Buy for 49$</a></p>
+
+<p>That's less money than you make within an hour!
+    (available on January 15 2015)</p>
 
 ### Self-Learner
 
@@ -138,7 +141,8 @@ That's less than you make in an hour!
 * _Starts bottom up,_ beginning with networking basics up to multiprocessing and
   Async IO and frameworks.
 
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button button-primary">Buy for 29$</a> (That’s less than a movie ticket, softdrink plus popcorn! Available January 15 2015)</p>
+<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button button-primary">Buy for 29$</a></p>
+<p>(That’s less than a movie ticket, softdrink plus popcorn! Available January 15 2015)</p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
