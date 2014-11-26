@@ -399,13 +399,19 @@ body.reveal-sidebar {
     background: fade(white, 97%);
     box-shadow: 0 10px 20px fade(black, 30%);
     transition: transform 200ms ease-out;
+    padding: 1em 3em;
+
+    .suggestions {
+        font-size: 0.8em;
+        color: fade(black, 50%);
+    }
 
     input[type=text] {
         background: transparent;
         color: fade(white, 90%);
         color: black;
         font-size: 3em;
-        padding: 1em;
+        padding: 0.5em 0;
 
         &:focus {
             box-shadow: none;
