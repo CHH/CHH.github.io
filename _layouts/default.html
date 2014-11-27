@@ -183,6 +183,8 @@
                         $(".main-wrapper, #search-bar .close, .site-header").one('click', function (ev) {
                             hideSearchBar();
                         });
+
+                        ga('send', 'event', 'search', 'show')
                     });
 
                     $("#page-top-bar").fixedsticky();
