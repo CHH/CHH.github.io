@@ -2,6 +2,8 @@
 title: "On Web Typography"
 date: "2014-11-12 11:30:00"
 layout: post
+tags:
+    - Design
 ---
 Recently I read “[On Web Typography][]” by [Jason Santa Maria][jsm]. I'm now into finishing it a second time. Jason is one of my greatest idols of the web design community. His design for “A List Apart” inspired me for many years.
 

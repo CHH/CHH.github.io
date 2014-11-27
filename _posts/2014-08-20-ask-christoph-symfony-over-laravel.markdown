@@ -2,6 +2,9 @@
 layout: question
 title: "Ask Christoph: Symfony vs. Laravel?"
 date: "Mi Aug 20 11:40:34 +0200 2014"
+tags:
+    - Programming
+    - Questions
 ---
 > Is learning Symfony2 vs. Laravel a good thing to do this year? As I mentioned I'm looking to get more opportunities, and I saw that Symfony2 is the right choice for business!
 

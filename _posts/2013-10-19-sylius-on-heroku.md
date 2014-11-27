@@ -1,6 +1,8 @@
 ---
 title: Running Sylius on Heroku
 layout: post
+tags:
+    - Programming
 ---
 [Sylius](http://sylius.org) is a modern ecommerce solution for PHP,
 built on Symfony 2. In this post we will explore together how simple it's to
@@ -59,7 +61,7 @@ Use `heroku addons:docs heroku-postgresql` to view documentation.
 To get our Postgres database finally ready, we have one more step ahead
 of us. If you look closer at the output in your own console,
 you will notice that the color in `HEROKU_POSTGRESQL_GRAY_URL` is a
-different one than here. Copy the whole string `HEROKU_POSTGRESQL_GRAY_URL` and 
+different one than here. Copy the whole string `HEROKU_POSTGRESQL_GRAY_URL` and
 run this in your terminal:
 
     $ heroku pg:promote HEROKU_POSTGRESQL_GRAY_URL
@@ -77,7 +79,7 @@ variables are then available as environment variables in your processes,
 i.e. in the `$_SERVER` and `$_ENV` superglobals of PHP or via
 `getenv()`.
 
-So we need a PHP config file which reads this environment variables and 
+So we need a PHP config file which reads this environment variables and
 sets the right container parameters. The Heroku Postgres addon sets the
 `DATABASE_URL` environment variable, and the Mandrill addon sets the
 `MANDRILL_USERNAME` and `MANDRILL_APIKEY` variables, which are the SMTP

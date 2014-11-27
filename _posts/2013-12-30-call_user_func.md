@@ -1,7 +1,8 @@
 ---
 layout: post
-title: On call_user_func()
+title: "On call_user_func()"
 short: true
+tag: Programming
 ---
 Little known change of PHP 5.4: you don't have to
 use the `call_user_func()` function anymore to call generic callables!

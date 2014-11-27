@@ -1,17 +1,15 @@
 ---
 layout: post
 title: We Power Users are going to be the 80 percent
-tags: 
-    - Opinion
 custom_excerpt: >
-    Recent OS releases follow some kind of trend: 
-    they all try to make the desktop more usable 
-    for normal users. But with the rapid adoption 
-    of tablets, the power users will be left as the 
+    Recent OS releases follow some kind of trend:
+    they all try to make the desktop more usable
+    for normal users. But with the rapid adoption
+    of tablets, the power users will be left as the
     80 percent who use desktops at all.
 ---
 The recent announcement that all Apps distributed through the Mac App
-Store must run in a sandbox beginning with March 2012 has had a huge 
+Store must run in a sandbox beginning with March 2012 has had a huge
 echo in the tech world. I think it's not a big deal though, because
 Microsoft is restricting API access for all apps distributed through
 their store too with Windows 8.
@@ -31,7 +29,7 @@ we **Power Users**.
 Don't get me wrong: I like when things are simple, and Just
 Work&trade;.
 
-Everyone else _will_ use tablets, because normal users can now do everything 
+Everyone else _will_ use tablets, because normal users can now do everything
 on a tablet, that they would have traditionally done on a computer (and
 with less maintenance and hassle by the way).
 

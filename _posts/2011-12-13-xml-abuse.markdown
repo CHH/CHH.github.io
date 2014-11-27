@@ -2,7 +2,7 @@
 layout: post
 title: XML Abuse
 tags:
-    - Opinion
+    - Programming
 custom_excerpt: >
     XML Abuse is everywhere, and I'm sick of it. Everytime
     I have to use Ant, I'm feeling like I'm in **XML Hell**.<br>
@@ -17,9 +17,9 @@ XML is perfectly fine for (because it was designed for this):
  1. First of all: XML was designed to be _written_ by **humans** and
     _read_ by **humans**. Nearly
     all _generated_ XML I've seen _sucks badly_. I think this is because
-    XML cannot efficiently represent common data structures found in 
+    XML cannot efficiently represent common data structures found in
     programming languages.
- 2. XML is _good_ for representing trees. If you imagine the outline of a document, 
+ 2. XML is _good_ for representing trees. If you imagine the outline of a document,
     you see that this is _definitly_ a **tree**.
  3. XML is good for creating _Markup_ Languages with it. Markup
     Languages are intended to be written by **humans** and can easily validated by a standard

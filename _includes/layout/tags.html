@@ -1,0 +1,10 @@
+<div class="site-tags">
+    <h1 class="box-title">Explore</h1>
+    <ul class="tag-list">
+        {% for tag in site.tags %}
+        <li>
+            <a href="/categories/{{ tag[0]|downcase }}">{{ tag[0] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

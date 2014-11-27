@@ -2,7 +2,7 @@
 title: PHP Unix Programming
 layout: post
 tags:
-    - How To
+    - Programming
 custom_excerpt: >
     Ever worried that your scripts ain't good Unix citizens?
     Here are some quick, practial recipes usable for everyday

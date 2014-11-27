@@ -1,10 +1,10 @@
 ---
 title: Hosting Composer Micropackages in Gists
 layout: post
-tags: 
+tags:
     - Programming
 custom_excerpt: >
-    Recently I once again came across [an article](http://jeffkreeftmeijer.com/2011/microgems-five-minute-rubygems/) 
+    Recently I once again came across [an article](http://jeffkreeftmeijer.com/2011/microgems-five-minute-rubygems/)
     by [Jeff Kreeftmeijer](http://jeffkreeftmeijer.com/) in which he
     explains how to host micro libraries just in one Github Gist. I
     instantly thought: "Does this work for PHP too?" and __yes__, thanks
@@ -13,7 +13,7 @@ custom_excerpt: >
 ---
 Sometimes there're simply small bits of code which you create and then
 want to use in another project too. The bits are mostly too small
-to run a real project for it and the code is so simple, it doesn't 
+to run a real project for it and the code is so simple, it doesn't
 need much maintenance.
 
 So what to do about it?
@@ -46,7 +46,7 @@ First add a file named `composer.json` to your Gist and put this in it:
 All classes must live in the Gist's root. This is because Gists have one
 limitation: Directories are not displayed in the Gist web interface.
 
-So we have to use the class map autoloader, because otherwise 
+So we have to use the class map autoloader, because otherwise
 (with PSR-0) we would have to model our directory structure like the
 class names and this would make them invisible when viewing the Gist
 from the web.
@@ -84,7 +84,7 @@ package's classes.
 
 The key take away of this, is that [Composer][] is an awesome tool,
 simplifies handling library dependencies _a lot_, has quite some tricks
-up its sleeve _and_ is rapidly gaining traction in the PHP community. 
+up its sleeve _and_ is rapidly gaining traction in the PHP community.
 
 You should definitely check it out!
 

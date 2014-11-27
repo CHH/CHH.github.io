@@ -1,6 +1,8 @@
 ---
 title: 2012
 layout: post
+tags:
+    - Personal
 ---
 
 Let's look back at the year 2012. It was a very succesful year, for me,
@@ -110,4 +112,3 @@ Few things which you can anticipate:
 * [php-build][] v1.0.0, which will see some restructuring, and will be
   the first release which breaks backwards compatibility with the dev
   versions.
-

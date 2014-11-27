@@ -2,7 +2,7 @@
 title: Closure Object Binding in PHP 5.4
 layout: post
 tags:
-    - How To
+    - Programming
 custom_excerpt:
     Closure Object Binding is one of the features that I'm looking
     forward to in PHP 5.4. We will take a brief look at the long way
@@ -23,9 +23,9 @@ object binding support had and show you some simple use cases for it.
 
 The Object Binding support for Closures had a very hard way, until it
 finally landed. I remember that it was present in some alpha releases of
-PHP 5.3, but when 5.3 was released it disappeared. 
+PHP 5.3, but when 5.3 was released it disappeared.
 
-After some digging, I found out it was excluded from the release because 
+After some digging, I found out it was excluded from the release because
 the behaviour of the Object Binding was kind of unspecified. Thank god,
 this [RFC](https://wiki.php.net/rfc/closures/object-extension) came
 along and got the problems for an implementation out of the way.
@@ -61,7 +61,7 @@ example:
 
     <?php
 
-    $closure = function() { 
+    $closure = function() {
         echo $this->foo;
     };
 
@@ -109,12 +109,12 @@ Consider the following example:
 
     // heisdead.phtml
     He is dead <?= $this->name ?>.
-    
+
     // test.php
     <?php
 
     $template = new \CHH\Template(__DIR__.'/heisdead.phtml');
-    
+
     $context = (object) array(
         'name' => 'Jim'
     );
@@ -148,7 +148,7 @@ Take this example of a (rather inflexible) context with a helper method:
 Our previous example could then be written as:
 
     // heisdead.phtml
-    He is dead <?= $this->name ?>. He died at 
+    He is dead <?= $this->name ?>. He died at
     <?= $this->formatDate($this->dateTimeOfDeath); ?>.
 
     // test.php
@@ -168,7 +168,7 @@ to allow extending the context with additional helper methods (think
 
 Closure object support makes injecting behaviour into classes
 much more elegant &mdash; as they can give you a access to
-the classes' properties. It can also simplify templating engines alot, 
+the classes' properties. It can also simplify templating engines alot,
 by putting the template inside the closure.
 
 ## Further Reading

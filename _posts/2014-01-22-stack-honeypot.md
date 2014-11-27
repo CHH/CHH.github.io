@@ -4,6 +4,8 @@ layout: post
 short: true
 type: link
 href: https://github.com/CHH/stack-honeypot
+tags:
+    - Programming
 ---
 After quite a bit of a pause, I'm starting with some little libs again.
 First came [MustacheJsCompiler](https://github.com/CHH/MustacheJsCompiler)

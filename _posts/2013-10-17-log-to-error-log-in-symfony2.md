@@ -2,6 +2,8 @@
 title: How to log to the PHP error log in Symfony 2
 layout: post
 short: true
+tags:
+    - Programming
 ---
 Sometimes you want to log to PHP's `error_log` in a Symfony 2 app. This
 is useful if your app runs in a container (think Docker)
@@ -29,4 +31,3 @@ monolog:
             type:  error_log
             level: debug
 ```
-

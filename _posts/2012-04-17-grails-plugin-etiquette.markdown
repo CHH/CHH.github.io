@@ -3,7 +3,7 @@
 title: Grails Plugin Etiquette
 layout: post
 tags:
-    - Opinion
+    - Programming
 custom_excerpt: >
     At work we use a _lot_ of Grails plugins. Recently one of our most
     important Plugins broke functionality in our app in a _minor_
@@ -23,7 +23,7 @@ breaking stuff in existing apps.
 ## When you absolutely, positively have to break something
 
 When you do have to break with existing behaviour then the
-most important thing is to __Communicate__! 
+most important thing is to __Communicate__!
 
 The worst thing for me as user is to realize that certain things
 do not work anymore, after a unsuspicious minor update.
@@ -35,14 +35,14 @@ Here are some suggestions:
  * Indicate it with a new _major_ version number (e.g. "2.0"). This is
    about managing expectations. I expect breaking changes in a major
    release. In minor releases though, I expect that _not a single thing_ breaks.
- * Blog about the break, and provide information on how to 
+ * Blog about the break, and provide information on how to
    upgrade from previous versions.
 
 ## Provide a changelog
 
 A changelog simply makes updates a bit more predictable &mdash; and
 therefore you make it easier to upgrade to the latest version if you
-clearly state what's new and what has changed from previous versions. 
+clearly state what's new and what has changed from previous versions.
 
 _You want your users to be on the latest version, or do you?_
 
@@ -73,7 +73,7 @@ changed between releases.
 Tags can be combined with [Github's Compare View](https://github.com/blog/612-introducing-github-compare-view)
 to provide a change log of releases.
 
-You can use 
+You can use
 
     http://github.com/<user>/<repository>/compare/<start>...<end>
 
@@ -83,4 +83,3 @@ complete with all commits listed and a diff.
 These points can also be _Tag Names_, [here is
 an example](https://github.com/CHH/php-build/compare/v0.3.0...v0.4.0)
 from one of my projects.
-

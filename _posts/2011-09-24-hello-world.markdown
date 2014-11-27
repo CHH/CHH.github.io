@@ -1,6 +1,7 @@
 ---
 title: Hello World
 layout: post
+tag: PSA
 ---
 Willkommen auf meinem neuen Blog!
 
@@ -31,4 +32,3 @@ Hier noch ein paar andere Fakten zu meiner Seite:
    Seite. LESS ist einfach das bessere CSS.
  * Ich verwende überall HTML5 Elemente. Für bessere IE Kompatibilität
    sorgt der Modernizr.
-

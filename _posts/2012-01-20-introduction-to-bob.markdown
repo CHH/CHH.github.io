@@ -2,7 +2,7 @@
 layout: post
 title: PHP Project Automation with Bob
 tags:
-    - How To
+    - Programming
 custom_excerpt: >
     After not being satisfied with Ant, Phing and Pake &mdash; I've
     scratched my own itch and made Bob &mdash; a **simple** project
@@ -11,10 +11,10 @@ custom_excerpt: >
 [Bob][] was written as a tool for me to
 automate those tiny, repetitive tasks that pop up every once
 in a while &mdash; like commands which have to be run on the shell every time
-with the same arguments, or some maintenance for the database. 
+with the same arguments, or some maintenance for the database.
 
-These task do almost never need a fancy CLI frontend. 
-They just need a place where they can be put and simple 
+These task do almost never need a fancy CLI frontend.
+They just need a place where they can be put and simple
 means to link them together.
 
 [bob]: http://github.com/CHH/Bob
@@ -35,7 +35,7 @@ the top of my head:
    bump the application's version number, create some tags
    in the VCS and make a tarball.
 
-I wrote Bob because I had enough of the verboseness of Phing's and Ant's 
+I wrote Bob because I had enough of the verboseness of Phing's and Ant's
 XML based DSLs and wasn't quite satisfied with Pake's PHP based
 DSL either.
 
@@ -119,7 +119,7 @@ the specified order:
 When no task is given on the command line, then Bob attempts to run the
 `default` task.
 
-Tasks can be described by using the `desc()` function before defining 
+Tasks can be described by using the `desc()` function before defining
 a task. Now let's add a simple description to our `hello` task:
 
     desc('Echoes Hello World');
@@ -216,4 +216,3 @@ This requires PHP 5.4.0 at least for the builtin CLI Web Server.
             $type == 'err' ? fwrite(STDERR, $output) : echo $output;
         });
     });
-

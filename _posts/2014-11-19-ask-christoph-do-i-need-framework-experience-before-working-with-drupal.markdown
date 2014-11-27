@@ -2,6 +2,9 @@
 layout: question
 title: "Ask Christoph: Do I need Framework Experience before working with Drupal?"
 date: "2014-11-19"
+tags:
+    - Programming
+    - Questions
 ---
 > Hi, I want to become a Drupal developer.
 > My question is: is learning PHP frameworks, like Zend Framework, Symfony etc.,

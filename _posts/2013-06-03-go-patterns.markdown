@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Go Patterns
+tags:
+    - Programming
 ---
 
 I must admit that I'm a serious fan of [Go][]. I spent most of the last
@@ -14,7 +16,7 @@ Many of these patterns are from [Effective Go][], a book which is
 maintained by the Go team. This book is available online, and highly
 recommended.
 
-If you are not already familiar with Go, I also recommend going through the [Tour of Go][] to get to know the core concepts of the language before reading this article. 
+If you are not already familiar with Go, I also recommend going through the [Tour of Go][] to get to know the core concepts of the language before reading this article.
 
 [Tour of Go]: http://tour.golang.org/
 [Effective Go]: http://golang.org/doc/effective_go.html
@@ -61,7 +63,7 @@ thanks to channels and Goroutines.
 
 I like to write Futures in Go with a `struct` type which has `Success` and
 `Error` channels. These channels are used to resolve the Future into the
-"error" and "success" states, respectively. 
+"error" and "success" states, respectively.
 
     // Can be anything
     type Result interface{}
@@ -82,7 +84,7 @@ I like to write Futures in Go with a `struct` type which has `Success` and
         return future
     }
 
-The "Then" part uses a `select` construct to wait on the `Success` 
+The "Then" part uses a `select` construct to wait on the `Success`
 and `Error` channels until the Future is resolved.
 
     future := doSomethingAsync()
@@ -98,7 +100,7 @@ and `Error` channels until the Future is resolved.
 If you read throughly about Futures in Programming, then you might
 notice that this implementation is fairly incomplete. It lacks stacking
 of futures, error bubbling and protection against resolving from
-the outside. Constructing a more "correct" Future implementation though is 
+the outside. Constructing a more "correct" Future implementation though is
 unnecessary for most use cases, and left as an exercise to the reader.
 
 ## BYOC
@@ -130,16 +132,16 @@ function on the same channel.
     func main() {
         numWorkers := 4
         c := make(chan int, numWorkers)
-        
+
         for i := 0; i < numWorkers; i++ {
             go generateSomeRandoms(c)
         }
-        
+
         // Get 10 random numbers
         for i := 0; i < 10; i++ {
             fmt.Println(<-c)
         }
-        
+
         close(c)
     }
 
@@ -163,7 +165,7 @@ values on a channel via an embedded Goroutine.
             }
             close(yield)
         }()
-        
+
         return yield
     }
 
@@ -190,4 +192,3 @@ can be used to replicate many features of higher level languages.
 Especially Channels and Goroutines are extremely powerful, yet simple
 and efficient primitives. I really love how Go makes Concurrency
 _really_ easy, without the bloat, and in a safe way.
-

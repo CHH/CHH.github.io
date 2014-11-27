@@ -4,6 +4,8 @@ short: true
 type: link
 href: "https://blog.heroku.com/archives/2014/4/29/introducing_the_new_php_on_heroku"
 layout: post
+tags:
+    - Programming
 ---
 A long due update to the Heroku PHP buildpack —which adds support for
 modern PHP development— is now in public beta. Their [Devcenter

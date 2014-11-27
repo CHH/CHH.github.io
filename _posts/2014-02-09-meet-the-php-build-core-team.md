@@ -2,6 +2,8 @@
 title: Meet the php-build core team
 layout: post
 emailsignup: false
+tags:
+    - Programming
 ---
 Over the past half year I've noticed that issues and pull requests start
 piling up and are taking often even weeks to resolve on the
@@ -10,8 +12,8 @@ Core Team.
 
 Let's welcome [Loïc Frering](https://github.com/loicfrering) and [Rogerio Prado de Jesus](https://github.com/rogeriopradoj) with a warm hug as the two new members of the core team!
 
-__Loïc Frering__ was _the_ first contributor to php-build, and it 
-wouldn't power the PHP support of Travis CI without him! He is the glue between 
+__Loïc Frering__ was _the_ first contributor to php-build, and it
+wouldn't power the PHP support of Travis CI without him! He is the glue between
 php-build and Travis CI.
 
 __Rogerio Prado de Jesus__ practically contributed nearly every single one of the definitions
@@ -30,4 +32,4 @@ can be released without a need for me. This should also mean that the quality of
 [php-build][] will increase, and on
 [other](https://github.com/CHH/pipe) [projects](https://github.com/CHH/heroku-buildpack-php) as well.
 
-[php-build]: https://CHH.github.io/php-build 
+[php-build]: https://CHH.github.io/php-build

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: PHP Socket Programming, done the Right Way™
+tags:
+    - Programming
 custom_excerpt: >
     When it comes to socket programming with PHP, nearly
     all articles are about the Socket Extension, despite it's

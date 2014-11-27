@@ -2,6 +2,8 @@
 layout: post
 title: "Named Exception Constructors"
 date: "Sa Sep 22 16:30 +0200 2014"
+tags:
+    - Programming
 ---
 Some time ago I read [a post][named constructors] by [Mathias Verraes](http://verraes.net) about using
 static methods as named constructors in object oriented PHP. I thought that this technique is very

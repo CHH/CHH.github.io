@@ -2,7 +2,7 @@
 layout: post
 title: Time is money
 tags:
-    - Opinion
+    - Programming
 custom_excerpt: >
     or why **no** corporation will fork your permissively licensed
     open source project _without_ contributing back upstream.
@@ -19,7 +19,7 @@ back to their open source project.
 ---------------------------
 
 _First of all_: most open source projects will never get _that_ popular. Especially
-it's very rare that a project gets popular enough, that they'll be used in a successful 
+it's very rare that a project gets popular enough, that they'll be used in a successful
 commercial product.
 
 _So don't worry._ Just pick any license which let's people use your
@@ -50,7 +50,7 @@ These are the choices you've for maintaining downstream patches:
     of the software. You will almost surily land in dependency hell too,
     because you _cannot_ upgrade software that depends on it.
 
-All of these options cost time (and time _is money_) and therefore _do not_ create 
+All of these options cost time (and time _is money_) and therefore _do not_ create
 business value.
 
 That's the reason why every corporation _avoids_ having to

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+{% assign posts = site.tags[page.tag_name] %}
+
+<header class="page-title">
+    <h1>Posts filed in “{{ page.tag_name }}”</h1>
+</header>
+
+<div itemprop="blogPosts" class="post-list">
+    {% for post in posts %}
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="post-preview {% if post.short %} short {% endif %}">
+        <header class="post-header">
+            <meta itemprop="url" content="{{ site.site_url }}{{ post.url }}" />
+            <meta itemprop="datePublished" content="{{ post.date }}" />
+            <meta itemprop="headline" content="{{ post.title }}" />
+
+            <h2 class="post-title">
+                {% if post.type == 'link' %}
+                <i class="ss-icon ss-redirect"></i>
+                {% endif %}
+
+                <a href="{% if post.type == 'link' %} {{post.href}} {% else %}
+                {{post.url}} {% endif %}" itemprop="name">{{ post.title }}</a>
+            </h2>
+
+            <div class="post-date">
+                Posted on
+                <time datetime="{{ post.date }}">
+                    {{ post.date | date: "%d %b %Y" }}
+                </time>
+                •
+                <a href="http://www.instapaper.com/hello2?url={{ site.site_url|url_escape }}{{ post.url|url_escape }}&title={{ post.title|url_escape }}&description={{ post.excerpt|markdownify|strip_html|url_escape }}">Save to Instapaper</a>
+                {% if post.type == 'link' %}
+                •
+                <a href="{{ post.url }}" title="Permalink">Permalink</a>
+                {% endif %}
+            </div>
+        </header>
+
+        <div class="post-excerpt" itemprop="description">
+            {% if post.short %}
+            {{ post.content }}
+            {% elsif post.custom_excerpt %}
+            {{ post.custom_excerpt | markdownify }}
+            {% else %}
+            {{ post.excerpt | markdownify }}
+            {% endif %}
+        </div>
+
+        <footer class="post-footer">
+            {% if post.short != true %}
+            <a class="continue" href="{{ post.url }}">
+                Continue reading »
+            </a>
+            {% endif %}
+        </footer>
+    </article>
+    {% endfor %}
+</div>

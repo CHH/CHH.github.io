@@ -2,6 +2,9 @@
 title: Available for hire
 layout: post
 short: true
+tags:
+    - Personal
+    - PSA
 ---
 I'm now officially available for hire. I'm interested in positions in full stack product development
 and I'm flexible what role to take in a project. I'm also very interested in DevOps positions.

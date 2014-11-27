@@ -2,7 +2,9 @@
 layout: post
 title: "The Network as Data Storage"
 date: "Di Aug 12 16:14:49 +0200 2014"
-excerpt: "Just like a file, a socket is an ordered stream of data. Do you know what’s also ordered? You’re right, a queue. So the network is essentially a queue. You know any of those fancy job processing systems, like Gearman or RabbitMQ? We can use the network to achieve some of their features, without any  infrastructure."
+excerpt: "Just like a file, a socket is an ordered stream of data. Do you know what’s also ordered? You’re right, a queue. So the network is essentially a queue. You know any of those fancy job processing systems, like Gearman or RabbitMQ? We can use the network to achieve some of their features, without any infrastructure."
+tags:
+    - Programming
 ---
 
 {% include posts/socket-book.html %}

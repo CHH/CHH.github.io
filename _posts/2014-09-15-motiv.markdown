@@ -2,6 +2,8 @@
 layout: post
 title: "Motiv"
 date: "Mi Sep 26 20:30 +0200 2014"
+tags:
+    - Design
 ---
 
 Recently something dawned upon me. All activities that encompass
@@ -37,4 +39,3 @@ And this is always a good thing to do when designing something.
     Though, you can also argue, that the Motiv in photography is also
     something deeper. It's not the thing itself, but you do the photograph
     _because_ of the thing. It's the _reason_ you do the photograph, the _motivation_.
-
