@@ -34,7 +34,7 @@ asset_base_urls:
     fonts: //d3rgic9i48f56z.cloudfront.net/fonts
 
 assets:
-    css_version: 5
+    css_version: 6
     js_version: 1
 
 markdown: kramdown
