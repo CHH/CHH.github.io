@@ -187,7 +187,8 @@
                             hideSearchBar();
                         });
 
-                        ga('send', 'event', 'search', 'show')
+                        ga('send', 'event', 'search', 'show');
+                        return false;
                     });
 
                     $("#page-top-bar").fixedsticky();
