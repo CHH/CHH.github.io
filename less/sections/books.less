@@ -22,7 +22,13 @@
             }
 
             img {
+                transition: all 250ms ease-in-out;
                 box-shadow: 0px 5px 8px fade(black, 40%);
+
+                &:hover {
+                    transform: translate(0, -5px);
+                    box-shadow: 0 10px 8px fade(black, 40%);
+                }
             }
         }
     }
