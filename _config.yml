@@ -1,6 +1,3 @@
-gems:
-  - jekyll-redirect-from
-
 permalink: pretty
 exclude:
     - Vagrantfile
