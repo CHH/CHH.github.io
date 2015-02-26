@@ -6,6 +6,7 @@ href: "/php-socket-programming-handbook/?icn=phpsphb&ici=post20140730_link"
 layout: post
 tags:
     - Programming
+    - Linked
 ---
 Since 2012 lots of people have read [this blog post]({% post_url 2012-07-24-php-socket-programming %})
 about socket programming. It's the most read post on this blog, year after year.

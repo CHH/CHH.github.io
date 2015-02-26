@@ -5,6 +5,7 @@ date: "2014-12-02"
 short: true
 type: link
 href: https://gum.co/cmsbook
+tags: [Linked]
 ---
 Had to choose a CMS for a project lately? It's a pain. So many options, finite time. The nagging voice in your head which asks “Does the choice come to bite me later on when we are deep into development?” adds to the anxiety.
 

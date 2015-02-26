@@ -5,6 +5,7 @@ date: "2015-02-26"
 short: true
 href: http://oss.ninjagrl.com/2015/02/23/stack/
 type: link
+tags: [Linked]
 ---
 
 ![Stack OSS Art](/images/posts/stack-oss-art/stack-11x14.jpg)
