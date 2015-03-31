@@ -51,7 +51,7 @@ navigation:
       link: /about/me/
       icon: ss-heart
     - label: Hire me
-      link: /hire/me/
+      link: https://hochstrasser.io
       icon: ss-briefcase
     - label: Favorite books
       link: /reads/
