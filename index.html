@@ -23,7 +23,6 @@ title: Home
         </div>
     </section>
 
-    {% if paginator.posts != empty %}
     <section id="blog_preview" itemscope itemtype="http://schema.org/Blog">
         <div itemprop="blogPosts" class="post-list">
             {% for post in paginator.posts %}
@@ -92,5 +91,4 @@ title: Home
             </div>
         </footer>
     </section>
-    {% endif %}
 </div>
