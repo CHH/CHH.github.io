@@ -16,9 +16,11 @@ programming, nearly 10 years ago. Servers are mindblowing at first.
 
 1. There are two ways to do this in PHP. And you have to discover the pleasant
    way yourself (it's not the obvious one).
-2. You need to know some networking terminology to understand it properly, which is often omitted
+2. You need to know some networking terminology to understand it properly,
+   which is often omitted
    in programming books. Especially in books about programming in PHP.
-3. The PHP manual is often aweful to read. Good, simple, and tweakable examples are hard to come by.
+3. The PHP manual is often aweful to read. Good, simple, and tweakable examples
+   are hard to come by.
 4. We are used to the fact that PHP starts from fresh memory on each request,
    servers are so entirely different.
 
@@ -42,7 +44,7 @@ What if you had a book, that…
     <ul class="list-checkmarks">
         <li>An exclusive free sample chapter</li>
         <li>Early access to the launch of the book</li>
-        <li>A special discount on the launch day, and for future product launches</li>
+        <li>10$ off, and early access to future product launches</li>
     </ul>
 
 <p><em>We never share your data with anyone and hate Spam just like you
@@ -86,14 +88,12 @@ var $mcj = jQuery.noConflict(true);
     <p><img src="/images/socket-book/Cover.png" alt=""></p>
 </div>
 
-__Available in Spring 2015 starting at 47$__, your guide to building awesome things with sockets
-in PHP.
+__Available in October 2016 starting at just 29$ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
 
 * 60+ page guide to socket programming in PHP
 * Start with networking basics and work your way up with tweakable examples
 * _[Signup for the mailing list](/php-socket-programming-handbook/subscribe/) and receive the entire first chapter free._
-  Additionally you get early access to the launch and receive a special discount code
-  for __20% off__.
+  Additionally you get early access to the launch and receive a special discount code for 10$ off the price.
 * DRM Free, PDF for easy reading on your computer, iPad or other tablet.
 
 <div style="clear: both;"></div>
@@ -115,12 +115,12 @@ try to get you into the right direction.
     <a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button button-primary">Buy for 299$</a>
 </p>
 <p>
-    You make this much money probably in a couple of hours. (available on January 15 2015)
+    You make this much money probably in a couple of hours. (available October 2016)
 </p>
 
 ### Guided
 
-This package is for people who need a bit more guidance on achieving their goal.
+This package is for people who need a bit more guidance for achieving their goal.
 
 * Includes the complete “Self-Learner” package
 * Includes 1 free one-on-one via Skype or Hangouts
@@ -129,8 +129,7 @@ This package is for people who need a bit more guidance on achieving their goal.
 
 <p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button button-primary">Buy for 49$</a></p>
 
-<p>That's less money than you make within an hour!
-    (available on January 15 2015)</p>
+<p>That's less money than you make within an hour! (available October 2016)</p>
 
 ### Self-Learner
 
@@ -142,7 +141,7 @@ This package is for people who need a bit more guidance on achieving their goal.
   Async IO and frameworks.
 
 <p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button button-primary">Buy for 29$</a></p>
-<p>(That’s less than a movie ticket, softdrink plus popcorn! Available January 15 2015)</p>
+<p>(That’s less than a movie ticket, softdrink, plus popcorn! Available October 2016)</p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
@@ -156,7 +155,7 @@ This package is for people who need a bit more guidance on achieving their goal.
  <ul class="list-checkmarks">
      <li>An exclusive free sample chapter</li>
      <li>Early access to the launch of the book</li>
-     <li>A special discount on the launch day, and for future product launches</li>
+     <li>Discount of 10$, and early access to future product launches</li>
  </ul>
 <p><em>We never share your data with anyone and hate Spam just like you
 do.</em></p>
