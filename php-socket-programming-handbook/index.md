@@ -2,6 +2,12 @@
 layout: stripped_down
 title: PHP Socket Programming Handbook
 ---
+<script src="https://gumroad.com/js/gumroad.js"></script>
+
+<p class="info-box">
+    <b>It’s here!</b> You can now buy the book! <a href="#packages">View available packages</a>
+</p>
+
 <header class="page-title">
     <h1>
         To this day my post about socket programming in PHP was viewed 45.685 times.
@@ -34,18 +40,31 @@ What if you had a book, that…
    stuff.
 4. …_and has someone who is available for all your questions_, if you are stuck.
 
+## The little PHP Socket Programming Handbook
+
+<div class="book-cover left">
+    <p><img src="/images/socket-book/Cover.png" alt=""></p>
+</div>
+
+__Available in October 2016 starting at just 29€ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
+
+* 60+ page guide to socket programming in PHP
+* Start with networking basics and work your way up with tweakable examples
+* _[Signup for the mailing list](/php-socket-programming-handbook/subscribe/) and receive the entire first chapter free._
+  Additionally you get early access to the launch and receive a special discount code for 10€ off the price.
+* DRM Free, PDF for easy reading on your computer, iPad or other tablet.
+
+<div style="clear: both;"></div>
+
 <div style="margin-top: 2em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <h2>
-        Subscribe now and get:
-    </h2>
+<h1 class="box-title">Get a free sample chapter</h1>
 
-    <ul class="list-checkmarks">
-        <li>An exclusive free sample chapter</li>
-        <li>Early access to the launch of the book</li>
-        <li>10$ off, and early access to future product launches</li>
-    </ul>
+<ul class="list-checkmarks">
+ <li>Contains the updated intro to socket programming with PHP</li>
+ <li>12 page PDF</li>
+</ul>
 
 <p><em>We never share your data with anyone and hate Spam just like you
 do.</em></p>
@@ -82,23 +101,37 @@ var $mcj = jQuery.noConflict(true);
 <!--End mc_embed_signup-->
 </div>
 
-## The little PHP Socket Programming Handbook
-
-<div class="book-cover left">
-    <p><img src="/images/socket-book/Cover.png" alt=""></p>
-</div>
-
-__Available in October 2016 starting at just 29$ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
-
-* 60+ page guide to socket programming in PHP
-* Start with networking basics and work your way up with tweakable examples
-* _[Signup for the mailing list](/php-socket-programming-handbook/subscribe/) and receive the entire first chapter free._
-  Additionally you get early access to the launch and receive a special discount code for 10$ off the price.
-* DRM Free, PDF for easy reading on your computer, iPad or other tablet.
-
-<div style="clear: both;"></div>
+<a id="packages"></a>
 
 ## Packages
+
+### Self-Learner (29€)
+
+* _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
+  tablets.
+* 60+ page guide to socket programming in PHP
+* _Tweakable examples_
+* _Starts bottom up,_ beginning with networking basics up to multiprocessing and
+  Async IO and frameworks.
+* Only __29€,__ that’s less than a movie ticket, softdrink plus popcorn!
+
+<p>
+    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 29€</a>
+</p>
+
+### Guided (49€)
+
+This package is for people who need a bit more guidance for achieving their goal.
+
+* Includes the complete “Self-Learner” package
+* Includes 1 free one-on-one via Skype or Hangouts
+* Send your questions per email
+* _Only 50 packages available!_
+* Only __49€,__ that's probably half of what you make in an hour!
+
+<p>
+    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 49€</a>
+</p>
 
 ### Enhanced
 
@@ -110,53 +143,27 @@ try to get you into the right direction.
 * Includes the complete “Guided” package
 * Includes free one-on-ones via Skype or Hangouts for 6 months
 * _Only 10 packages available!_
+* __Only 299€,__ you make this much money probably in a couple of hours
 
 <p>
-    <a href="/php-socket-programming-handbook/subscribe/?pkg=enhanced" class="button button-primary">Buy for 299$</a>
+    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 299€</a>
 </p>
-<p>
-    You make this much money probably in a couple of hours. (available October 2016)
-</p>
-
-### Guided
-
-This package is for people who need a bit more guidance for achieving their goal.
-
-* Includes the complete “Self-Learner” package
-* Includes 1 free one-on-one via Skype or Hangouts
-* Send your questions per email
-* _Only 50 packages available!_
-
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=guided" class="button button-primary">Buy for 49$</a></p>
-
-<p>That's less money than you make within an hour! (available October 2016)</p>
-
-### Self-Learner
-
-* _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
-  tablets.
-* 60+ page guide to socket programming in PHP
-* _Tweakable examples_
-* _Starts bottom up,_ beginning with networking basics up to multiprocessing and
-  Async IO and frameworks.
-
-<p><a href="/php-socket-programming-handbook/subscribe/?pkg=basic" class="button button-primary">Buy for 29$</a></p>
-<p>(That’s less than a movie ticket, softdrink, plus popcorn! Available October 2016)</p>
 
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <h1 class="box-title">Subscribe to get your free sample chapter</h1>
+    <h1 class="box-title">Before you leave</h1>
 
-    <h2>
-         Subscribe now and get:
-    </h2>
+    <p>There’s a free sample chapter for you, where you’ll learn all the basics of networking and socket programming, and learn to write your first server.</p>
 
- <ul class="list-checkmarks">
-     <li>An exclusive free sample chapter</li>
-     <li>Early access to the launch of the book</li>
-     <li>Discount of 10$, and early access to future product launches</li>
- </ul>
+    <p>Enter your email address and you’ll get:</p>
+
+    <ul class="list-checkmarks">
+     <li>An intro to networking basics</li>
+     <li>An intro to socket programming with PHP and how to write your first server</li>
+     <li>12 page PDF</li>
+    </ul>
+
 <p><em>We never share your data with anyone and hate Spam just like you
 do.</em></p>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
