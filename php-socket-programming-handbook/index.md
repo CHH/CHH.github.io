@@ -5,7 +5,7 @@ title: PHP Socket Programming Handbook
 <script src="https://gumroad.com/js/gumroad.js"></script>
 
 <p class="info-box">
-    <b>It’s here!</b> You can now buy the book! <a href="#packages">View available packages</a>
+    <b>XMAS Sale!</b> Enter code “SOCKETXMAS” at checkout and get 50% off of every package! <a href="#packages">View available packages</a>
 </p>
 
 <header class="page-title">
@@ -46,7 +46,7 @@ What if you had a book, that…
     <p><img src="/images/socket-book/Cover.png" alt=""></p>
 </div>
 
-__Available in October 2016 starting at just 29€ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
+__Available now starting at just 29€ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
 
 * 60+ page guide to socket programming in PHP
 * Start with networking basics and work your way up with tweakable examples
@@ -105,7 +105,7 @@ var $mcj = jQuery.noConflict(true);
 
 ## Packages
 
-### Self-Learner (29€)
+### Self-Learner (~~29€~~ 14.50€)
 
 * _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
   tablets.
@@ -116,10 +116,10 @@ var $mcj = jQuery.noConflict(true);
 * Only __29€,__ that’s less than a movie ticket, softdrink plus popcorn!
 
 <p>
-    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 29€</a>
+    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for <s>29€</s> 14.50€ with code “SOCKETXMAS” (only until Dec 23rd)</a>
 </p>
 
-### Guided (49€)
+### Guided (~~49€~~ 24.50€)
 
 This package is for people who need a bit more guidance for achieving their goal.
 
@@ -130,7 +130,7 @@ This package is for people who need a bit more guidance for achieving their goal
 * Only __49€,__ that's probably half of what you make in an hour!
 
 <p>
-    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 49€</a>
+    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for <s>49€</s> 24.50€ with code “SOCKETXMAS” (only until Dec 23rd)</a>
 </p>
 
 ### Enhanced
@@ -146,7 +146,7 @@ try to get you into the right direction.
 * __Only 299€,__ you make this much money probably in a couple of hours
 
 <p>
-    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 299€</a>
+    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for <s>299€</s> 149.50€ with code “SOCKETXMAS” (only until Dec 23rd)</a>
 </p>
 
 <div style="margin-top: 4em;">
