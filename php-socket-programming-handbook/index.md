@@ -2,10 +2,15 @@
 layout: stripped_down
 title: PHP Socket Programming Handbook
 ---
-<script src="https://gumroad.com/js/gumroad.js"></script>
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+	Paddle.Setup({
+		vendor: 17598
+	});
+</script>
 
 <p class="info-box">
-    <b>It’s here!</b> You can now buy the book! <a href="#packages">View available packages</a>
+    <b>It’s here!</b> You can NOW buy the book! <a href="#packages">View available packages</a>
 </p>
 
 <header class="page-title">
@@ -46,7 +51,7 @@ What if you had a book, that…
     <p><img src="/images/socket-book/Cover.png" alt=""></p>
 </div>
 
-__Available in October 2016 starting at just 29€ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
+__Available NOW starting at just 29€ (probably way less than you make in an hour)__, your guide to building awesome things with sockets in PHP.
 
 * 60+ page guide to socket programming in PHP
 * Start with networking basics and work your way up with tweakable examples
@@ -116,7 +121,7 @@ var $mcj = jQuery.noConflict(true);
 * Only __29€,__ that’s less than a movie ticket, softdrink plus popcorn!
 
 <p>
-    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 29€</a>
+    <a class="paddle_button" data-product="511192" href="#!" data-allow-quantity="false">Buy for 29€</a>
 </p>
 
 ### Guided (49€)
@@ -130,7 +135,7 @@ This package is for people who need a bit more guidance for achieving their goal
 * Only __49€,__ that's probably half of what you make in an hour!
 
 <p>
-    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 49€</a>
+    <a class="paddle_button" data-product="511195" href="#!" data-allow-quantity="false">Buy for 49€</a>
 </p>
 
 ### Enhanced
@@ -146,7 +151,7 @@ try to get you into the right direction.
 * __Only 299€,__ you make this much money probably in a couple of hours
 
 <p>
-    <a class="gumroad-button" href="https://gum.co/phpsocketprogramming?wanted=true">Buy for 299€</a>
+    <a class="paddle_button" data-product="511196" href="#!" data-allow-quantity="false">Buy for 299€</a>
 </p>
 
 <div style="margin-top: 4em;">
