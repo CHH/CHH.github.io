@@ -8,13 +8,9 @@ title: PHP Socket Programming Handbook
 		vendor: 17598
 	});
 </script>
-<!--
-<p class="info-box">
-    <b>It’s here!</b> You can NOW buy the book! <a href="#packages">View available packages</a>
-</p> -->
 
 <p class="info-box">
-    <b>Cyber Monday!</b> Everything is 50% off, only today! <a href="#packages">Claim your 50% discount!</a>
+    <b>It’s here!</b> You can NOW buy the book! <a href="#packages">View available packages</a>
 </p>
 
 <header class="page-title">
@@ -49,7 +45,7 @@ What if you had a book, that…
    stuff.
 4. …_and has someone who is available for all your questions_, if you are stuck.
 
-## The PHP Socket Programming Handbook
+## The little PHP Socket Programming Handbook
 
 <div class="book-cover left">
     <p><img src="/images/socket-book/Cover.png" alt=""></p>
@@ -114,7 +110,7 @@ var $mcj = jQuery.noConflict(true);
 
 ## Packages
 
-### Self-Learner (~~29€~~ *only 14.50€ on Cyber Monday*)
+### Self-Learner (29€)
 
 * _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
   tablets.
@@ -125,10 +121,10 @@ var $mcj = jQuery.noConflict(true);
 * Only __29€,__ that’s less than a movie ticket, softdrink plus popcorn!
 
 <p>
-    <a class="paddle_button" data-product="511192" href="#!" data-allow-quantity="false">Buy for 14.50€</a>
+    <a class="paddle_button" data-product="511192" href="#!" data-allow-quantity="false">Buy for 29€</a>
 </p>
 
-### Guided (~~49€~~ *only 24.50€ on Cyber Monday*)
+### Guided (49€)
 
 This package is for people who need a bit more guidance for achieving their goal.
 
@@ -139,7 +135,7 @@ This package is for people who need a bit more guidance for achieving their goal
 * Only __49€,__ that's probably half of what you make in an hour!
 
 <p>
-    <a class="paddle_button" data-product="511195" href="#!" data-allow-quantity="false">Buy for 24.50€</a>
+    <a class="paddle_button" data-product="511195" href="#!" data-allow-quantity="false">Buy for 49€</a>
 </p>
 
 ### Enhanced
@@ -152,10 +148,10 @@ try to get you into the right direction.
 * Includes the complete “Guided” package
 * Includes free one-on-ones via Skype or Hangouts for 6 months
 * _Only 10 packages available!_
-* __Only ~~299€~~ 149.50€ on Cyber Monday,__ you make this much money probably in a couple of hours
+* __Only 299€,__ you make this much money probably in a couple of hours
 
 <p>
-    <a class="paddle_button" data-product="511196" href="#!" data-allow-quantity="false">Buy for 149.50€</a>
+    <a class="paddle_button" data-product="511196" href="#!" data-allow-quantity="false">Buy for 299€</a>
 </p>
 
 <div style="margin-top: 4em;">
