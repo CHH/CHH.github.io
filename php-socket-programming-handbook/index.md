@@ -56,7 +56,6 @@ __Available NOW starting at just 29€ (probably way less than you make in an ho
 * 60+ page guide to socket programming in PHP
 * Start with networking basics and work your way up with tweakable examples
 * _[Signup for the mailing list](/php-socket-programming-handbook/subscribe/) and receive the entire first chapter free._
-  Additionally you get early access to the launch and receive a special discount code for 10€ off the price.
 * DRM Free, PDF for easy reading on your computer, iPad or other tablet.
 
 <div style="clear: both;"></div>
@@ -108,9 +107,7 @@ var $mcj = jQuery.noConflict(true);
 
 <a id="packages"></a>
 
-## Packages
-
-### Self-Learner (29€)
+## Buy now
 
 * _No bullshit DRM free PDF book_, formated for reading on PC, iPad and other
   tablets.
@@ -121,37 +118,7 @@ var $mcj = jQuery.noConflict(true);
 * Only __29€,__ that’s less than a movie ticket, softdrink plus popcorn!
 
 <p>
-    <a class="paddle_button" data-product="511192" href="#!" data-allow-quantity="false">Buy for 29€</a>
-</p>
-
-### Guided (49€)
-
-This package is for people who need a bit more guidance for achieving their goal.
-
-* Includes the complete “Self-Learner” package
-* Includes 1 free one-on-one via Skype or Hangouts
-* Send your questions per email
-* _Only 50 packages available!_
-* Only __49€,__ that's probably half of what you make in an hour!
-
-<p>
-    <a class="paddle_button" data-product="511195" href="#!" data-allow-quantity="false">Buy for 49€</a>
-</p>
-
-### Enhanced
-
-This package is best suited for consultants or agencies which have a specific
-use case and want a pointer on how to get there quickly. I'll talk with you
-about your use case. You can ask everything about socket programming and I'll
-try to get you into the right direction.
-
-* Includes the complete “Guided” package
-* Includes free one-on-ones via Skype or Hangouts for 6 months
-* _Only 10 packages available!_
-* __Only 299€,__ you make this much money probably in a couple of hours
-
-<p>
-    <a class="paddle_button" data-product="511196" href="#!" data-allow-quantity="false">Buy for 299€</a>
+    <a class="paddle_button" data-product="511192" href="#!" data-allow-quantity="false">Buy now for 29€</a>
 </p>
 
 <div style="margin-top: 4em;">
