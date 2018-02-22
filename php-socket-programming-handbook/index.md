@@ -10,7 +10,7 @@ title: PHP Socket Programming Handbook
 </script>
 
 <p class="info-box">
-    <b>It’s here!</b> You can NOW buy the book! <a href="#packages">View available packages</a>
+    <b>It’s here!</b> You can NOW buy the book!
 </p>
 
 <header class="page-title">
