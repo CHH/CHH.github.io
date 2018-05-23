@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18270",
+"creatorBuild": "19076",
 "files": {
 	"\/_books\/design-is-a-job.html": {
 		"fileType": 8192,
@@ -155,6 +155,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_includes\/layout\/tags.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_includes\/layout\/tags.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_includes\/posts\/socket-book.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -263,6 +272,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/fastclick\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/fastclick\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/fastclick\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/bower_components\/fastclick\/lib\/fastclick.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -273,6 +304,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/filament-fixed\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/filament-fixed\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/filament-fixed\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/bower_components\/filament-fixed\/fixedfixed-min.js": {
 		"fileType": 64,
@@ -304,6 +346,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/filament-sticky\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/filament-sticky\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/filament-sticky\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/bower_components\/filament-sticky\/demos\/demo-control.html": {
 		"fileType": 8192,
@@ -354,6 +407,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/filament-sticky\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/filament-sticky\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/filament-sticky\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/bower_components\/filament-sticky\/test\/fixed-sticky-tests.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -373,6 +437,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/headroom.js\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/headroom.js\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/headroom.js\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/bower_components\/headroom.js\/dist\/angular.headroom.js": {
 		"fileType": 64,
@@ -440,6 +515,50 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/headroom.js\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/headroom.js\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/headroom.js\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/jquery\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/jquery\/component.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/component.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/component-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/jquery\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/bower_components\/jquery\/jquery-migrate.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -484,6 +603,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/jquery\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/bower_components\/less-elements\/elements.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -509,6 +639,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/categories\/design.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/categories\/linked.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/categories\/linked.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -566,6 +705,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/chef\/cookbooks\/nodejs\/metadata.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/chef\/cookbooks\/nodejs\/metadata.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/chef\/cookbooks\/nodejs\/metadata-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/css\/screen.css": {
 		"fileType": 16,
@@ -867,6 +1017,17 @@
 		"initialSize": 45809,
 		"inputAbbreviatedPath": "\/images\/posts\/on-web-typography\/on-web-typography-cover.jpg",
 		"outputAbbreviatedPath": "\/images\/posts\/on-web-typography\/on-web-typography-cover.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/posts\/stack-oss-art\/stack-11x14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116961,
+		"inputAbbreviatedPath": "\/images\/posts\/stack-oss-art\/stack-11x14.jpg",
+		"outputAbbreviatedPath": "\/images\/posts\/stack-oss-art\/stack-11x14.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1294,7 +1455,7 @@
 		"outputAbbreviatedPath": "\/css\/screen.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
@@ -1570,6 +1731,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/gemoji-2.1.0\/db\/emoji.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/gemoji-2.1.0\/db\/emoji.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/gemoji-2.1.0\/db\/emoji-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/ruby\/2.0.0\/gems\/gemoji-2.1.0\/images\/emoji\/bowtie.png": {
 		"fileType": 32768,
@@ -12383,6 +12555,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/data\/example.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/data\/example.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/data\/example-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/data\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -12402,6 +12585,347 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail10.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail10.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail10-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail11.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail11.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail11-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail12.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail12.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail12-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail13.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail13.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail13-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail14.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail14.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail14-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail18.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail18.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail18-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail19.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail19.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail19-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail20.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail20.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail20-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail21.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail21.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail21-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail22.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail22.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail22-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail23.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail23.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail23-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail24.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail24.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail24-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail25.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail25.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail25-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail27.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail27.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail27-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail28.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail28.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail28-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail6.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail6.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail6-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail7.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail7.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail7-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail8.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail8.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail8-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail9.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail9.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/fail9-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass15.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass15.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass15-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass16.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass16.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass16-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass17.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass17.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass17-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass26.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass26.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass26-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/json-1.8.1\/tests\/fixtures\/pass3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/ruby\/2.0.0\/gems\/kramdown-1.0.2\/data\/kramdown\/document.html": {
 		"fileType": 8192,
@@ -19959,13 +20483,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.5.2\/vendor\/pygments-main\/tests\/examplefiles\/example.ts",
+		"jsxMode": 0,
 		"minifyOutput": 0,
+		"moduleResolutionType": 0,
 		"moduleType": 0,
 		"noImplicitAny": 0,
 		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.5.2\/vendor\/pygments-main\/tests\/examplefiles\/js\/example.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"preserveConstEnums": 0,
 		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.5.2\/vendor\/pygments-main\/tests\/examplefiles\/example.xhtml": {
@@ -20129,13 +20657,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.5.4\/vendor\/pygments-main\/tests\/examplefiles\/example.ts",
+		"jsxMode": 0,
 		"minifyOutput": 0,
+		"moduleResolutionType": 0,
 		"moduleType": 0,
 		"noImplicitAny": 0,
 		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.5.4\/vendor\/pygments-main\/tests\/examplefiles\/js\/example.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"preserveConstEnums": 0,
 		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.5.4\/vendor\/pygments-main\/tests\/examplefiles\/example.xhtml": {
@@ -20417,6 +20949,7 @@
 		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.6.0\/vendor\/pygments-main\/tests\/examplefiles\/example.slim",
 		"logicless": 0,
 		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.6.0\/vendor\/pygments-main\/tests\/examplefiles\/example.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -20429,13 +20962,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.6.0\/vendor\/pygments-main\/tests\/examplefiles\/example.ts",
+		"jsxMode": 0,
 		"minifyOutput": 0,
+		"moduleResolutionType": 0,
 		"moduleType": 0,
 		"noImplicitAny": 0,
 		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.6.0\/vendor\/pygments-main\/tests\/examplefiles\/js\/example.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"preserveConstEnums": 0,
 		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"\/vendor\/ruby\/2.0.0\/gems\/pygments.rb-0.6.0\/vendor\/pygments-main\/tests\/examplefiles\/example.xhtml": {
@@ -23155,6 +23692,688 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/item.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/item.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/item-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/ohai.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/ohai.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/ohai-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/twitter_search.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/twitter_search.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/twitter_search-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/twitter_stream.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/twitter_stream.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/twitter_stream-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/unicode.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/unicode.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/benchmark\/subjects\/unicode-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.15.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.15.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.15-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.16.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.16.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.16-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.17.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.17.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.17-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.26.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.26.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail.26-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail11.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail11.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail11-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail12.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail12.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail12-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail13.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail13.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail13-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail14.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail14.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail14-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail19.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail19.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail19-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail20.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail20.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail20-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail21.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail21.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail21-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail22.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail22.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail22-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail23.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail23.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail23-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail24.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail24.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail24-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail25.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail25.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail25-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail27.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail27.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail27-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail28.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail28.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail28-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail6.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail6.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail6-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail9.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail9.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/fail9-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.array.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.array.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.array-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.codepoints_from_unicode_org.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.codepoints_from_unicode_org.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.codepoints_from_unicode_org-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.contacts.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.contacts.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.contacts-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.db100.xml.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.db100.xml.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.db100.xml-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.db1000.xml.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.db1000.xml.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.db1000.xml-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.dc_simple_with_comments.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.dc_simple_with_comments.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.dc_simple_with_comments-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.deep_arrays.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.deep_arrays.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.deep_arrays-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.difficult_json_c_test_case.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.difficult_json_c_test_case.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.difficult_json_c_test_case-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.difficult_json_c_test_case_with_comments.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.difficult_json_c_test_case_with_comments.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.difficult_json_c_test_case_with_comments-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.doubles.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.doubles.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.doubles-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.empty_array.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.empty_array.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.empty_array-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.empty_string.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.empty_string.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.empty_string-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.escaped_bulgarian.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.escaped_bulgarian.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.escaped_bulgarian-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.escaped_foobar.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.escaped_foobar.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.escaped_foobar-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.item.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.item.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.item-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample4-nows.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample4-nows.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample4-nows-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.json-org-sample5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.map-spain.xml.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.map-spain.xml.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.map-spain.xml-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.ns-invoice100.xml.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.ns-invoice100.xml.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.ns-invoice100.xml-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.ns-soap.xml.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.ns-soap.xml.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.ns-soap.xml-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-fp-4k.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-fp-4k.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-fp-4k-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-fp-64k.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-fp-64k.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-fp-64k-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-int-4k.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-int-4k.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-int-4k-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-int-64k.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-int-64k.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.numbers-int-64k-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.twitter-search.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.twitter-search.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.twitter-search-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.twitter-search2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.twitter-search2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.twitter-search2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.unicode.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.unicode.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.unicode-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.yelp.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.yelp.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass.yelp-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ruby\/2.0.0\/gems\/yajl-ruby-1.1.0\/spec\/parsing\/fixtures\/pass3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		}
 	},
 "hooks": [
@@ -23231,6 +24450,10 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -23324,6 +24547,10 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -23380,6 +24607,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -23402,6 +24633,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -23440,6 +24675,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -23453,6 +24692,10 @@
 			"flagValue": 4
 			},
 		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -23500,6 +24743,10 @@
 			"active": 0,
 			"flagValue": 4
 			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"mootools": {
 			"active": 0,
 			"flagValue": -1
@@ -23518,6 +24765,10 @@
 			},
 		"noarg": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -23565,6 +24816,10 @@
 			"flagValue": -1
 			},
 		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -23616,6 +24871,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"withstmt": {
 			"active": 0,
 			"flagValue": -1
@@ -23634,10 +24893,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -23646,15 +24901,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"debug": {
+		"couch": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -23662,75 +24909,27 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
+		"es6": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
+		"eval": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
+		"for": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": 0,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"vars": {
+		"this": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -23739,6 +24938,14 @@
 			"flagValue": -1
 			}
 		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
@@ -23766,9 +24973,18 @@
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 0,
-	"markdownEnableSmartyPants": 1,
-	"markdownExpandTabs": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
@@ -23792,6 +25008,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -23813,15 +25030,22 @@
 	"typescriptAutoOutputPathStyle": 2,
 	"typescriptCreateDeclarationFile": 0,
 	"typescriptCreateSourceMap": 0,
+	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
+	"typescriptModuleResolutionType": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -23854,6 +25078,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -23897,6 +25125,14 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -23909,8 +25145,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {

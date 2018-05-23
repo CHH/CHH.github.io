@@ -11,8 +11,10 @@ exclude:
     - .codekit-cache
 
 include: [.htaccess, .well-known]
-safe: true
 # lsi: true
+
+gems:
+    - jekyll-paginate
 
 title: "Christoph Hochstrasser"
 description: >
@@ -35,6 +37,9 @@ assets:
     js_version: 1
 
 markdown: kramdown
+
+# TODO: Fix post times to include timezone
+future: true
 
 kramdown:
     input: GFM

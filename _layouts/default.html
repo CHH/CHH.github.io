@@ -23,6 +23,8 @@
 
         <meta name="description" content="{{ page_desc }}">
 
+        <script type="text/javascript"> var _iub = _iub || []; _iub.csConfiguration = {"banner":{"textColor":"white","backgroundColor":"black"},"lang":"en","siteId":1175475,"cookiePolicyId":52439058}; </script><script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
+
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
         <script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script>
         <script type="text/javascript" src="/js/application-min.js?v={{ site.assets.js_version }}"></script>
@@ -115,12 +117,15 @@
 
                     <footer role="contentinfo" class="site-footer">
                         <p class="copyright">
-                            &copy;2011–2018 Christoph Hochstrasser
+                            &copy; 2011–{{ "now"|date:"%Y" }} Christoph Hochstrasser
                         </p>
                         <nav class="footer-nav">
                             <ul>
                                 <li class="nav-item">
                                     <a href="/imprint">Imprint</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/privacy">Privacy</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://github.com/CHH">Github</a>
