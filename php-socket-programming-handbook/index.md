@@ -9,10 +9,6 @@ title: PHP Socket Programming Handbook
 	});
 </script>
 
-<p class="info-box">
-    <b>It’s here!</b> You can NOW buy the book!
-</p>
-
 <header class="page-title">
     <h1>
         To this day my post about socket programming in PHP was viewed 45.685 times.
@@ -79,42 +75,61 @@ __Available NOW starting at just 29€ (probably way less than you make in an ho
 <div style="margin-top: 4em;">
 <div id="mc_embed_signup">
 <form action="//christophh.us7.list-manage.com/subscribe/post?u=d87aafa86509e5206d575da4c&amp;id=e81c880932" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <h1 class="box-title">Before you leave</h1>
 
-    <p>There’s a free sample chapter for you, where you’ll learn all the basics of networking and socket programming, and learn to write your first server.</p>
+<h1 class="box-title">Before you leave</h1>
 
-    <p>Enter your email address and you’ll get:</p>
+<p>There’s a free sample chapter for you, where you’ll learn all the basics of networking and socket programming, and learn to write your first server.</p>
 
-    <ul class="list-checkmarks">
-     <li>An intro to networking basics</li>
-     <li>An intro to socket programming with PHP and how to write your first server</li>
-     <li>12 page PDF</li>
-    </ul>
+<p>Enter your email address and you’ll get:</p>
+
+<ul class="list-checkmarks">
+    <li>An intro to networking basics</li>
+    <li>An intro to socket programming with PHP and how to write your first server</li>
+    <li>12 page PDF</li>
+</ul>
 
 <p><em>We never share your data with anyone and hate Spam just like you
 do.</em></p>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
-</label>
-	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+    <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
+
 <div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+    <label for="mce-LNAME">Last Name </label>
+    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
 </div>
+
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d87aafa86509e5206d575da4c_e81c880932" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
+
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Marketing Permissions <span class="asterisk">*</span></label>
+    <p>
+    Ing. Christoph Hochstrasser will use the information you provide on this form to be in touch with you and to provide updates and marketing. Please let us know all the ways you would like to hear from us:
+    </p>
+    <label><input type="checkbox" name="CGDPR[EMAIL]" value="{{ "now"|date:"%Y-%m-%d" }}"> Email</label>
+    <label><input type="checkbox" name="CGDPR[ADS]" value="{{ "now"|date:"%Y-%m-%d" }}"> Customized online advertising</label>
+    <p></p>
+    <p>
+    You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at me@christophh.net. We will treat your information with respect. For more information about our privacy practices please visit our website. By clicking below, you agree that we may process your information in accordance with these terms.
+    </p>
+</div>
+
+<div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;"><input type="text" name="b_d87aafa86509e5206d575da4c_e81c880932" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
+
 </form>
+
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script type='text/javascript'>
