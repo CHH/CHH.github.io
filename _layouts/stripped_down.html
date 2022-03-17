@@ -32,8 +32,6 @@
         <link rel="apple-touch-icon-precomposed" type="image/png" href="/images/apple-touch-icon-precomposed.png">
         <link rel="icon" type="image/png" href="/images/favicon_16.png">
 
-        <script type="text/javascript"> var _iub = _iub || []; _iub.csConfiguration = {"banner":{"textColor":"white","backgroundColor":"black"},"lang":"en","siteId":1175475,"cookiePolicyId":52439058}; </script><script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
-
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
         <script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script>
         <script type="text/javascript" src="/js/application-min.js?v={{ site.assets.js_version }}"></script>
@@ -50,8 +48,6 @@
         {% for link in page.stylesheet_links %}
         <link rel="stylesheet" href="{{ link }}?v={{ site.assets.css_version }}">
         {% endfor %}
-
-        {% include layout/ga.html %}
     </head>
 
     <body class="site-stripped-down">
